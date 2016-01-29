@@ -1,6 +1,6 @@
 # PredixMobileSDK
 
-The Predix Mobile SDK is a comprehensive suite of tools, frameworks and source examples that will enable and educate you on building mobile applications for the Industrial Internet of Things (IoT). Follow our getting started documentation then come here to find all of the tools and examples to follow along. 
+The Predix Mobile SDK is a comprehensive suite of tools, frameworks and source examples that will enable and educate you on building mobile applications for the Industrial Internet of Things (IIoT). Follow our getting started documentation then come here to find all of the tools and examples to follow along. 
 
 ##Predix Mobile Container
 The [Predix Mobile container](https://github.com/PredixDev/PredixMobileReferenceApp) is a platform specific environment in which Predix mobile applications are run. It contains the implementation of our Predix Core Services Framework.
