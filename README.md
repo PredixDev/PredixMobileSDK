@@ -10,13 +10,13 @@ The [PM CLI Tools](https://github.com/PredixDev/predix-mobile-cli) is a set of c
 
 ## Examples
 1. WEB-APPs
-..*[MobileExample-WebApp-Sample : The Sample App](https://github.com/PredixDev/MobileExample-WebApp-Sample)
-..*[MobileExample-WebApp-OfflineAuthentication : For offline authentication](https://github.com/PredixDev/MobileExample-WebApp-OfflineAuthentication)
-..*[MobileExample-WebApp-HelloWorld : Predix Mobile Hello World example](https://github.com/PredixDev/MobileExample-WebApp-HelloWorld)
-..*[MobileExample-WebApp-AssetIntegration : Asset integration webapp example](https://github.com/PredixDev/MobileExample-WebApp-AssetIntegration)
+  * [MobileExample-WebApp-Sample : The Sample App](https://github.com/PredixDev/MobileExample-WebApp-Sample)
+  * [MobileExample-WebApp-OfflineAuthentication : For offline authentication](https://github.com/PredixDev/MobileExample-WebApp-OfflineAuthentication)
+  * [MobileExample-WebApp-HelloWorld : Predix Mobile Hello World example](https://github.com/PredixDev/MobileExample-WebApp-HelloWorld)
+  * [MobileExample-WebApp-AssetIntegration : Asset integration webapp example](https://github.com/PredixDev/MobileExample-WebApp-AssetIntegration)
 
 	
 2. Microservices
-..*[MobileExample-Microservice-AssetIntegration : Asset integration microservice example](https://github.com/PredixDev/MobileExample-Microservice-AssetIntegration)
+  * [MobileExample-Microservice-AssetIntegration : Asset integration microservice example](https://github.com/PredixDev/MobileExample-Microservice-AssetIntegration)
 
 
