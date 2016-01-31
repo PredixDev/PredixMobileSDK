@@ -6,7 +6,7 @@ The Predix Mobile SDK is a comprehensive suite of tools, frameworks and source e
 The [Predix Mobile container](https://github.com/PredixDev/PredixMobileReferenceApp) is a platform specific environment in which Predix mobile applications are run. It contains the implementation of our Predix Core Services Framework.
 
 ##PM CLI Tools
-The [PM CLI Tools](https://github.com/PredixDev/predix-mobile-cli) is a set of command line scripts implemented in NodeJS that facilitate the management of Predix mobile users, roles, Predix mobile applications and their constituent web app dependencies. These tools depend on both the Cloud Foundry and UAAC connad line tools so make sure they are installed and properly configured prior to installing the PM tools.
+The [pm CLI](https://github.com/PredixDev/predix-mobile-cli) is a Command Line Interface that facilitates the management of Predix mobile users, roles, Predix mobile applications and their constituent web app dependencies. Cloud Foundry cf CLI and uaac CLI must be installed and configured first prior to installing the pm CLI.
 
 ## Examples
 1. WEB-APPs
