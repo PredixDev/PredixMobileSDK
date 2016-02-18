@@ -13,7 +13,7 @@ The [pm CLI](https://github.com/PredixDev/predix-mobile-cli) is a Command Line I
   * [MobileExample-WebApp-Sample : The Sample App](https://github.com/PredixDev/MobileExample-WebApp-Sample)  
   * [MobileExample-WebApp-OfflineAuthentication : For offline authentication](https://github.com/PredixDev/MobileExample-WebApp-OfflineAuthentication)  
   * [MobileExample-WebApp-HelloWorld : Predix Mobile Hello World example](https://github.com/PredixDev/MobileExample-WebApp-HelloWorld)  
-  * [MobileExample-WebApp-AssetIntegration : Sample webapp that sends a test command to Mobile Service and displays the response. example](https://github.com/PredixDev/MobileExample-WebApp-AssetIntegration)  
+  * [MobileExample-WebApp-SendCommand : Sample webapp that sends a test command to Mobile Service and displays the response. example](https://github.com/PredixDev/MobileExample-WebApp-SendCommand)  
   * [MobileExample-WebApp-AssetIntegration : Asset integration webapp example](https://github.com/PredixDev/MobileExample-WebApp-AssetIntegration)  
 
 2. Microservices
