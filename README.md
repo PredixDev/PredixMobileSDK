@@ -23,6 +23,7 @@ The [pm CLI](https://github.com/PredixDev/predix-mobile-cli) is a Command Line I
   * [MobileExample-iOSService-Sample : Basic native iOS service example](https://github.com/PredixDev/MobileExample-iOSService-Sample)
   * [MobileExample-iOSService-SingleLocation : Retrieve user's current location in iOS via a service](https://github.com/PredixDev/MobileExample-iOSService-SingleLocation)
   * [MobileExample-iOSService-Barcode-Scanner : Barcode scanner implementation for iOS via native service](https://github.com/PredixDev/MobileExample-iOSService-Barcode-Scanner)
+  * [MobileExample-iOSService-Camera : Camera service implementation for iOS via native service](https://github.com/PredixDev/MobileExample-iOSService-Camera)
 
 4. iOS Client Examples
   * [MobileExample-iOS-StoreLogsInDatabase : Store logs in the database](https://github.com/PredixDev/MobileExample-iOS-StoreLogsInDatabase)
