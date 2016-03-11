@@ -27,3 +27,4 @@ The [pm CLI](https://github.com/PredixDev/predix-mobile-cli) is a Command Line I
 
 4. iOS Client Examples
   * [MobileExample-iOS-StoreLogsInDatabase : Store logs in the database](https://github.com/PredixDev/MobileExample-iOS-StoreLogsInDatabase)
+  * [MobileExample-iOS-NativeIssuesListApp : using the Predix Mobile SDK for iOS to create a non-hybrid, native iOS app](https://github.com/PredixDev/MobileExample-iOS-NativeIssuesListApp)
