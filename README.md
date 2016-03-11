@@ -8,6 +8,9 @@ The [Predix Mobile container](https://github.com/PredixDev/PredixMobileReference
 ##pm CLI
 The [pm CLI](https://github.com/PredixDev/predix-mobile-cli) is a Command Line Interface that facilitates the management of Predix mobile users, roles, Predix mobile applications and their constituent web app dependencies. You must install and configure the Cloud Foundry cf CLI and uaac CLI before installing the pm CLI.
 
+## Additional Information
+For additional technical documentation see the [Wiki](../../wiki) in this repo.
+
 ## Examples
 1. WEB-APPs
   * [MobileExample-WebApp-Sample : The Sample App](https://github.com/PredixDev/MobileExample-WebApp-Sample)  
