@@ -18,21 +18,21 @@ For additional technical documentation see the [Wiki](../../wiki) in this repo.
 
 ## Examples
 1. WEB-APPs
-  * [MobileExample-WebApp-Sample : The Sample App](https://github.com/PredixDev/MobileExample-WebApp-Sample)  
-  * [MobileExample-WebApp-OfflineAuthentication : For offline authentication](https://github.com/PredixDev/MobileExample-WebApp-OfflineAuthentication)  
-  * [MobileExample-WebApp-SendCommand : Sample webapp that sends a test command to Mobile Service and displays the response. example](https://github.com/PredixDev/MobileExample-WebApp-SendCommand)  
-  * [MobileExample-WebApp-AssetIntegration : Asset integration webapp example](https://github.com/PredixDev/MobileExample-WebApp-AssetIntegration)  
+  * Predix Mobile Sample app - [MobileExample-WebApp-Sample](https://github.com/PredixDev/MobileExample-WebApp-Sample)  
+  * Offline Authentication app - [MobileExample-WebApp-OfflineAuthentication](https://github.com/PredixDev/MobileExample-WebApp-OfflineAuthentication)  
+  * Send Command app - [MobileExample-WebApp-SendCommand](https://github.com/PredixDev/MobileExample-WebApp-SendCommand)  
+  * Asset integration app -  [MobileExample-WebApp-AssetIntegration](https://github.com/PredixDev/MobileExample-WebApp-AssetIntegration)  
 
 2. Microservices
-  * [MobileExample-Microservice-CommandProcessor : A sample command-processor example](https://github.com/PredixDev/MobileExample-Microservice-CommandProcessor)  
-  * [MobileExample-Microservice-AssetIntegration : A sample sync-processor which communicates with Predix-Assets service](https://github.com/PredixDev/MobileExample-Microservice-AssetIntegration)  
+  * Sample Command Processor - [MobileExample-Microservice-CommandProcessor](https://github.com/PredixDev/MobileExample-Microservice-CommandProcessor)  
+  * Sample Sync Processor that communicates with Predix Asset service - [MobileExample-Microservice-AssetIntegration](https://github.com/PredixDev/MobileExample-Microservice-AssetIntegration)  
 
 3. iOS Client Services
-  * [MobileExample-iOSService-Sample : Basic native iOS service example](https://github.com/PredixDev/MobileExample-iOSService-Sample)
-  * [MobileExample-iOSService-SingleLocation : Retrieve user's current location in iOS via a service](https://github.com/PredixDev/MobileExample-iOSService-SingleLocation)
-  * [MobileExample-iOSService-Barcode-Scanner : Barcode scanner implementation for iOS via native service](https://github.com/PredixDev/MobileExample-iOSService-Barcode-Scanner)
-  * [MobileExample-iOSService-Camera : Camera service implementation for iOS via native service](https://github.com/PredixDev/MobileExample-iOSService-Camera)
+  * Basic native iOS service example - [MobileExample-iOSService-Sample](https://github.com/PredixDev/MobileExample-iOSService-Sample)
+  * Retrieve user's current location in iOS via a service exmple [MobileExample-iOSService-SingleLocation ](https://github.com/PredixDev/MobileExample-iOSService-SingleLocation)
+  * Barcode scanner implementation for iOS via native service - [MobileExample-iOSService-Barcode-Scanner : ](https://github.com/PredixDev/MobileExample-iOSService-Barcode-Scanner)
+  * Camera service implementation for iOS via native service - [MobileExample-iOSService-Camera : ](https://github.com/PredixDev/MobileExample-iOSService-Camera)
 
 4. iOS Client Examples
-  * [MobileExample-iOS-StoreLogsInDatabase : Store logs in the database](https://github.com/PredixDev/MobileExample-iOS-StoreLogsInDatabase)
-  * [MobileExample-iOS-NativeIssuesListApp : using the Predix Mobile SDK for iOS to create a non-hybrid, native iOS app](https://github.com/PredixDev/MobileExample-iOS-NativeIssuesListApp)
+  * Store Loges in the Database [MobileExample-iOS-StoreLogsInDatabase](https://github.com/PredixDev/MobileExample-iOS-StoreLogsInDatabase)
+  * Create a non-hybrid, native iOS app with Mobile SDK -  [MobileExample-iOS-NativeIssuesListApp](https://github.com/PredixDev/MobileExample-iOS-NativeIssuesListApp)
