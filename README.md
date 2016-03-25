@@ -29,7 +29,7 @@ For additional technical documentation see the [Wiki](../../wiki) in this repo.
 
 3. iOS Client Services
   * Basic native iOS service example - [MobileExample-iOSService-Sample](https://github.com/PredixDev/MobileExample-iOSService-Sample)
-  * Retrieve user's current location in iOS via a service exmple [MobileExample-iOSService-SingleLocation ](https://github.com/PredixDev/MobileExample-iOSService-SingleLocation)
+  * Retrieve user's current location in iOS via a service example [MobileExample-iOSService-SingleLocation ](https://github.com/PredixDev/MobileExample-iOSService-SingleLocation)
   * Barcode scanner implementation for iOS via native service - [MobileExample-iOSService-Barcode-Scanner : ](https://github.com/PredixDev/MobileExample-iOSService-Barcode-Scanner)
   * Camera service implementation for iOS via native service - [MobileExample-iOSService-Camera : ](https://github.com/PredixDev/MobileExample-iOSService-Camera)
 
