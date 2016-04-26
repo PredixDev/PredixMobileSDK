@@ -36,5 +36,5 @@ For additional technical documentation see the [Wiki](../../wiki) in this repo.
 4. iOS Client Examples
   * Store Loges in the Database [MobileExample-iOS-StoreLogsInDatabase](https://github.com/PredixDev/MobileExample-iOS-StoreLogsInDatabase)
   * Create a non-hybrid, native iOS app with Mobile SDK -  [MobileExample-iOS-NativeIssuesListApp](https://github.com/PredixDev/MobileExample-iOS-NativeIssuesListApp)
-  * Development-time rapid on-device WebApp interations -  [MobileExample-iOS-DeviceDevWebAppUpdater](https://github.com/PredixDev/MobileExample-iOS-DeviceDevWebAppUpdater)
+  * Development-time rapid on-device WebApp iterations -  [MobileExample-iOS-DeviceDevWebAppUpdater](https://github.com/PredixDev/MobileExample-iOS-DeviceDevWebAppUpdater)
 
