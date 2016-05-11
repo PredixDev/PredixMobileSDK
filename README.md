@@ -12,7 +12,7 @@ Predix Mobile SDK includes Predix Mobile Reference App Containers for both iOS a
 
 For iOS, you build the [Predix Mobile Reference App Container for iOS](https://github.com/PredixDev/PredixMobileReferenceApp).
 
-For Electron, you download and install the [Predix Mobile Reference App Container for Electron for Windows[(https://github.com/PredixDev/PredixMobileElectron/releases).
+For Electron, you download and install the [Predix Mobile Reference App Container for Electron for Windows](https://github.com/PredixDev/PredixMobileElectron/releases).
 
 ##pm CLI
 The [Predix Mobile pm command line tool](https://github.com/PredixDev/predix-mobile-cli) allows you to manage your Predix Mobile apps and your mobile backend processes. It includes a set of commands that are invoked through the pm command line interface. These tools depend on both the Cloud Foundry and UAAC command line tools, so make sure they are installed and properly configured prior to installing the pm tool. You must install and configure the Cloud Foundry cf CLI and uaac CLI before installing the pm CLI.
