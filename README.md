@@ -7,8 +7,8 @@ The Predix Mobile SDK is a comprehensive suite of tools, frameworks and source e
 
 Then, come back to this site to find all of the tools and examples to follow along.
 
-##Predix Mobile Container
-With the Predix Mobile Reference App for iOS, you build the [Predix Mobile App Container for iOS](https://github.com/PredixDev/PredixMobileReferenceApp), a platform-specific environment in which Predix mobile applications are run. It contains an implementation of the Predix Mobile Client Core Services framework. 
+##Predix Mobile App Container
+Predix Mobile SDK includes both an iOS and Electron for Windows  Predix Mobile Reference App Container.  The Reference App  for iOS, you build the [Predix Mobile App Container for iOS](https://github.com/PredixDev/PredixMobileReferenceApp), a platform-specific environment in which Predix mobile applications are run. It contains an implementation of the Predix Mobile Client Core Services framework. 
 
 ##pm CLI
 The [pm CLI](https://github.com/PredixDev/predix-mobile-cli) is a Command Line Interface that facilitates the management of Predix mobile users, roles, Predix mobile applications and their constituent web app dependencies. You must install and configure the Cloud Foundry cf CLI and uaac CLI before installing the pm CLI.
