@@ -8,7 +8,7 @@ The Predix Mobile SDK is a comprehensive suite of tools, frameworks and source e
 Then, come back to this site to find all of the tools and examples to follow along.
 
 ##Predix Mobile App Container
-Predix Mobile SDK includes Predix Mobile Reference App Containers for both iOS and Electron for Windows.  The Mobile Reference App Container is a platform-specific environment in which Predix mobile applications are run. 
+Predix Mobile SDK includes Predix Mobile Reference App Containers for iOS, macOS, and Electron for Windows.  The Mobile Reference App Container is a platform-specific environment in which Predix mobile applications are run. 
 
 For iOS, you build the [Predix Mobile Reference App Container for iOS](https://github.com/PredixDev/PredixMobileiOS).
 
