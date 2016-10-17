@@ -27,6 +27,9 @@ The Predix Mobile App Container interprets URL requests and delegates them to th
 For additional technical documentation see the [Wiki](../../wiki) in this repo.
 
 ## Examples
+
+The following examples show different ways you can use the Predix Mobile SDK. They are not meant for production use.
+
 1. WEB-APPs
   * Predix Mobile Sample app - [MobileExample-WebApp-Sample](https://github.com/PredixDev/MobileExample-WebApp-Sample)  
   * Offline Authentication app - [MobileExample-WebApp-OfflineAuthentication](https://github.com/PredixDev/MobileExample-WebApp-OfflineAuthentication)  
