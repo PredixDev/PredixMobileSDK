@@ -1,0 +1,758 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ServiceRouterProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/ServiceRouterProtocol" class="dashAnchor"></a>
+
+    <a title="ServiceRouterProtocol Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          PredixMobileSDK Docs
+        </a>
+         (100% documented)
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">PredixMobileSDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      ServiceRouterProtocol Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ApplicationDelegateHandlers.html">ApplicationDelegateHandlers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FullTextSearch.html">FullTextSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Keychain.html">Keychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand.html">KeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand/KeychainAccess.html">– KeychainAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommandResult.html">KeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OpenURLService.html">OpenURLService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobilityConfiguration.html">PredixMobilityConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobilityManager.html">PredixMobilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommand.html">ReadKeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommandResult.html">ReadKeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ServiceRouter.html">ServiceRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WaitStateReturn.html">WaitStateReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WriteKeychainCommand.html">WriteKeychainCommand</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK9ApiSchemeSS">ApiScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK28DatabaseDownloadNotificationVCSo14NSNotification4Name">DatabaseDownloadNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK26DatabaseManagerErrorDomainSS">DatabaseManagerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK27DocumentChangedNotificationVCSo14NSNotification4Name">DocumentChangedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK11HttpVersionSS">HttpVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK38InitialReplicationCompleteNotificationVCSo14NSNotification4Name">InitialReplicationCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK19KeychainErrorDomainSS">KeychainErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK31ReachabilityWatcherNotificationVCSo14NSNotification4Name">ReachabilityWatcherNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixVCSo14NSNotification4Name">ReplicationCompleteNotificationSuffix</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK19UIReadyNotificationVCSo14NSNotification4Name">UIReadyNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LoggerLevel.html">LoggerLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Messages.html">Messages</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/WaitState.html">WaitState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/PGSDKLogger.html">PGSDKLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/LoggerProtocol.html">LoggerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PredixAppWindowProtocol.html">PredixAppWindowProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ServiceProtocol.html">ServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ServiceRouterProtocol.html">ServiceRouterProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ConnectivityStatus.html">ConnectivityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ReachabilityStatus.html">ReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ServiceId.html">ServiceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ShowSeriousErrorHelper.html">ShowSeriousErrorHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/VersionInfoKeys.html">VersionInfoKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ViewDefinition.html">ViewDefinition</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>ServiceRouterProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ServiceRouterProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Public protocol implemented by the Service Router for service registration and processing requests.</p>
+
+<div class="aside aside-seealso">
+    <p class="aside-title">Seealso</p>
+    <a href="../Classes/ServiceRouter.html">ServiceRouter</a>
+
+</div>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP15PredixMobileSDK21ServiceRouterProtocol15registerServiceFPMPS_15ServiceProtocol_Sb"></a>
+                    <a name="//apple_ref/swift/Method/registerService(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP15PredixMobileSDK21ServiceRouterProtocol15registerServiceFPMPS_15ServiceProtocol_Sb">registerService(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Registers the provided service class.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@discardableResult</span> <span class="kd">func</span> <span class="nf">registerService</span><span class="p">(</span><span class="n">_</span> <span class="nv">service</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ServiceProtocol.html">ServiceProtocol</a></span><span class="o">.</span><span class="k">Type</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>service</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>class type meeting the ServiceProtocol type.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                      <div>
+                        <h4>Return Value</h4>
+                        <p>true if registration was successful.</p>
+
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP15PredixMobileSDK21ServiceRouterProtocol17unregisterServiceFPMPS_15ServiceProtocol_T_"></a>
+                    <a name="//apple_ref/swift/Method/unregisterService(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP15PredixMobileSDK21ServiceRouterProtocol17unregisterServiceFPMPS_15ServiceProtocol_T_">unregisterService(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unregisters the provided service class, if the service was previously registered.</p>
+
+<p>If the service was not registered this method has no effect.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">unregisterService</span><span class="p">(</span><span class="n">_</span> <span class="nv">service</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/ServiceProtocol.html">ServiceProtocol</a></span><span class="o">.</span><span class="k">Type</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>service</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>class type meeting the ServiceProtocol type to unregister</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP15PredixMobileSDK21ServiceRouterProtocol14processRequestFTV10Foundation10URLRequest13responseBlockFGSqCSo11URLResponse_T_9dataBlockFGSqVS1_4Data_T_15completionBlockFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/processRequest(_:responseBlock:dataBlock:completionBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP15PredixMobileSDK21ServiceRouterProtocol14processRequestFTV10Foundation10URLRequest13responseBlockFGSqCSo11URLResponse_T_9dataBlockFGSqVS1_4Data_T_15completionBlockFT_T__T_">processRequest(_:responseBlock:dataBlock:completionBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Processes the provided request, routing the request to the appropriate service.</p>
+
+<p>The request URL will be similar to: <code>http://pmapi/serviceid/extrapath</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">processRequest</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span> <span class="p">:</span> <span class="kt">URLRequest</span><span class="p">,</span> <span class="nv">responseBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="nv">dataBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">dataReturnBlock</span><span class="p">,</span> <span class="nv">completionBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">requestCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The URLRequest to process</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>First of three return closures. The service will call this closure to return response object back to the calling code.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Second of the three return closures. The service will call this closure to return data back to the calling code. This closure may not be called if the service does not return any data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Third and final of the three return closures. The service will call this closure when the service request has completed.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP15PredixMobileSDK21ServiceRouterProtocol14processRequestFT9serviceIdSS13responseBlockFGSqCSo11URLResponse_T_9dataBlockFGSqV10Foundation4Data_T_15completionBlockFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/processRequest(serviceId:responseBlock:dataBlock:completionBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP15PredixMobileSDK21ServiceRouterProtocol14processRequestFT9serviceIdSS13responseBlockFGSqCSo11URLResponse_T_9dataBlockFGSqV10Foundation4Data_T_15completionBlockFT_T__T_">processRequest(serviceId:responseBlock:dataBlock:completionBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructs a basic GET request for given service identifier and processes the provided request, routing the request to the appropriate service.</p>
+
+<p>The request URL will be similar to: <code>http://pmapi/serviceid</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">processRequest</span><span class="p">(</span><span class="nv">serviceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">responseBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="nv">dataBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">dataReturnBlock</span><span class="p">,</span> <span class="nv">completionBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">requestCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>serviceId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Service Identifier, specifying the service that should process the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>First of three return closures. The service will call this closure to return response object back to the calling code.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Second of the three return closures. The service will call this closure to return data back to the calling code. This closure may not be called if the service does not return any data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Third and final of the three return closures. The service will call this closure when the service request has completed.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP15PredixMobileSDK21ServiceRouterProtocol14processRequestFTSS9extraPathGSqSS_13responseBlockFGSqCSo11URLResponse_T_9dataBlockFGSqV10Foundation4Data_T_15completionBlockFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/processRequest(_:extraPath:responseBlock:dataBlock:completionBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP15PredixMobileSDK21ServiceRouterProtocol14processRequestFTSS9extraPathGSqSS_13responseBlockFGSqCSo11URLResponse_T_9dataBlockFGSqV10Foundation4Data_T_15completionBlockFT_T__T_">processRequest(_:extraPath:responseBlock:dataBlock:completionBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructs a GET request for given service identifier and processes the provided request, routing the request to the appropriate service.</p>
+
+<p>The request URL will be similar to: <code>http://pmapi/serviceid/extrapath</code></p>
+
+<ul>
+<li><p>examples, given a servideId of <q>serviceid</q>, and extraPath of:</p>
+
+<ul>
+<li><code>foo</code> &ndash;&gt; resulting url: <code>http://pmapi/serviceid/foo</code></li>
+<li><code>foo/bar?some=query&amp;another=value</code> &ndash;&gt; resulting url: <code>http://pmapi/serviceid/foo/bar?some=query&amp;another=value</code></li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">processRequest</span><span class="p">(</span><span class="n">_</span> <span class="nv">serviceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">extraPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">responseBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="nv">dataBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">dataReturnBlock</span><span class="p">,</span> <span class="nv">completionBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">requestCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>serviceId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Service Identifier, specifying the service that should process the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>extraPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional string to include in the request URL after the service identifier. This string may include any valid URL components, including multiple path depths, and query strings</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>First of three return closures. The service will call this closure to return response object back to the calling code.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Second of the three return closures. The service will call this closure to return data back to the calling code. This closure may not be called if the service does not return any data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Third and final of the three return closures. The service will call this closure when the service request has completed.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FP15PredixMobileSDK21ServiceRouterProtocol14processRequestFTSS9extraPathGSqSS_6methodSS4dataGSqV10Foundation4Data_13responseBlockFGSqCSo11URLResponse_T_9dataBlockFGSqS2__T_15completionBlockFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/processRequest(_:extraPath:method:data:responseBlock:dataBlock:completionBlock:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FP15PredixMobileSDK21ServiceRouterProtocol14processRequestFTSS9extraPathGSqSS_6methodSS4dataGSqV10Foundation4Data_13responseBlockFGSqCSo11URLResponse_T_9dataBlockFGSqS2__T_15completionBlockFT_T__T_">processRequest(_:extraPath:method:data:responseBlock:dataBlock:completionBlock:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Constructs a request for given service identifier and processes the provided request, routing the request to the appropriate service.</p>
+
+<p>The request URL will be similar to: <code>http://pmapi/serviceid/extrapath</code></p>
+
+<ul>
+<li><p>examples, given a servideId of <q>serviceid</q>, and extraPath of:</p>
+
+<ul>
+<li><code>foo</code> &ndash;&gt; resulting url: <code>http://pmapi/serviceid/foo</code></li>
+<li><code>foo/bar?some=query&amp;another=value</code> &ndash;&gt; resulting url: <code>http://pmapi/serviceid/foo/bar?some=query&amp;another=value</code></li>
+</ul></li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">func</span> <span class="nf">processRequest</span><span class="p">(</span><span class="n">_</span> <span class="nv">serviceId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">extraPath</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">method</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">data</span><span class="p">:</span> <span class="kt">Data</span><span class="p">?,</span> <span class="nv">responseBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="nv">dataBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">dataReturnBlock</span><span class="p">,</span> <span class="nv">completionBlock</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">requestCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>serviceId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Service Identifier, specifying the service that should process the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>extraPath</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional string to include in the request URL after the service identifier. This string may include any valid URL components, including multiple path depths, and query strings</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>method</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTP method string to use for the request, i.e. “GET”, “POST, “PUT”, “DELETE”, “OPTION”, etc.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>data</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Body data to include in the request.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>First of three return closures. The service will call this closure to return response object back to the calling code.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Second of the three return closures. The service will call this closure to return data back to the calling code. This closure may not be called if the service does not return any data.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>completionBlock</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Third and final of the three return closures. The service will call this closure when the service request has completed.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2016-12-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

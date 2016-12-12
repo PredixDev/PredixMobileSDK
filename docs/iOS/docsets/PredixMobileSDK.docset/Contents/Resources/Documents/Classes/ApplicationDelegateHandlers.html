@@ -1,0 +1,800 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ApplicationDelegateHandlers Class Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Class/ApplicationDelegateHandlers" class="dashAnchor"></a>
+
+    <a title="ApplicationDelegateHandlers Class Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          PredixMobileSDK Docs
+        </a>
+         (100% documented)
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">PredixMobileSDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      ApplicationDelegateHandlers Class Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ApplicationDelegateHandlers.html">ApplicationDelegateHandlers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FullTextSearch.html">FullTextSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Keychain.html">Keychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand.html">KeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand/KeychainAccess.html">– KeychainAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommandResult.html">KeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OpenURLService.html">OpenURLService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobilityConfiguration.html">PredixMobilityConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobilityManager.html">PredixMobilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommand.html">ReadKeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommandResult.html">ReadKeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ServiceRouter.html">ServiceRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WaitStateReturn.html">WaitStateReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WriteKeychainCommand.html">WriteKeychainCommand</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK9ApiSchemeSS">ApiScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK28DatabaseDownloadNotificationVCSo14NSNotification4Name">DatabaseDownloadNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK26DatabaseManagerErrorDomainSS">DatabaseManagerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK27DocumentChangedNotificationVCSo14NSNotification4Name">DocumentChangedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK11HttpVersionSS">HttpVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK38InitialReplicationCompleteNotificationVCSo14NSNotification4Name">InitialReplicationCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK19KeychainErrorDomainSS">KeychainErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK31ReachabilityWatcherNotificationVCSo14NSNotification4Name">ReachabilityWatcherNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixVCSo14NSNotification4Name">ReplicationCompleteNotificationSuffix</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK19UIReadyNotificationVCSo14NSNotification4Name">UIReadyNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LoggerLevel.html">LoggerLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Messages.html">Messages</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/WaitState.html">WaitState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/PGSDKLogger.html">PGSDKLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/LoggerProtocol.html">LoggerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PredixAppWindowProtocol.html">PredixAppWindowProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ServiceProtocol.html">ServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ServiceRouterProtocol.html">ServiceRouterProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ConnectivityStatus.html">ConnectivityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ReachabilityStatus.html">ReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ServiceId.html">ServiceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ShowSeriousErrorHelper.html">ShowSeriousErrorHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/VersionInfoKeys.html">VersionInfoKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ViewDefinition.html">ViewDefinition</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>ApplicationDelegateHandlers</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ApplicationDelegateHandlers</span></code></pre>
+
+                </div>
+              </div>
+            <p>Handles methods for application lifecycle events, local and remote notifications.</p>
+
+<p>If PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is true, the SDK will automatically handle application lifecycle events, however local and remote notification event method calls will need to be passed to the SDK from the container app.</p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Application%20Lifecycle%20Events"></a>
+                <a name="//apple_ref/swift/Section/Application Lifecycle Events" class="dashAnchor"></a>
+                <a href="#/Application%20Lifecycle%20Events">
+                  <h3 class="section-name">Application Lifecycle Events</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PredixMobileSDK27ApplicationDelegateHandlers27applicationWillResignActiveFCSo13UIApplicationT_"></a>
+                    <a name="//apple_ref/swift/Method/applicationWillResignActive(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PredixMobileSDK27ApplicationDelegateHandlers27applicationWillResignActiveFCSo13UIApplicationT_">applicationWillResignActive(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationWillResignActive event from a consuming application.</p>
+
+<p>Would be called by the container&rsquo;s AppDelegate, example:</p>
+
+<pre class="highlight plaintext"><code>func applicationWillResignActive(_ application: UIApplication) {
+   PredixMobilityManager.sharedInstance.applicationDelegates.applicationWillResignActive(application)
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationWillResignActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the UIApplication object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PredixMobileSDK27ApplicationDelegateHandlers26applicationDidBecomeActiveFCSo13UIApplicationT_"></a>
+                    <a name="//apple_ref/swift/Method/applicationDidBecomeActive(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PredixMobileSDK27ApplicationDelegateHandlers26applicationDidBecomeActiveFCSo13UIApplicationT_">applicationDidBecomeActive(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationDidBecomeActive event from a consuming application.</p>
+
+<p>Would be called by the container&rsquo;s AppDelegate, example:</p>
+
+<pre class="highlight plaintext"><code>func applicationDidBecomeActive(_ application: UIApplication) {
+    PredixMobilityManager.sharedInstance.applicationDelegates.applicationDidBecomeActive(application)
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationDidBecomeActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the UIApplication object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PredixMobileSDK27ApplicationDelegateHandlers24applicationWillTerminateFCSo13UIApplicationT_"></a>
+                    <a name="//apple_ref/swift/Method/applicationWillTerminate(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PredixMobileSDK27ApplicationDelegateHandlers24applicationWillTerminateFCSo13UIApplicationT_">applicationWillTerminate(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationWillTerminate event from a consuming application.</p>
+
+<p>Would be called by the container&rsquo;s AppDelegate, example:</p>
+
+<pre class="highlight plaintext"><code>func applicationWillTerminate(_ application: UIApplication) {
+    PredixMobilityManager.sharedInstance.applicationDelegates.applicationWillTerminate(application)
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationWillTerminate</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the UIApplication object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PredixMobileSDK27ApplicationDelegateHandlers29applicationDidEnterBackgroundFCSo13UIApplicationT_"></a>
+                    <a name="//apple_ref/swift/Method/applicationDidEnterBackground(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PredixMobileSDK27ApplicationDelegateHandlers29applicationDidEnterBackgroundFCSo13UIApplicationT_">applicationDidEnterBackground(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationDidEnterBackground event from a consuming application.</p>
+
+<p>Would be called by the container&rsquo;s AppDelegate, example:</p>
+
+<pre class="highlight plaintext"><code>func applicationDidEnterBackground(_ application: UIApplication) {
+    PredixMobilityManager.sharedInstance.applicationDelegates.applicationDidEnterBackground(application)
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationDidEnterBackground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the UIApplication object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PredixMobileSDK27ApplicationDelegateHandlers30applicationWillEnterForegroundFCSo13UIApplicationT_"></a>
+                    <a name="//apple_ref/swift/Method/applicationWillEnterForeground(_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PredixMobileSDK27ApplicationDelegateHandlers30applicationWillEnterForegroundFCSo13UIApplicationT_">applicationWillEnterForeground(_:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationWillEnterForeground event from a consuming application.</p>
+
+<p>Would be called by the container&rsquo;s AppDelegate, example:</p>
+
+<pre class="highlight plaintext"><code>func applicationWillEnterForeground(_ application: UIApplication) {
+    PredixMobilityManager.sharedInstance.applicationDelegates.applicationWillEnterForeground(application)
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationWillEnterForeground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the UIApplication object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/iOS%20Local%20Notification%20Handler"></a>
+                <a name="//apple_ref/swift/Section/iOS Local Notification Handler" class="dashAnchor"></a>
+                <a href="#/iOS%20Local%20Notification%20Handler">
+                  <h3 class="section-name">iOS Local Notification Handler</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PredixMobileSDK27ApplicationDelegateHandlers11applicationFTCSo13UIApplication27didReceiveLocalNotificationCSo19UILocalNotification_T_"></a>
+                    <a name="//apple_ref/swift/Method/application(_:didReceiveLocalNotification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PredixMobileSDK27ApplicationDelegateHandlers11applicationFTCSo13UIApplication27didReceiveLocalNotificationCSo19UILocalNotification_T_">application(_:didReceiveLocalNotification:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows the SDK to handle local iOS notifications, informing the running webapp when they occur.</p>
+
+<p>Should be called by the container&rsquo;s AppDelegate, example:</p>
+
+<pre class="highlight plaintext"><code>func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
+    PredixMobilityManager.sharedInstance.application(application, didReceiveLocalNotification: notification)
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceiveLocalNotification</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UILocalNotification</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the UIApplication object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>didReceiveLocalNotification</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the notification object</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/iOS%20Remote%20Notification%20Events"></a>
+                <a name="//apple_ref/swift/Section/iOS Remote Notification Events" class="dashAnchor"></a>
+                <a href="#/iOS%20Remote%20Notification%20Events">
+                  <h3 class="section-name">iOS Remote Notification Events</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PredixMobileSDK27ApplicationDelegateHandlers11applicationFTCSo13UIApplication28didReceiveRemoteNotificationGVs10DictionaryVs11AnyHashableP___T_"></a>
+                    <a name="//apple_ref/swift/Method/application(_:didReceiveRemoteNotification:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PredixMobileSDK27ApplicationDelegateHandlers11applicationFTCSo13UIApplication28didReceiveRemoteNotificationGVs10DictionaryVs11AnyHashableP___T_">application(_:didReceiveRemoteNotification:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows the SDK to handle remote push notifications, informing the running webapp when they occur.</p>
+
+<p>Should be called by the container&rsquo;s AppDelegate, example:</p>
+
+<pre class="highlight plaintext"><code>func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
+    PredixMobilityManager.sharedInstance.application(application, didReceiveRemoteNotification: userInfo)
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceiveRemoteNotification</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UIApplication object.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>userInfo</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary containing information about the remote notification.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PredixMobileSDK27ApplicationDelegateHandlers11applicationFTCSo13UIApplication48didRegisterForRemoteNotificationsWithDeviceTokenV10Foundation4Data_T_"></a>
+                    <a name="//apple_ref/swift/Method/application(_:didRegisterForRemoteNotificationsWithDeviceToken:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PredixMobileSDK27ApplicationDelegateHandlers11applicationFTCSo13UIApplication48didRegisterForRemoteNotificationsWithDeviceTokenV10Foundation4Data_T_">application(_:didRegisterForRemoteNotificationsWithDeviceToken:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows the SDK to handle registration of remote push notifications.</p>
+
+<p>Registration information will be written to a Database document where it can be processed by the server to register the device for remote notifications.</p>
+
+<p>Should be called by the container&rsquo;s AppDelegate, example:</p>
+
+<pre class="highlight plaintext"><code>func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
+    PredixMobilityManager.sharedInstance.application(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didRegisterForRemoteNotificationsWithDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UIApplication object.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>deviceToken</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>A token that identifies the device to APNs.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:FC15PredixMobileSDK27ApplicationDelegateHandlers11applicationFTCSo13UIApplication48didFailToRegisterForRemoteNotificationsWithErrorPs5Error__T_"></a>
+                    <a name="//apple_ref/swift/Method/application(_:didFailToRegisterForRemoteNotificationsWithError:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:FC15PredixMobileSDK27ApplicationDelegateHandlers11applicationFTCSo13UIApplication48didFailToRegisterForRemoteNotificationsWithErrorPs5Error__T_">application(_:didFailToRegisterForRemoteNotificationsWithError:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allows the SDK to handle failures in obtaining a remote push notification device token.</p>
+
+<p>Should be called by the container&rsquo;s AppDelegate, example:</p>
+
+<pre class="highlight plaintext"><code>func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
+   PredixMobilityManager.sharedInstance.application(application, didFailToRegisterForRemoteNotificationsWithError: error as NSError)
+}
+</code></pre>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFailToRegisterForRemoteNotificationsWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>application</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>The UIApplication object.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Error object.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2016-12-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>

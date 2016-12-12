@@ -1,0 +1,1263 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>ServiceProtocol Protocol Reference</title>
+    <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
+    <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
+    <meta charset="utf-8">
+    <script src="../js/jquery.min.js" defer></script>
+    <script src="../js/jazzy.js" defer></script>
+    
+  </head>
+  <body>
+
+    <a name="//apple_ref/swift/Protocol/ServiceProtocol" class="dashAnchor"></a>
+
+    <a title="ServiceProtocol Protocol Reference"></a>
+
+    <header class="header">
+      <p class="header-col header-col--primary">
+        <a class="header-link" href="../index.html">
+          PredixMobileSDK Docs
+        </a>
+         (100% documented)
+      </p>
+    
+    
+    </header>
+
+    <p class="breadcrumbs">
+      <a class="breadcrumb" href="../index.html">PredixMobileSDK Reference</a>
+      <img class="carat" src="../img/carat.png" />
+      ServiceProtocol Protocol Reference
+    </p>
+
+    <div class="content-wrapper">
+      <nav class="navigation">
+        <ul class="nav-groups">
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Classes.html">Classes</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ApplicationDelegateHandlers.html">ApplicationDelegateHandlers</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/FullTextSearch.html">FullTextSearch</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Keychain.html">Keychain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand.html">KeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommand/KeychainAccess.html">– KeychainAccess</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/KeychainCommandResult.html">KeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/OpenURLService.html">OpenURLService</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobilityConfiguration.html">PredixMobilityConfiguration</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/PredixMobilityManager.html">PredixMobilityManager</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommand.html">ReadKeychainCommand</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ReadKeychainCommandResult.html">ReadKeychainCommandResult</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/ServiceRouter.html">ServiceRouter</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WaitStateReturn.html">WaitStateReturn</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/WriteKeychainCommand.html">WriteKeychainCommand</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Global Variables.html">Global Variables</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK9ApiSchemeSS">ApiScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK28DatabaseDownloadNotificationVCSo14NSNotification4Name">DatabaseDownloadNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK26DatabaseManagerErrorDomainSS">DatabaseManagerErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK27DocumentChangedNotificationVCSo14NSNotification4Name">DocumentChangedNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK11HttpVersionSS">HttpVersion</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK38InitialReplicationCompleteNotificationVCSo14NSNotification4Name">InitialReplicationCompleteNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK19KeychainErrorDomainSS">KeychainErrorDomain</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK31ReachabilityWatcherNotificationVCSo14NSNotification4Name">ReachabilityWatcherNotification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixVCSo14NSNotification4Name">ReplicationCompleteNotificationSuffix</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK19UIReadyNotificationVCSo14NSNotification4Name">UIReadyNotification</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/LoggerLevel.html">LoggerLevel</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/Messages.html">Messages</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Enums/WaitState.html">WaitState</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Extensions.html">Extensions</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/Notification.html">Notification</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Extensions/PGSDKLogger.html">PGSDKLogger</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Protocols.html">Protocols</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/LoggerProtocol.html">LoggerProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/PredixAppWindowProtocol.html">PredixAppWindowProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ServiceProtocol.html">ServiceProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Protocols/ServiceRouterProtocol.html">ServiceRouterProtocol</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ConnectivityStatus.html">ConnectivityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ReachabilityStatus.html">ReachabilityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ServiceId.html">ServiceId</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ShowSeriousErrorHelper.html">ShowSeriousErrorHelper</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/VersionInfoKeys.html">VersionInfoKeys</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Structs/ViewDefinition.html">ViewDefinition</a>
+              </li>
+            </ul>
+          </li>
+        </ul>
+      </nav>
+      <article class="main-content">
+
+        <section class="section">
+          <div class="section-content">
+            <h1>ServiceProtocol</h1>
+              <div class="declaration">
+                <div class="language">
+                  <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ServiceProtocol</span></code></pre>
+
+                </div>
+              </div>
+            <p>Protocol all services must implement to be considered a <q>service</q></p>
+
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    You will notice all these methods are staticly defined. Services are expected to be completely static classes. This is done to emphasize and promote the stateless nature of service calls. Services should be stateless, reentrant, and thread-safe. 
+
+</div>
+
+<p><em>There are no guarentees for how, when, on what thread, or how often any service is called.</em></p>
+
+          </div>
+        </section>
+
+        <section class="section">
+          <div class="section-content">
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Protocol%20Implementation:"></a>
+                <a name="//apple_ref/swift/Section/Protocol Implementation:" class="dashAnchor"></a>
+                <a href="#/Protocol%20Implementation:">
+                  <h3 class="section-name">Protocol Implementation:</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvP15PredixMobileSDK15ServiceProtocol17serviceIdentifierSS"></a>
+                    <a name="//apple_ref/swift/Variable/serviceIdentifier" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvP15PredixMobileSDK15ServiceProtocol17serviceIdentifierSS">serviceIdentifier</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Unique identifier for this service.</p>
+
+<p>The serviceIdentifier string will make up the first part of the path for requests made to services.</p>
+
+<p>Example:</p>
+
+<p>If a serviceIdentifier is <q>foo</q> then a request to the service will look like: </p>
+
+<p><code>http://pmapi/foo</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="k">var</span> <span class="nv">serviceIdentifier</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFP15PredixMobileSDK15ServiceProtocol14performRequestFTV10Foundation10URLRequest8responseCSo15HTTPURLResponse14responseReturnFGSqCSo11URLResponse_T_10dataReturnFGSqVS1_4Data_T_15requestCompleteFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/performRequest(_:response:responseReturn:dataReturn:requestComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFP15PredixMobileSDK15ServiceProtocol14performRequestFTV10Foundation10URLRequest8responseCSo15HTTPURLResponse14responseReturnFGSqCSo11URLResponse_T_10dataReturnFGSqVS1_4Data_T_15requestCompleteFT_T__T_">performRequest(_:response:responseReturn:dataReturn:requestComplete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The method called when the ServiceRouter detects a request was made for this service (as identified by the serviceIdentifier)</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">static</span> <span class="kd">func</span> <span class="nf">performRequest</span><span class="p">(</span><span class="n">_</span> <span class="nv">request</span> <span class="p">:</span> <span class="kt">URLRequest</span><span class="p">,</span> <span class="nv">response</span> <span class="p">:</span> <span class="kt">HTTPURLResponse</span><span class="p">,</span> <span class="nv">responseReturn</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="nv">dataReturn</span> <span class="p">:</span> <span class="kd">@escaping</span> <span class="n">dataReturnBlock</span><span class="p">,</span> <span class="nv">requestComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="n">requestCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>request</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the URLRequest that was made to call this service.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>a template response, preset to have a 200 status code.</p>
+<p>This response object can be used as-is or be used to create a new response.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>First of three return closures. Used to return the response object back to the calling code.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Second of the three return closures. Used to return data back to the calling code.</p>
+<p>This closure is may be skipped if no data is to be returned.</p>
+<p>If called, this closeure must be called after the responseReturn closure, and before the requestComplete closure.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Third and final of the three return closures. This indicates the service request has completed.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFP15PredixMobileSDK15ServiceProtocol10registeredFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/registered()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFP15PredixMobileSDK15ServiceProtocol10registeredFT_T_">registered()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optional: if this method is implimented, the this method will be called when the service is registered with the service router.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">optional</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">registered</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFP15PredixMobileSDK15ServiceProtocol12unregisteredFT_T_"></a>
+                    <a name="//apple_ref/swift/Method/unregistered()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFP15PredixMobileSDK15ServiceProtocol12unregisteredFT_T_">unregistered()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Optional: if this method is implimented, the this method will be called when the service is unregistered with the service router.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">@objc</span> <span class="kd">optional</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">unregistered</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Protocol%20Extension%20helper%20methods:"></a>
+                <a name="//apple_ref/swift/Section/Protocol Extension helper methods:" class="dashAnchor"></a>
+                <a href="#/Protocol%20Extension%20helper%20methods:">
+                  <h3 class="section-name">Protocol Extension helper methods:</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCode8responseCSo15HTTPURLResponse14responseReturnFGSqCSo11URLResponse_T_15requestCompleteFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/respondWithErrorStatus(_:response:responseReturn:requestComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCode8responseCSo15HTTPURLResponse14responseReturnFGSqCSo11URLResponse_T_15requestCompleteFT_T__T_">respondWithErrorStatus(_:response:responseReturn:requestComplete:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shortcut helper method to return a provided status code for a given service request.</p>
+
+<p>Will construct a HTTPURLResponse object with provided status code, and will call the responseReturn, and requestComplete closures.</p>
+
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>since this method will call requestComplete, no additional code should be executed in the service after calling this method.</p>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">respondWithErrorStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a></span><span class="p">,</span> <span class="nv">response</span> <span class="p">:</span> <span class="kt">HTTPURLResponse</span><span class="p">,</span> <span class="nv">responseReturn</span><span class="p">:</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="nv">requestComplete</span><span class="p">:</span> <span class="n">requestCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPStatusCode enum for the status code the response object should use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPURLResponse base object used to construct the response.</p>
+<p>Headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>responseReturn closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>requestComplete closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCodeCSo15HTTPURLResponseFGSqCSo11URLResponse_T_FT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/respondWithErrorStatus(_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCodeCSo15HTTPURLResponseFGSqCSo11URLResponse_T_FT_T__T_">respondWithErrorStatus(_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shortcut helper method to return a provided status code for a given service request with positional parameters.</p>
+
+<p>Will construct a HTTPURLResponse object with provided status code, and will call the responseReturn, and requestComplete closures.</p>
+
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>since this method will call requestComplete, no additional code should be executed in the service after calling this method.</p>
+
+</div>
+
+<p>Headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">respondWithErrorStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">response</span> <span class="p">:</span> <span class="kt">HTTPURLResponse</span><span class="p">,</span> <span class="n">_</span> <span class="nv">responseReturn</span><span class="p">:</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="n">_</span> <span class="nv">requestComplete</span><span class="p">:</span> <span class="n">requestCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPStatusCode enum for the status code the response object should use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPURLResponse base object used to construct the response.</p>
+<p>Headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>responseReturn closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>requestComplete closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCode8responseCSo15HTTPURLResponse14responseReturnFGSqCSo11URLResponse_T_15requestCompleteFT_T_15responseHeadersGSqGVs10DictionarySSSS___T_"></a>
+                    <a name="//apple_ref/swift/Method/respondWithErrorStatus(_:response:responseReturn:requestComplete:responseHeaders:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCode8responseCSo15HTTPURLResponse14responseReturnFGSqCSo11URLResponse_T_15requestCompleteFT_T_15responseHeadersGSqGVs10DictionarySSSS___T_">respondWithErrorStatus(_:response:responseReturn:requestComplete:responseHeaders:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shortcut helper method to return a provided status code and headers for a given service request.</p>
+
+<p>Will construct a HTTPURLResponse object with provided status code and headers, and will call the responseReturn, and requestComplete closures.</p>
+
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>since this method will call requestComplete, no additional code should be executed in the service after calling this method.</p>
+
+</div>
+
+<p>Any headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call, appended to the headers provided in the responseHeaders parameter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">respondWithErrorStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a></span><span class="p">,</span> <span class="nv">response</span> <span class="p">:</span> <span class="kt">HTTPURLResponse</span><span class="p">,</span> <span class="nv">responseReturn</span><span class="p">:</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="nv">requestComplete</span><span class="p">:</span> <span class="n">requestCompleteBlock</span><span class="p">,</span> <span class="nv">responseHeaders</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPStatusCode enum for the status code the response object should use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPURLResponse base object used to construct the response.</p>
+<p>Any headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call, appended to the headers provided in the responseHeaders parameter.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>responseReturn closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>requestComplete closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseHeaders</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional dictionary of headers to include in the response object.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCodeCSo15HTTPURLResponseFGSqCSo11URLResponse_T_FT_T_GSqGVs10DictionarySSSS___T_"></a>
+                    <a name="//apple_ref/swift/Method/respondWithErrorStatus(_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCodeCSo15HTTPURLResponseFGSqCSo11URLResponse_T_FT_T_GSqGVs10DictionarySSSS___T_">respondWithErrorStatus(_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shortcut helper method to return a provided status code and headers for a given service request with positional parameters.</p>
+
+<p>Will construct a HTTPURLResponse object with provided status code and headers, and will call the responseReturn, and requestComplete closures.</p>
+
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>since this method will call requestComplete, no additional code should be executed in the service after calling this method.</p>
+
+</div>
+
+<p>Any headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call, appended to the headers provided in the responseHeaders parameter.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">respondWithErrorStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">response</span> <span class="p">:</span> <span class="kt">HTTPURLResponse</span><span class="p">,</span> <span class="n">_</span> <span class="nv">responseReturn</span><span class="p">:</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="n">_</span> <span class="nv">requestComplete</span><span class="p">:</span> <span class="n">requestCompleteBlock</span><span class="p">,</span> <span class="n">_</span> <span class="nv">responseHeaders</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPStatusCode enum for the status code the response object should use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPURLResponse base object used to construct the response.</p>
+<p>Any headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call, appended to the headers provided in the responseHeaders parameter.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>responseReturn closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>requestComplete closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseHeaders</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional dictionary of headers to include in the response object.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCode11descriptionSS10dataReturnFGSqV10Foundation4Data_T_8responseCSo15HTTPURLResponse14responseReturnFGSqCSo11URLResponse_T_15requestCompleteFT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/respondWithErrorStatus(_:description:dataReturn:response:responseReturn:requestComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCode11descriptionSS10dataReturnFGSqV10Foundation4Data_T_8responseCSo15HTTPURLResponse14responseReturnFGSqCSo11URLResponse_T_15requestCompleteFT_T__T_">respondWithErrorStatus(_:description:dataReturn:response:responseReturn:requestComplete:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shortcut helper method to return a provided status code and a data string for a given service request.</p>
+
+<p><li><p>Will construct a HTTPURLResponse object with provided status code, and will call the responseReturn closure.</p></li>
+<li><p>Then will encode the provided string and call the dataReturn closure.</p></li>
+<li><p>Then will call the requestComplete closures.</p></li>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>since this method will call requestComplete, no additional code should be executed in the service after calling this method.</p></p>
+
+<p></div></p>
+
+<p>Headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">respondWithErrorStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a></span><span class="p">,</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">dataReturn</span> <span class="p">:</span>  <span class="n">dataReturnBlock</span><span class="p">,</span> <span class="nv">response</span> <span class="p">:</span> <span class="kt">HTTPURLResponse</span><span class="p">,</span> <span class="nv">responseReturn</span><span class="p">:</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="nv">requestComplete</span><span class="p">:</span> <span class="n">requestCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPStatusCode enum for the status code the response object should use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>description</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>string to encode and return as data</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>dataReturn closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPURLResponse base object used to construct the response.</p>
+<p>Headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>responseReturn closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>requestComplete closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCodeSSFGSqV10Foundation4Data_T_CSo15HTTPURLResponseFGSqCSo11URLResponse_T_FT_T__T_"></a>
+                    <a name="//apple_ref/swift/Method/respondWithErrorStatus(_:_:_:_:_:_:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE15PredixMobileSDKPS_15ServiceProtocol22respondWithErrorStatusFTOS_14HTTPStatusCodeSSFGSqV10Foundation4Data_T_CSo15HTTPURLResponseFGSqCSo11URLResponse_T_FT_T__T_">respondWithErrorStatus(_:_:_:_:_:_:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Shortcut helper method to return a provided status code and a data string for a given service request with positional parameters.</p>
+
+<p><li><p>Will construct a HTTPURLResponse object with provided status code, and will call the responseReturn closure.</p></li>
+<li><p>Then will encode the provided string and call the dataReturn closure.</p></li>
+<li><p>Then will call the requestComplete closures.</p></li>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    <p>since this method will call requestComplete, no additional code should be executed in the service after calling this method.</p></p>
+
+<p></div></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">respondWithErrorStatus</span><span class="p">(</span><span class="n">_</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a></span><span class="p">,</span> <span class="n">_</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">_</span> <span class="nv">dataReturn</span> <span class="p">:</span>  <span class="n">dataReturnBlock</span><span class="p">,</span> <span class="n">_</span> <span class="nv">response</span> <span class="p">:</span> <span class="kt">HTTPURLResponse</span><span class="p">,</span> <span class="n">_</span> <span class="nv">responseReturn</span><span class="p">:</span> <span class="n">responseReturnBlock</span><span class="p">,</span> <span class="n">_</span> <span class="nv">requestComplete</span><span class="p">:</span> <span class="n">requestCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPStatusCode enum for the status code the response object should use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>description</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>string to encode and return as data</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>dataReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>dataReturn closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPURLResponse base object used to construct the response.</p>
+<p>Headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseReturn</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>responseReturn closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>requestComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>requestComplete closure provided in the service’s performRequest method.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE15PredixMobileSDKPS_15ServiceProtocol14createResponseFTOS_14HTTPStatusCode8responseCSo15HTTPURLResponse_S2_"></a>
+                    <a name="//apple_ref/swift/Method/createResponse(_:response:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE15PredixMobileSDKPS_15ServiceProtocol14createResponseFTOS_14HTTPStatusCode8responseCSo15HTTPURLResponse_S2_">createResponse(_:response:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Helper method to create a HTTPURLResponse based on the provided response object, and containing the provided HTTPStatusCode status code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createResponse</span><span class="p">(</span><span class="n">_</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a></span><span class="p">,</span> <span class="nv">response</span><span class="p">:</span> <span class="kt">HTTPURLResponse</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">HTTPURLResponse</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPStatusCode enum for the status code the response object should use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPURLResponse base object used to construct the response.</p>
+<p>Headers in this object will be included in the HTTPURLResponse object returned.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFE15PredixMobileSDKPS_15ServiceProtocol14createResponseFTOS_14HTTPStatusCode8responseCSo15HTTPURLResponse15responseHeadersGSqGVs10DictionarySSSS___S2_"></a>
+                    <a name="//apple_ref/swift/Method/createResponse(_:response:responseHeaders:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFE15PredixMobileSDKPS_15ServiceProtocol14createResponseFTOS_14HTTPStatusCode8responseCSo15HTTPURLResponse15responseHeadersGSqGVs10DictionarySSSS___S2_">createResponse(_:response:responseHeaders:)</a>
+                    </code>
+                      <span class="declaration-note">
+                        Extension method
+                      </span>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Helper method to create a HTTPURLResponse based on the provided response object, and containing the provided HTTPStatusCode status code.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createResponse</span><span class="p">(</span><span class="n">_</span> <span class="nv">statusCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/HTTPStatusCode.html">HTTPStatusCode</a></span><span class="p">,</span> <span class="nv">response</span><span class="p">:</span> <span class="kt">HTTPURLResponse</span><span class="p">,</span> <span class="n">responseHeaders</span> <span class="nv">responseHeadersOptional</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]?)</span> <span class="o">-&gt;</span> <span class="p">(</span><span class="kt">HTTPURLResponse</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>statusCode</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPStatusCode enum for the status code the response object should use.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>response</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>HTTPURLResponse base object used to construct the response.</p>
+<p>Any headers in this object will be included in the HTTPURLResponse object returned in the responseReturn closure call, appended to the headers provided in the responseHeaders parameter.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>responseHeaders</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional dictionary of headers to include in the returned HTTPURLResponse object.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+      </article>
+    </div>
+    <section class="footer">
+      <p>&copy; 2016 <a class="link" href="" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2016-12-09)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+    </section>
+  </body>
+</div>
+</html>
