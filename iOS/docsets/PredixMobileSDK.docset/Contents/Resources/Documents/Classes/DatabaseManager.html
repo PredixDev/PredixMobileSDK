@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>ReachabilityStatus Struct Reference</title>
+    <title>DatabaseManager Class Reference</title>
     <link rel="stylesheet" type="text/css" href="../css/jazzy.css" />
     <link rel="stylesheet" type="text/css" href="../css/highlight.css" />
     <meta charset="utf-8">
@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Struct/ReachabilityStatus" class="dashAnchor"></a>
+    <a name="//apple_ref/swift/Class/DatabaseManager" class="dashAnchor"></a>
 
-    <a title="ReachabilityStatus Struct Reference"></a>
+    <a title="DatabaseManager Class Reference"></a>
 
     <header class="header">
       <p class="header-col header-col--primary">
@@ -35,7 +35,7 @@
     <p class="breadcrumbs">
       <a class="breadcrumb" href="../index.html">PredixMobileSDK Reference</a>
       <img class="carat" src="../img/carat.png" />
-      ReachabilityStatus Struct Reference
+      DatabaseManager Class Reference
     </p>
 
     <div class="content-wrapper">
@@ -214,14 +214,14 @@
 
         <section class="section">
           <div class="section-content">
-            <h1>ReachabilityStatus</h1>
+            <h1>DatabaseManager</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReachabilityStatus</span> <span class="p">:</span> <span class="kt">OptionSet</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DatabaseManager</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt">DatabaseManagerProtocol</span></code></pre>
 
                 </div>
               </div>
-            <p>OptionSet indicating endpoint connectivity statuses</p>
+            <p>Database interaction class. Controls setup of replication, access to documents, manipulation of attachments, etc.</p>
 
           </div>
         </section>
@@ -229,13 +229,20 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Public%20DatabaseManagerProtocol%20methods"></a>
+                <a name="//apple_ref/swift/Section/Public DatabaseManagerProtocol methods" class="dashAnchor"></a>
+                <a href="#/Public%20DatabaseManagerProtocol%20methods">
+                  <h3 class="section-name">Public DatabaseManagerProtocol methods</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vPs16RawRepresentable8rawValuewx8RawValue"></a>
-                    <a name="//apple_ref/swift/Property/rawValue" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vPs16RawRepresentable8rawValuewx8RawValue">rawValue</a>
+                    <a name="/s:ZFC15PredixMobileSDK15DatabaseManager16setupReplicationFT11forDatabaseSS7withUrlV10Foundation3URL10onCompleteFTSbGSqPs5Error___T_17firstSyncCompleteGSqFT_T___T_"></a>
+                    <a name="//apple_ref/swift/Method/setupReplication(forDatabase:withUrl:onComplete:firstSyncComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC15PredixMobileSDK15DatabaseManager16setupReplicationFT11forDatabaseSS7withUrlV10Foundation3URL10onCompleteFTSbGSqPs5Error___T_17firstSyncCompleteGSqFT_T___T_">setupReplication(forDatabase:withUrl:onComplete:firstSyncComplete:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -243,41 +250,14 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>OptionSet indicating endpoint connectivity statuses</p>
+                        <p>Sets up initial database replication.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">rawValue</span> <span class="p">:</span> <span class="kt">Int</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:FPs9OptionSetcFT8rawValuewx8RawValue_x"></a>
-                    <a name="//apple_ref/swift/Method/init(rawValue:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FPs9OptionSetcFT8rawValuewx8RawValue_x">init(rawValue:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>OptionSet indicating endpoint connectivity statuses</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="nf">init</span><span class="p">(</span><span class="nv">rawValue</span><span class="p">:</span> <span class="kt">Int</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">setupReplication</span><span class="p">(</span><span class="n">forDatabase</span> <span class="nv">database</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withUrl</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="n">taskCompleteBlock</span><span class="p">,</span> <span class="n">firstSyncComplete</span> <span class="nv">syncComplete</span><span class="p">:</span> <span class="p">(()</span><span class="o">-&gt;</span><span class="p">())?)</span></code></pre>
 
                         </div>
                       </div>
@@ -288,12 +268,51 @@
                             <tr>
                               <td>
                                 <code>
-                                <em>rawValue</em>
+                                <em>forDatabase</em>
                                 </code>
                               </td>
                               <td>
                                 <div>
-                                  <p>The raw value of the option set to create. Each bit of <code>rawValue</code> potentially represents an element of the option set, though raw values may include bits that are not defined as distinct values of the <code>OptionSet</code> type.</p>
+                                  <p>Name of database to start replicating. Currently must match database name in PredixMobilityConfiguration.defaultDatabaseName or the token “~”</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withUrl</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>URL of replication gateway</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure, incdicating success or failure of setting up replication. Success does NOT mean replication has completed successfully, or that the URL provided was valid or reachable, just that there were no internal errors in initializing the replication process.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>firstSyncComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional closure that, if provided, will be called when the initial replication process has completed successfully.</p>
 
                                 </div>
                               </td>
@@ -307,9 +326,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:vPs23CustomStringConvertible11descriptionSS"></a>
-                    <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:vPs23CustomStringConvertible11descriptionSS">description</a>
+                    <a name="/s:ZFC15PredixMobileSDK15DatabaseManager29assignFilterToPushReplicationFT10filterNameSS10parametersGSqGVs10DictionarySSP___10onCompleteFTSbGSqPs5Error___T__T_"></a>
+                    <a name="//apple_ref/swift/Method/assignFilterToPushReplication(filterName:parameters:onComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC15PredixMobileSDK15DatabaseManager29assignFilterToPushReplicationFT10filterNameSS10parametersGSqGVs10DictionarySSP___10onCompleteFTSbGSqPs5Error___T__T_">assignFilterToPushReplication(filterName:parameters:onComplete:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -317,16 +336,74 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>OptionSet indicating endpoint connectivity statuses</p>
+                        <p>Associates given filter name and filter parameters with push (client to server) replication</p>
+
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p><code><a href="../Classes/PredixMobilityConfiguration.html#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration32pushReplicationFilterDefinitionsGVs10DictionarySSFTGSqGS1_SSP___GSqGS1_Vs11AnyHashableP____Sb_">PredixMobilityConfiguration.pushReplicationFilterDefinitions</a></code></p>
+
+</div>
+
+<p>onComplete closure is defined as:</p>
+
+<p><code>(success: Bool, error: Error?)-&gt;()</code></p>
+
+<p>Success will be false if filterName is not defined in PredixMobilityConfiguration.pushReplicationFilterDefinitions, otherwise true.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span> <span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">assignFilterToPushReplication</span><span class="p">(</span><span class="nv">filterName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="n">taskCompleteBlock</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>filterName</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>name of filter. This filter must be defined in PredixMobilityConfiguration.pushReplicationFilterDefinitions</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>parameters</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Dictionary of filter parameters passed to filter function.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure called when assignment of filter is complete.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>
@@ -334,9 +411,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:FV15PredixMobileSDK18ReachabilityStatus10valueArrayFT_GSaSS_"></a>
-                    <a name="//apple_ref/swift/Method/valueArray()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:FV15PredixMobileSDK18ReachabilityStatus10valueArrayFT_GSaSS_">valueArray()</a>
+                    <a name="/s:ZFC15PredixMobileSDK15DatabaseManager29updatePullReplicationChannelsFT13channelsToAddGSqGSaSS__16channelsToRemoveGSqGSaSS__10onCompleteFTSbGSqPs5Error___T__T_"></a>
+                    <a name="//apple_ref/swift/Method/updatePullReplicationChannels(channelsToAdd:channelsToRemove:onComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC15PredixMobileSDK15DatabaseManager29updatePullReplicationChannelsFT13channelsToAddGSqGSaSS__16channelsToRemoveGSqGSaSS__10onCompleteFTSbGSqPs5Error___T__T_">updatePullReplicationChannels(channelsToAdd:channelsToRemove:onComplete:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -344,16 +421,119 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>String array of OptionSet value descriptions</p>
+                        <p>Adds or removes given channel names to pull (server to client) replication</p>
+
+<p>onComplete closure is defined as:</p>
+
+<p><code>(success: Bool, error: Error?)-&gt;()</code></p>
+
+<p>Success will be false if both channelsToAdd and channelsToRemove is nil or an empty array.</p>
 
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">valueArray</span><span class="p">()</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">]</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updatePullReplicationChannels</span><span class="p">(</span><span class="nv">channelsToAdd</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="nv">channelsToRemove</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="n">taskCompleteBlock</span><span class="p">)</span></code></pre>
 
                         </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelsToAdd</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String array of channels to add. Pull replication will be restricted to only these channels</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>channelsToRemove</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String array of channels to remove. Removing all channels will allow replication of all data to which the user has access.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure called when assignment of channels is complete.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC15PredixMobileSDK15DatabaseManager32removeAllPullReplicationChannelsFT10onCompleteFTSbGSqPs5Error___T__T_"></a>
+                    <a name="//apple_ref/swift/Method/removeAllPullReplicationChannels(onComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC15PredixMobileSDK15DatabaseManager32removeAllPullReplicationChannelsFT10onCompleteFTSbGSqPs5Error___T__T_">removeAllPullReplicationChannels(onComplete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Removes all channel names for pull (server to client) replication</p>
+
+<p>onComplete closure is defined as:</p>
+
+<p><code>(success: Bool, error: Error?)-&gt;()</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">removeAllPullReplicationChannels</span><span class="p">(</span><span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="n">taskCompleteBlock</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure called when assignment of channels is complete.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
                       </div>
                     </section>
                   </div>

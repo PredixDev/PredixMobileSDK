@@ -48,6 +48,9 @@
                 <a class="nav-group-task-link" href="../Classes/ApplicationDelegateHandlers.html">ApplicationDelegateHandlers</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Classes/DatabaseManager.html">DatabaseManager</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Classes/FullTextSearch.html">FullTextSearch</a>
               </li>
               <li class="nav-group-task">
@@ -194,6 +197,14 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/ViewDefinition.html">ViewDefinition</a>
+              </li>
+            </ul>
+          </li>
+          <li class="nav-group-name">
+            <a class="nav-group-name-link" href="../Typealiases.html">Typealiases</a>
+            <ul class="nav-group-tasks">
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Typealiases.html#/s:15PredixMobileSDK21PushReplicationFilter">PushReplicationFilter</a>
               </li>
             </ul>
           </li>
@@ -1481,6 +1492,120 @@ The methods <strong>appendDataViewDefinition(&hellip;)</strong> are a helper met
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration32pushReplicationFilterDefinitionsGVs10DictionarySSFTGSqGS1_SSP___GSqGS1_Vs11AnyHashableP____Sb_"></a>
+                    <a name="//apple_ref/swift/Variable/pushReplicationFilterDefinitions" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration32pushReplicationFilterDefinitionsGVs10DictionarySSFTGSqGS1_SSP___GSqGS1_Vs11AnyHashableP____Sb_">pushReplicationFilterDefinitions</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>A dictionary of replication push filter definitions, whose key is the name of the filter, and value is a PushReplicationFilter closure that determines if the document should be pushed to the server during replication.</p>
+
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="../Classes/PredixMobilityConfiguration.html#/s:ZFC15PredixMobileSDK27PredixMobilityConfiguration24addPushReplicationFilterFT4nameSS6filterFTGSqGVs10DictionarySSP___GSqGS1_Vs11AnyHashableP____Sb_T_">addPushReplicationFilter(name:filter:)</a></code>
+
+</div>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">pushReplicationFilterDefinitions</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span><span class="kt"><a href="../Typealiases.html#/s:15PredixMobileSDK21PushReplicationFilter">PushReplicationFilter</a></span><span class="p">]</span> <span class="o">=</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt"><a href="../Typealiases.html#/s:15PredixMobileSDK21PushReplicationFilter">PushReplicationFilter</a></span><span class="p">]()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration32defaultPushReplicationFilterNameGSqSS_"></a>
+                    <a name="//apple_ref/swift/Variable/defaultPushReplicationFilterName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration32defaultPushReplicationFilterNameGSqSS_">defaultPushReplicationFilterName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The name of a PushReplicationFilter, as setup in pushReplicationFilterDefinitions, to use when replication is initially setup</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultPushReplicationFilterName</span> <span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration38defaultPushReplicationFilterParametersGSqGVs10DictionarySSP___"></a>
+                    <a name="//apple_ref/swift/Variable/defaultPushReplicationFilterParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration38defaultPushReplicationFilterParametersGSqGVs10DictionarySSP___">defaultPushReplicationFilterParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Dictionary of filter parameters to use when replication is initially setup</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultPushReplicationFilterParameters</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration30defaultPullReplicationChannelsGSqGSaSS__"></a>
+                    <a name="//apple_ref/swift/Variable/defaultPullReplicationChannels" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration30defaultPullReplicationChannelsGSqGSaSS__">defaultPullReplicationChannels</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>List of channels used to restrict data coming from the server when replication is initially setup</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">defaultPullReplicationChannels</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration19keychainAccessGroupGSqSS_"></a>
                     <a name="//apple_ref/swift/Variable/keychainAccessGroup" class="dashAnchor"></a>
                     <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration19keychainAccessGroupGSqSS_">keychainAccessGroup</a>
@@ -1801,6 +1926,33 @@ The methods <strong>appendDataViewDefinition(&hellip;)</strong> are a helper met
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:ZFC15PredixMobileSDK27PredixMobilityConfiguration24addPushReplicationFilterFT4nameSS6filterFTGSqGVs10DictionarySSP___GSqGS1_Vs11AnyHashableP____Sb_T_"></a>
+                    <a name="//apple_ref/swift/Method/addPushReplicationFilter(name:filter:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC15PredixMobileSDK27PredixMobilityConfiguration24addPushReplicationFilterFT4nameSS6filterFTGSqGVs10DictionarySSP___GSqGS1_Vs11AnyHashableP____Sb_T_">addPushReplicationFilter(name:filter:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Adds a filter for Push replication, consisting of a filter name, and a closure called to determine if a given document should be sent to the server.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">addPushReplicationFilter</span><span class="p">(</span><span class="nv">name</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">filter</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="kt"><a href="../Typealiases.html#/s:15PredixMobileSDK21PushReplicationFilter">PushReplicationFilter</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:ZFC15PredixMobileSDK27PredixMobilityConfiguration14getVersionInfoFT_GVs10DictionarySSSS_"></a>
                     <a name="//apple_ref/swift/Method/getVersionInfo()" class="dashAnchor"></a>
                     <a class="token" href="#/s:ZFC15PredixMobileSDK27PredixMobilityConfiguration14getVersionInfoFT_GVs10DictionarySSSS_">getVersionInfo()</a>
@@ -1860,7 +2012,7 @@ The methods <strong>appendDataViewDefinition(&hellip;)</strong> are a helper met
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2016 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2016-12-12)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-01-25)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
