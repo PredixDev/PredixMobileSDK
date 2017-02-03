@@ -125,6 +125,9 @@
                 <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixVCSo14NSNotification4Name">ReplicationCompleteNotificationSuffix</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK26ServiceInvokedNotificationVCSo14NSNotification4Name">ServiceInvokedNotification</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK19UIReadyNotificationVCSo14NSNotification4Name">UIReadyNotification</a>
               </li>
             </ul>
@@ -230,99 +233,13 @@
           <div class="section-content">
             <div class="task-group">
               <div class="task-name-container">
-                <a name="/Public%20DatabaseManagerProtocol%20methods"></a>
-                <a name="//apple_ref/swift/Section/Public DatabaseManagerProtocol methods" class="dashAnchor"></a>
-                <a href="#/Public%20DatabaseManagerProtocol%20methods">
-                  <h3 class="section-name">Public DatabaseManagerProtocol methods</h3>
+                <a name="/DatabaseManagerProtocol%20methods"></a>
+                <a name="//apple_ref/swift/Section/DatabaseManagerProtocol methods" class="dashAnchor"></a>
+                <a href="#/DatabaseManagerProtocol%20methods">
+                  <h3 class="section-name">DatabaseManagerProtocol methods</h3>
                 </a>
               </div>
               <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:ZFC15PredixMobileSDK15DatabaseManager16setupReplicationFT11forDatabaseSS7withUrlV10Foundation3URL10onCompleteFTSbGSqPs5Error___T_17firstSyncCompleteGSqFT_T___T_"></a>
-                    <a name="//apple_ref/swift/Method/setupReplication(forDatabase:withUrl:onComplete:firstSyncComplete:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:ZFC15PredixMobileSDK15DatabaseManager16setupReplicationFT11forDatabaseSS7withUrlV10Foundation3URL10onCompleteFTSbGSqPs5Error___T_17firstSyncCompleteGSqFT_T___T_">setupReplication(forDatabase:withUrl:onComplete:firstSyncComplete:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Sets up initial database replication.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">setupReplication</span><span class="p">(</span><span class="n">forDatabase</span> <span class="nv">database</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">withUrl</span> <span class="nv">url</span><span class="p">:</span> <span class="kt">URL</span><span class="p">,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="n">taskCompleteBlock</span><span class="p">,</span> <span class="n">firstSyncComplete</span> <span class="nv">syncComplete</span><span class="p">:</span> <span class="p">(()</span><span class="o">-&gt;</span><span class="p">())?)</span></code></pre>
-
-                        </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>forDatabase</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Name of database to start replicating. Currently must match database name in PredixMobilityConfiguration.defaultDatabaseName or the token “~”</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>withUrl</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>URL of replication gateway</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>onComplete</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Closure, incdicating success or failure of setting up replication. Success does NOT mean replication has completed successfully, or that the URL provided was valid or reachable, just that there were no internal errors in initializing the replication process.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>firstSyncComplete</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>Optional closure that, if provided, will be called when the initial replication process has completed successfully.</p>
-
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -344,18 +261,12 @@
 
 </div>
 
-<p>onComplete closure is defined as:</p>
-
-<p><code>(success: Bool, error: Error?)-&gt;()</code></p>
-
-<p>Success will be false if filterName is not defined in PredixMobilityConfiguration.pushReplicationFilterDefinitions, otherwise true.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">assignFilterToPushReplication</span><span class="p">(</span><span class="nv">filterName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="n">taskCompleteBlock</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">assignFilterToPushReplication</span><span class="p">(</span><span class="nv">filterName</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="nv">parameters</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
 
                         </div>
                       </div>
@@ -397,7 +308,33 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Closure called when assignment of filter is complete.</p>
+                                  <p>Closure called when assignment of filter is complete consisting of:</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>will be false if filterName is not defined in PredixMobilityConfiguration.pushReplicationFilterDefinitions, otherwise true.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>nil, or containing the error that occurred if success is false</p>
 
                                 </div>
                               </td>
@@ -423,18 +360,12 @@
                       <div class="abstract">
                         <p>Adds or removes given channel names to pull (server to client) replication</p>
 
-<p>onComplete closure is defined as:</p>
-
-<p><code>(success: Bool, error: Error?)-&gt;()</code></p>
-
-<p>Success will be false if both channelsToAdd and channelsToRemove is nil or an empty array.</p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updatePullReplicationChannels</span><span class="p">(</span><span class="nv">channelsToAdd</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="nv">channelsToRemove</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="n">taskCompleteBlock</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updatePullReplicationChannels</span><span class="p">(</span><span class="nv">channelsToAdd</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="nv">channelsToRemove</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">]?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
 
                         </div>
                       </div>
@@ -476,7 +407,33 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Closure called when assignment of channels is complete.</p>
+                                  <p>Closure called when assignment of channels is complete consisting of:</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>will only be false if both channelsToAdd and channelsToRemove is nil or an empty array.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>nil, or containing the error that occurred if success is false</p>
 
                                 </div>
                               </td>
@@ -502,16 +459,12 @@
                       <div class="abstract">
                         <p>Removes all channel names for pull (server to client) replication</p>
 
-<p>onComplete closure is defined as:</p>
-
-<p><code>(success: Bool, error: Error?)-&gt;()</code></p>
-
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">removeAllPullReplicationChannels</span><span class="p">(</span><span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="n">taskCompleteBlock</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">removeAllPullReplicationChannels</span><span class="p">(</span><span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
 
                         </div>
                       </div>
@@ -527,7 +480,496 @@
                               </td>
                               <td>
                                 <div>
-                                  <p>Closure called when assignment of channels is complete.</p>
+                                  <p>Closure called when assignment of channels is complete consisting of:</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true if the channels were removed successfully</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>nil, or containing the error that occurred if success is false</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC15PredixMobileSDK15DatabaseManager11getDocumentFT6withIdSS12fromDatabaseGSqSS_10onCompleteFTSbGSqPs5Error__GSqGVs10DictionaryVs11AnyHashableP____T__T_"></a>
+                    <a name="//apple_ref/swift/Method/getDocument(withId:fromDatabase:onComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC15PredixMobileSDK15DatabaseManager11getDocumentFT6withIdSS12fromDatabaseGSqSS_10onCompleteFTSbGSqPs5Error__GSqGVs10DictionaryVs11AnyHashableP____T__T_">getDocument(withId:fromDatabase:onComplete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Returns a document from the database. </p>
+
+<p>Note, that if a document with the provided document id does not exist, the success return value in the onComplete closure will still be true, but the returned document dictionary will be nil.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">getDocument</span><span class="p">(</span><span class="n">withId</span> <span class="nv">documentId</span> <span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">fromDatabase</span> <span class="nv">database</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">document</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Document Id of document to retrieve</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromDatabase</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional name of database. If included must match PredixMobilityConfiguration.defaultDatabaseName or be token “~”</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Closure that will be called when the document has been retrieved consisting of:</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true if no error occurred retrieving document</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>nil, or the error that occurred if success is false</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>document</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>the contents of the retrieved document, or nil if no document with the given Id could be found or an error occurred</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC15PredixMobileSDK15DatabaseManager14createDocumentFT4fromGVs10DictionarySSP__6withIdGSqSS_10inDatabaseGSqSS_10onCompleteFTSbGSqPs5Error__GSqGS1_Vs11AnyHashableP____T__T_"></a>
+                    <a name="//apple_ref/swift/Method/createDocument(from:withId:inDatabase:onComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC15PredixMobileSDK15DatabaseManager14createDocumentFT4fromGVs10DictionarySSP__6withIdGSqSS_10inDatabaseGSqSS_10onCompleteFTSbGSqPs5Error__GSqGS1_Vs11AnyHashableP____T__T_">createDocument(from:withId:inDatabase:onComplete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Creates a document in the database</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">createDocument</span><span class="p">(</span><span class="n">from</span> <span class="nv">documentDictionary</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">withId</span> <span class="nv">documentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="n">inDatabase</span> <span class="nv">database</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">document</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>from</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>[String : Any] document properties from which to create the document</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional String Document Id of document to create. If nil, a unique id will be automatically generated.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inDatabase</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional String name of database. If included must match PredixMobilityConfiguration.defaultDatabaseName or be token “~”</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>taskReturnDictionaryBlock closure that will be called when the document has been created consisting of:</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true if no error occurred creating the document</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>nil, or the error that occurred if success is false</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>document</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>contents of the created document, otherwise nil if an error occurred</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC15PredixMobileSDK15DatabaseManager14updateDocumentFT4fromGVs10DictionarySSP__6withIdSS10inDatabaseGSqSS_10onCompleteFTSbGSqPs5Error__GSqGS1_Vs11AnyHashableP____T__T_"></a>
+                    <a name="//apple_ref/swift/Method/updateDocument(from:withId:inDatabase:onComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC15PredixMobileSDK15DatabaseManager14updateDocumentFT4fromGVs10DictionarySSP__6withIdSS10inDatabaseGSqSS_10onCompleteFTSbGSqPs5Error__GSqGS1_Vs11AnyHashableP____T__T_">updateDocument(from:withId:inDatabase:onComplete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Updates a document in the database</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">updateDocument</span><span class="p">(</span><span class="n">from</span> <span class="nv">documentDictionary</span> <span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="n">withId</span> <span class="nv">documentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">inDatabase</span> <span class="nv">database</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?,</span> <span class="n">_</span> <span class="nv">document</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]?)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>from</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>[String : Any] document properties to add/update in the document</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String Document Id of document to update.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>inDatabase</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional String name of database. If included must match PredixMobilityConfiguration.defaultDatabaseName or be token “~”</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>taskReturnDictionaryBlock closure that will be called when the document has been updated consisting of:</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true if no error occurred updating the document</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>nil, or containing the error that occurred if success is false</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>document</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>contents of the updated document, otherwise nil if an error occurred</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                          </tbody>
+                        </table>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZFC15PredixMobileSDK15DatabaseManager14deleteDocumentFT6withIdSS12fromDatabaseGSqSS_10onCompleteFTSbGSqPs5Error___T__T_"></a>
+                    <a name="//apple_ref/swift/Method/deleteDocument(withId:fromDatabase:onComplete:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZFC15PredixMobileSDK15DatabaseManager14deleteDocumentFT6withIdSS12fromDatabaseGSqSS_10onCompleteFTSbGSqPs5Error___T__T_">deleteDocument(withId:fromDatabase:onComplete:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Deletes a document from the database</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="nf">deleteDocument</span><span class="p">(</span><span class="n">withId</span> <span class="nv">documentId</span><span class="p">:</span> <span class="kt">String</span><span class="p">,</span> <span class="n">fromDatabase</span> <span class="nv">database</span><span class="p">:</span> <span class="kt">String</span><span class="p">?,</span> <span class="nv">onComplete</span><span class="p">:</span> <span class="kd">@escaping</span> <span class="p">(</span><span class="n">_</span> <span class="nv">success</span><span class="p">:</span> <span class="kt">Bool</span><span class="p">,</span> <span class="n">_</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">?)</span><span class="o">-&gt;</span><span class="p">())</span></code></pre>
+
+                        </div>
+                      </div>
+                      <div>
+                        <h4>Parameters</h4>
+                        <table class="graybox">
+                          <tbody>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>withId</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>String Document Id of document to delete.</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>fromDatabase</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>Optional String name of database. If included must match PredixMobilityConfiguration.defaultDatabaseName or be token “~”</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>onComplete</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>taskCompleteBlock closure that will be called when the document has been deleted consisting of:</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>success</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>true if the document was deleted successfully</p>
+
+                                </div>
+                              </td>
+                            </tr>
+                            <tr>
+                              <td>
+                                <code>
+                                <em>error</em>
+                                </code>
+                              </td>
+                              <td>
+                                <div>
+                                  <p>nil, or containing the error that occurred if success is false</p>
 
                                 </div>
                               </td>
@@ -546,7 +988,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-01-25)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-02-02)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
