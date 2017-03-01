@@ -51,4 +51,10 @@ The following examples show different ways you can use the Predix Mobile SDK. Th
   * Create a non-hybrid, native iOS app with Mobile SDK -  [MobileExample-iOS-NativeIssuesListApp](https://github.com/PredixDev/MobileExample-iOS-NativeIssuesListApp)
   * Development-time rapid on-device WebApp iterations -  [MobileExample-iOS-DeviceDevWebAppUpdater](https://github.com/PredixDev/MobileExample-iOS-DeviceDevWebAppUpdater)
   * Example container integrating Predix Mobile with React-Native -  [MobileExample-iOS-PredixMobileWithReactNative](https://github.com/PredixDev/MobileExample-iOS-PredixMobileWithReactNative)
+  
+5. Android Client Examples
+ * Sample hybrid application - [PredixMobileAndroidSampleApplication]
+
+6. Java Client Examples
+ * Sample hybrid application using JavaFX - [PredixMobileJavaSampleApplication]
  
