@@ -7,17 +7,17 @@ The Predix Mobile SDK is a comprehensive suite of tools, frameworks and source e
 
 Then, come back to this site to find all of the tools and examples to follow along.
 
-##Predix Mobile App Container
+## Predix Mobile App Container
 Predix Mobile SDK includes Predix Mobile Reference App Containers for iOS, macOS, and Electron for Windows.  The Mobile Reference App Container is a platform-specific environment in which Predix mobile applications are run. 
 * For Android, you build the [Predix Mobile Reference App Container for Android](https://github.com/PredixDev/PredixMobileAndroidSampleApplication). 
 * For iOS, you build the [Predix Mobile Reference App Container for iOS](https://github.com/PredixDev/PredixMobileiOS).
 * For Mac, you build the [Predix Mobile Reference App Container for macOS](https://github.com/PredixDev/PredixMobileMacOS).
 * For Electron, you download and install the [Predix Mobile Reference App Container for Electron for Windows](https://github.com/PredixDev/PredixMobileElectron/releases).
 
-##pm CLI
+## pm CLI
 The [Predix Mobile pm command line tool](https://github.com/PredixDev/predix-mobile-cli) allows you to manage your Predix Mobile apps and your mobile backend processes. It includes a set of commands that are invoked through the pm command line interface. These tools depend on both the Cloud Foundry and UAAC command line tools, so make sure they are installed and properly configured prior to installing the pm tool. You must install and configure the Cloud Foundry cf CLI and uaac CLI before installing the pm CLI.
 
-##Predix Mobile Client Core Services Framework
+## Predix Mobile Client Core Services Framework
 The Predix Mobile SDK provides several services as REST APIs to provide functionality to hybrid or native Mobile applications. The Client SDK consuming application, the Predix Mobile App Container, can interact with these local services following this general URL structure: http://pmapi//<parameters>.
 The Predix Mobile App Container interprets URL requests and delegates them to the services in the Predix Mobile Client Core Services framework , which respond with a JSON payload describing the result of the call. 
 
