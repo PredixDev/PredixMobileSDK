@@ -22,10 +22,9 @@ The Predix Mobile SDK provides several services as REST APIs to provide function
 The Predix Mobile App Container interprets URL requests and delegates them to the services in the Predix Mobile Client Core Services framework , which respond with a JSON payload describing the result of the call. 
 
 ## Additional Information
-For additional technical documentation see the [Wiki](../../wiki) in this repo.
+### For additional technical documentation see the [Wiki](../../wiki) in this repo.
 
-#### For native code documentation specific to the various platforms see the [code documentation site](http://predixdev.github.io/PredixMobileSDK/)
-There you will find documentation for the native iOS/macOS, Java and Android SDKs
+### For native Swift and Java documentation specific to the iOS/macOS, Java and Android SDKs see the [code documentation site](http://predixdev.github.io/PredixMobileSDK/)
 
 ## Examples
 
