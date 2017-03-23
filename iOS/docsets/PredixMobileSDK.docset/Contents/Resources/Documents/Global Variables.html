@@ -109,7 +109,7 @@
                 <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK26DatabaseManagerErrorDomainSS">DatabaseManagerErrorDomain</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK27DocumentChangedNotificationVCSo14NSNotification4Name">DocumentChangedNotification</a>
+                <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK33DocumentChangedNotificationPrefixSS">DocumentChangedNotificationPrefix</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK11HttpVersionSS">HttpVersion</a>
@@ -127,7 +127,7 @@
                 <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK31ReachabilityWatcherNotificationVCSo14NSNotification4Name">ReachabilityWatcherNotification</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixVCSo14NSNotification4Name">ReplicationCompleteNotificationSuffix</a>
+                <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixSS">ReplicationCompleteNotificationSuffix</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK29ReplicationPausedNotificationVCSo14NSNotification4Name">ReplicationPausedNotification</a>
@@ -330,7 +330,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ReachabilityWatcherNotification</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReachabilityWatcherNotification"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ReachabilityWatcherNotification</span> <span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="o">.</span><span class="n">pmReachabilityWatcher</span></code></pre>
 
                         </div>
                       </div>
@@ -357,7 +357,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">InitialReplicationCompleteNotification</span> <span class="o">=</span>  <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"InitialReplicationCompleteNotification"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">InitialReplicationCompleteNotification</span> <span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="o">.</span><span class="n">pmInitialReplicationComplete</span></code></pre>
 
                         </div>
                       </div>
@@ -384,63 +384,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">DatabaseDownloadNotification</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"DatabaseDownloadNotification"</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:v15PredixMobileSDK27DocumentChangedNotificationVCSo14NSNotification4Name"></a>
-                    <a name="//apple_ref/swift/Global/DocumentChangedNotification" class="dashAnchor"></a>
-                    <a class="token" href="#/s:v15PredixMobileSDK27DocumentChangedNotificationVCSo14NSNotification4Name">DocumentChangedNotification</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>First part of notification pathname issued when database document changes occur. Full notification name will be <q>DocumentChangedNotification/<document_id></q>
-This notification is only issued when the document id has been subscribed to via the Notify service, and the document has changed.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">DocumentChangedNotification</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"DocumentChangedNotification"</span><span class="p">)</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixVCSo14NSNotification4Name"></a>
-                    <a name="//apple_ref/swift/Global/ReplicationCompleteNotificationSuffix" class="dashAnchor"></a>
-                    <a class="token" href="#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixVCSo14NSNotification4Name">ReplicationCompleteNotificationSuffix</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Suffix of the notfication name issued when replication is has reached a complted (idle) state. Prefix of the notification name will be the replication type, either <q>push</q> or <q>pull</q>
-For example: pullReplicationCompleteNotification will be issue when pull replication (data transmitted from server to client) has completed.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ReplicationCompleteNotificationSuffix</span> <span class="o">=</span>  <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReplicationCompleteNotification"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">DatabaseDownloadNotification</span> <span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="o">.</span><span class="n">pmDatabaseDownload</span></code></pre>
 
                         </div>
                       </div>
@@ -467,7 +411,7 @@ For example: pullReplicationCompleteNotification will be issue when pull replica
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">UIReadyNotification</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"UIReadyNotification"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">UIReadyNotification</span> <span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="o">.</span><span class="n">pmUIReady</span></code></pre>
 
                         </div>
                       </div>
@@ -505,7 +449,7 @@ For example: pullReplicationCompleteNotification will be issue when pull replica
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ServiceInvokedNotification</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ServiceInvokedNotification"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ServiceInvokedNotification</span> <span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="o">.</span><span class="n">pmServiceInvoked</span></code></pre>
 
                         </div>
                       </div>
@@ -534,7 +478,7 @@ For example: pullReplicationCompleteNotification will be issue when pull replica
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ReplicationPausedNotification</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReplicationPausedNotification"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ReplicationPausedNotification</span> <span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="o">.</span><span class="n">pmReplicationPaused</span></code></pre>
 
                         </div>
                       </div>
@@ -564,7 +508,7 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ReplicationResumedNotification</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReplicationResumedNotification"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ReplicationResumedNotification</span> <span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="o">.</span><span class="n">pmReplicationResumed</span></code></pre>
 
                         </div>
                       </div>
@@ -604,7 +548,7 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">PMAPIRequestHandledNotification</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"PMAPIRequestHandledNotification"</span><span class="p">)</span></code></pre>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">PMAPIRequestHandledNotification</span> <span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="o">.</span><span class="n">pmAPIRequestHandled</span></code></pre>
 
                         </div>
                       </div>
@@ -622,6 +566,62 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                 </a>
               </div>
               <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:v15PredixMobileSDK33DocumentChangedNotificationPrefixSS"></a>
+                    <a name="//apple_ref/swift/Global/DocumentChangedNotificationPrefix" class="dashAnchor"></a>
+                    <a class="token" href="#/s:v15PredixMobileSDK33DocumentChangedNotificationPrefixSS">DocumentChangedNotificationPrefix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Prefix of the notification pathname issued when database document changes occur. Full notification name will be <q>DocumentChangedNotification/<document_id></q>
+This notification is only issued when the document id has been subscribed to via the Notify service, and the document has changed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">DocumentChangedNotificationPrefix</span> <span class="o">=</span> <span class="s">"DocumentChangedNotification"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixSS"></a>
+                    <a name="//apple_ref/swift/Global/ReplicationCompleteNotificationSuffix" class="dashAnchor"></a>
+                    <a class="token" href="#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixSS">ReplicationCompleteNotificationSuffix</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Suffix of the notfication name issued when replication is has reached a complted (idle) state. Prefix of the notification name will be the replication type, either <q>push</q> or <q>pull</q>
+For example: pullReplicationCompleteNotification will be issue when pull replication (data transmitted from server to client) has completed.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="k">let</span> <span class="nv">ReplicationCompleteNotificationSuffix</span> <span class="o">=</span> <span class="s">"ReplicationCompleteNotification"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
                 <li class="item">
                   <div>
                     <code>
@@ -684,7 +684,7 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-03-22)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-03-23)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

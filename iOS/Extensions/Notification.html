@@ -110,7 +110,7 @@
                 <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK26DatabaseManagerErrorDomainSS">DatabaseManagerErrorDomain</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK27DocumentChangedNotificationVCSo14NSNotification4Name">DocumentChangedNotification</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK33DocumentChangedNotificationPrefixSS">DocumentChangedNotificationPrefix</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK11HttpVersionSS">HttpVersion</a>
@@ -128,7 +128,7 @@
                 <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK31ReachabilityWatcherNotificationVCSo14NSNotification4Name">ReachabilityWatcherNotification</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixVCSo14NSNotification4Name">ReplicationCompleteNotificationSuffix</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK37ReplicationCompleteNotificationSuffixSS">ReplicationCompleteNotificationSuffix</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Global Variables.html#/s:v15PredixMobileSDK29ReplicationPausedNotificationVCSo14NSNotification4Name">ReplicationPausedNotification</a>
@@ -247,6 +247,309 @@
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name21pmReachabilityWatcherS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmReachabilityWatcher" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name21pmReachabilityWatcherS1_">pmReachabilityWatcher</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification used when network connectivity state changes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmReachabilityWatcher</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReachabilityWatcherNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name28pmInitialReplicationCompleteS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmInitialReplicationComplete" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name28pmInitialReplicationCompleteS1_">pmInitialReplicationComplete</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification issued when the initial replication has completed after the app start. WebApps will not be launched until after this notification fires.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmInitialReplicationComplete</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"InitialReplicationCompleteNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name18pmDatabaseDownloadS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmDatabaseDownload" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name18pmDatabaseDownloadS1_">pmDatabaseDownload</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification issued when database replication events occur.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmDatabaseDownload</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"DatabaseDownloadNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name9pmUIReadyS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmUIReady" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name9pmUIReadyS1_">pmUIReady</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification informs the SDK that the container UI is ready for SDK interaction. Used with PredixMobilityConfiguration.considerUIReadyWhenApplicationDidBecomeActive.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmUIReady</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"UIReadyNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name25pmPullReplicationCompleteS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmPullReplicationComplete" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name25pmPullReplicationCompleteS1_">pmPullReplicationComplete</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification issued when pull (server to client) replication is has reached a complted (idle) state</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmPullReplicationComplete</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"pullReplicationCompleteNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name25pmPushReplicationCompleteS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmPushReplicationComplete" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name25pmPushReplicationCompleteS1_">pmPushReplicationComplete</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification issued when push (client to server) replication is has reached a complted (idle) state</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmPushReplicationComplete</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"pushReplicationCompleteNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name16pmServiceInvokedS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmServiceInvoked" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name16pmServiceInvokedS1_">pmServiceInvoked</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification posted when data flows through the service router via a service request. Can be used to gather metrics</p>
+
+<p>Notification object contains a dictionary with the following keys:</p>
+
+<ul>
+<li><strong>path</strong> : the path of the request</li>
+<li><strong>query</strong> : the querystring, if any, of the request</li>
+<li><strong>method</strong> : the http method of the request</li>
+<li><strong>bytesReceived</strong> : number of bytes in the body of the request</li>
+<li><strong>bytesSent</strong> : number of bytes returned in the response data</li>
+<li><strong>duration</strong> : number of milliseconds it took to process this request</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmServiceInvoked</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ServiceInvokedNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name19pmReplicationPausedS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmReplicationPaused" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name19pmReplicationPausedS1_">pmReplicationPaused</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification sent when replication is paused, either due to repeated failure, or due to connnectivity loss.</p>
+
+<p>No additional data is associated with this notification</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmReplicationPaused</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReplicationPausedNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name20pmReplicationResumedS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmReplicationResumed" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name20pmReplicationResumedS1_">pmReplicationResumed</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification sent when replication is resumed from a paused state, generally because connectivity has been restored,
+or because repeated failures paused replication, and PredixMobileConfiguration.replicationFailureRetryRecoveryTime has elapsed.</p>
+
+<p>No additional data is associated with this notification</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmReplicationResumed</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReplicationResumedNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name19pmAPIRequestHandledS1_"></a>
+                    <a name="//apple_ref/swift/Variable/pmAPIRequestHandled" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvE15PredixMobileSDKVCSo14NSNotification4Name19pmAPIRequestHandledS1_">pmAPIRequestHandled</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Notification posted when a web request is detected as a PMAPI request. Can be used to gather metrics</p>
+
+<p>Similar to the ServiceInvokedNotification, except only tracks requests coming through the web request infrastructure, rather than any request made through the ServiceRouter.</p>
+
+<p>Notification object contains a dictionary with the following keys:</p>
+
+<ul>
+<li><strong>path</strong> : the path of the request</li>
+<li><strong>query</strong> : the querystring, if any, of the request</li>
+<li><strong>method</strong> : the http method of the request</li>
+<li><strong>bytesReceived</strong> : number of bytes in the body of the request</li>
+<li><strong>bytesSent</strong> : number of bytes returned in the response data</li>
+<li><strong>duration</strong> : number of milliseconds it took to process this request</li>
+</ul>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmAPIRequestHandled</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"PMAPIRequestHandledNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:vPs23CustomStringConvertible11descriptionSS"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
                     <a class="token" href="#/s:vPs23CustomStringConvertible11descriptionSS">description</a>
@@ -279,7 +582,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-03-22)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-03-23)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
