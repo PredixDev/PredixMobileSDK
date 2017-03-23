@@ -1,0 +1,5 @@
+com.ge.predix.mobile.core
+com.ge.predix.mobile.sdk.android
+com.ge.predix.mobile.sdk.android.context
+com.ge.predix.mobile.sdk.android.logging
+com.ge.predix.mobile.services
