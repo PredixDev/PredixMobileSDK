@@ -1,0 +1,12 @@
+com.ge.predix.mobile.annotations
+com.ge.predix.mobile.core
+com.ge.predix.mobile.core.connection
+com.ge.predix.mobile.core.notifications
+com.ge.predix.mobile.enums
+com.ge.predix.mobile.exceptions
+com.ge.predix.mobile.logging
+com.ge.predix.mobile.network
+com.ge.predix.mobile.platform
+com.ge.predix.mobile.serviceFoundation
+com.ge.predix.mobile.services
+com.ge.predix.mobile.util
