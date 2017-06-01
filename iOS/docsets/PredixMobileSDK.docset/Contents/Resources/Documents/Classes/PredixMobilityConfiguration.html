@@ -1886,6 +1886,199 @@ The methods <strong>appendDataViewDefinition(&hellip;)</strong> are a helper met
                     </section>
                   </div>
                 </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration20hybridUIDatabaseNameGSqSS_"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIDatabaseName" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration20hybridUIDatabaseNameGSqSS_">hybridUIDatabaseName</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Secondary database to use for hybrid UI data: webapp documents and pm app documents.</p>
+
+<p>If nil the system will use a single database for all data.</p>
+
+<p>If a directory named <code>hybridUIDatabaseName</code>.cblite2 containing a sql lite database exists in the application bundle, then this database will be used as an inital data source.</p>
+
+<p>When a hybrid UI database is used, application loading will not wait for the main data database to sync before launching the hybrid ui webapp.</p>
+
+<p><strong>Example:</strong>
+<code>
+PredixMobilityManager.hybridUIDatabaseName = &quot;hybridui&quot;
+</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIDatabaseName</span> <span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration29hybridUIDatabaseNameConfigKeySS"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIDatabaseNameConfigKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration29hybridUIDatabaseNameConfigKeySS">hybridUIDatabaseNameConfigKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the configuration key (as in a key/value pair) used to determine the name of the hybrid UI database in either the info.plist or the settings bundle root.plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIDatabaseNameConfigKey</span> <span class="o">=</span> <span class="s">"HybridDatabaseName"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration34hybridUIDatabaseNameConfigLocationOS_21ConfigurationLocation"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIDatabaseNameConfigLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration34hybridUIDatabaseNameConfigLocationOS_21ConfigurationLocation">hybridUIDatabaseNameConfigLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where the hybrid UI database name configuration key/value should be found.</p>
+
+<p><strong>Default</strong>: Info.plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIDatabaseNameConfigLocation</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a></span><span class="o">.</span><span class="n">infoplist</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration20hybridUIAllowUpdatesSb"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIAllowUpdates" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration20hybridUIAllowUpdatesSb">hybridUIAllowUpdates</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Works with <code><a href="../Classes/PredixMobilityConfiguration.html#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration20hybridUIDatabaseNameGSqSS_">hybridUIDatabaseName</a></code> to allow the hybrid UI web elements to be updated dynamically.</p>
+
+<p>Allowing replication of hybrid UI data allows for easy updates during development, or for creating an Enterprise app that supports dynamic updates.</p>
+
+<p><strong>Behaviors:</strong></p>
+
+<p><em>true</em>: On application start, the database named in <code><a href="../Classes/PredixMobilityConfiguration.html#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration20hybridUIDatabaseNameGSqSS_">PredixMobilityConfiguration.hybridUIDatabaseName</a></code> will be refreshed from the backend sync gateway. Application loading will wait until this database has synced, but will not wait for the main data database to sync.</p>
+
+<p><em>false</em>: No replication will be performed to update the <code><a href="../Classes/PredixMobilityConfiguration.html#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration20hybridUIDatabaseNameGSqSS_">hybridUIDatabaseName</a></code> database. This database is expected to be included in the application bundle. Application loading will not wait for the main data database to sync.</p>
+
+<div class="aside aside-attention">
+    <p class="aside-title">Attention</p>
+    Must be <em>false</em> for any App Store production system.
+
+</div>
+
+<p><strong>Default</strong>: true</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIAllowUpdates</span> <span class="p">:</span> <span class="kt">Bool</span> <span class="o">=</span> <span class="kc">true</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration29hybridUIAllowUpdatesConfigKeySS"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIAllowUpdatesConfigKey" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration29hybridUIAllowUpdatesConfigKeySS">hybridUIAllowUpdatesConfigKey</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies the configuration key (as in a key/value pair) used to determine state of the hybridUIAllowUpdates configuration in either the info.plist or the settings bundle root.plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIAllowUpdatesConfigKey</span> <span class="o">=</span> <span class="s">"HybridUIAllowUpdates"</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration34hybridUIAllowUpdatesConfigLocationOS_21ConfigurationLocation"></a>
+                    <a name="//apple_ref/swift/Variable/hybridUIAllowUpdatesConfigLocation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:ZvC15PredixMobileSDK27PredixMobilityConfiguration34hybridUIAllowUpdatesConfigLocationOS_21ConfigurationLocation">hybridUIAllowUpdatesConfigLocation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Specifies where the hybridUIAllowUpdates configuration key/value should be found.</p>
+
+<p><strong>Default</strong>: Info.plist</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">var</span> <span class="nv">hybridUIAllowUpdatesConfigLocation</span> <span class="o">=</span> <span class="kt"><a href="../Enums/ConfigurationLocation.html">ConfigurationLocation</a></span><span class="o">.</span><span class="n">infoplist</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
               </ul>
             </div>
             <div class="task-group">
@@ -2094,7 +2287,7 @@ The methods <strong>appendDataViewDefinition(&hellip;)</strong> are a helper met
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-03-23)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-06-01)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
