@@ -56,6 +56,12 @@
                 <a class="nav-group-task-link" href="Classes/ApplicationDelegateHandlers.html">ApplicationDelegateHandlers</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/Command.html">Command</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/CommandResponse.html">CommandResponse</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/DatabaseManager.html">DatabaseManager</a>
               </li>
               <li class="nav-group-task">
@@ -75,6 +81,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/Logger.html">Logger</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/MobileMonitor.html">MobileMonitor</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/OpenURLService.html">OpenURLService</a>
@@ -110,6 +119,9 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK9ApiSchemeSS">ApiScheme</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK15ApiSchemeSecureSS">ApiSchemeSecure</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Global Variables.html#/s:v15PredixMobileSDK28DatabaseDownloadNotificationVCSo14NSNotification4Name">DatabaseDownloadNotification</a>
@@ -159,6 +171,12 @@
                 <a class="nav-group-task-link" href="Enums/ConfigurationLocation.html">ConfigurationLocation</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/DocumentTypes.html">DocumentTypes</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/HTTPMethod.html">HTTPMethod</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/HTTPStatusCode.html">HTTPStatusCode</a>
               </li>
               <li class="nav-group-task">
@@ -166,6 +184,9 @@
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/Messages.html">Messages</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Enums/QuerySortOrder.html">QuerySortOrder</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Enums/WaitState.html">WaitState</a>
@@ -187,10 +208,25 @@
             <a class="nav-group-name-link" href="Protocols.html">Protocols</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/CommandContents.html">CommandContents</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/CommandRecord.html">CommandRecord</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/LogTransmitter.html">LogTransmitter</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/LoggerProtocol.html">LoggerProtocol</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/NotificationManagerDelegate.html">NotificationManagerDelegate</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/PredixAppWindowProtocol.html">PredixAppWindowProtocol</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Protocols/QueryParameters.html">QueryParameters</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Protocols/ServiceProtocol.html">ServiceProtocol</a>
@@ -205,6 +241,18 @@
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/ConnectivityStatus.html">ConnectivityStatus</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QueryByKeyList.html">QueryByKeyList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QueryByKeyRange.html">QueryByKeyRange</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QueryResultList.html">QueryResultList</a>
+              </li>
+              <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Structs/QueryResultRow.html">QueryResultRow</a>
               </li>
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Structs/ReachabilityStatus.html">ReachabilityStatus</a>
@@ -439,13 +487,133 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V15PredixMobileSDK14QueryResultRow"></a>
+                    <a name="//apple_ref/swift/Struct/QueryResultRow" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V15PredixMobileSDK14QueryResultRow">QueryResultRow</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Represents a single row of data returned from a query</p>
+
+                        <a href="Structs/QueryResultRow.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryResultRow</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V15PredixMobileSDK15QueryResultList"></a>
+                    <a name="//apple_ref/swift/Struct/QueryResultList" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V15PredixMobileSDK15QueryResultList">QueryResultList</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Results of a view query</p>
+
+                        <a href="Structs/QueryResultList.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryResultList</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V15PredixMobileSDK14QueryByKeyList"></a>
+                    <a name="//apple_ref/swift/Struct/QueryByKeyList" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V15PredixMobileSDK14QueryByKeyList">QueryByKeyList</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query parameter structure to use when querying a known list of keys.</p>
+
+                        <a href="Structs/QueryByKeyList.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyList</span> <span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:V15PredixMobileSDK15QueryByKeyRange"></a>
+                    <a name="//apple_ref/swift/Struct/QueryByKeyRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:V15PredixMobileSDK15QueryByKeyRange">QueryByKeyRange</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Query parameter structure to use when querying a range of keys.</p>
+
+                        <a href="Structs/QueryByKeyRange.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyRange</span> <span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-06-01)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-07-28)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.7.5</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
