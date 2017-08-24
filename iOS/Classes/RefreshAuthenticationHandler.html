@@ -388,9 +388,11 @@
               </div>
             <p>Base class for all refresh authentication handlers used by an <code><a href="../Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code></p>
 
-<p>Processes Oauth2 refresh-based authentication, where a refresh token is exchanged for an active authentication token with a authentication provider to allow for secure Touch Id based authentication scenarios.</p>
+<p>Processes Oauth2 refresh-based authentication, where a refresh token is exchanged for an active authentication token with an authentication provider.</p>
 
-<p>In the expected process, the <code><a href="../Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code> <code>authenticationResponsePayload</code> will contain a refresh token. This token is then used by this handler to refresh the authentication without needing the users credentials.</p>
+<p>Intended to allow for secure biometric or device passcode based authentication scenarios.</p>
+
+<p>In the expected process, the <code>OnlineAuthenticationHandler.authenticationResponsePayload</code> property will contain a refresh token. This token is then used by this handler during the next authentication request to refresh the authentication without needing the users credentials.</p>
 
           </div>
         </section>
@@ -398,6 +400,13 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20properties"></a>
+                <a name="//apple_ref/swift/Section/public properties" class="dashAnchor"></a>
+                <a href="#/public%20properties">
+                  <h3 class="section-name">public properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -727,6 +736,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/initialization"></a>
+                <a name="//apple_ref/swift/Section/initialization" class="dashAnchor"></a>
+                <a href="#/initialization">
+                  <h3 class="section-name">initialization</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -740,7 +760,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initialization</p>
+                        <p>Initializes and returns a RefreshAuthenticationHandler object</p>
 
                       </div>
                       <div class="declaration">
@@ -754,6 +774,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20instance%20methods"></a>
+                <a name="//apple_ref/swift/Section/public instance methods" class="dashAnchor"></a>
+                <a href="#/public%20instance%20methods">
+                  <h3 class="section-name">public instance methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -768,6 +799,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Starts the authentication refresh process.</p>
+
+<p>Called by the associated <code><a href="../Classes/AuthenticationManager.html">AuthenticationManager</a></code> when needed.</p>
 
                       </div>
                       <div class="declaration">
@@ -839,6 +872,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/subclass%20use%20only"></a>
+                <a name="//apple_ref/swift/Section/subclass use only" class="dashAnchor"></a>
+                <a href="#/subclass%20use%20only">
+                  <h3 class="section-name">subclass use only</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -963,7 +1007,7 @@ or could modify the actual work of the refresh authentication, in which case the
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-23)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-24)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

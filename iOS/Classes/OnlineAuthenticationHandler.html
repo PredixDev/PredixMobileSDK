@@ -396,6 +396,13 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20properties"></a>
+                <a name="//apple_ref/swift/Section/public properties" class="dashAnchor"></a>
+                <a href="#/public%20properties">
+                  <h3 class="section-name">public properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -561,6 +568,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/initialization"></a>
+                <a name="//apple_ref/swift/Section/initialization" class="dashAnchor"></a>
+                <a href="#/initialization">
+                  <h3 class="section-name">initialization</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -574,7 +592,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initialization</p>
+                        <p>Initializes and returns an OnlineAuthenticationHandler object</p>
 
                       </div>
                       <div class="declaration">
@@ -588,6 +606,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20instance%20methods"></a>
+                <a name="//apple_ref/swift/Section/public instance methods" class="dashAnchor"></a>
+                <a href="#/public%20instance%20methods">
+                  <h3 class="section-name">public instance methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -601,7 +630,9 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Starts the authentication process. </p>
+                        <p>Starts the authentication process.</p>
+
+<p>Called by the associated <code><a href="../Classes/AuthenticationManager.html">AuthenticationManager</a></code> when needed.</p>
 
 <p>If a <code><a href="../Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></code> is associated with this <code>OnlineAuthenticationHandler</code> the refresh handler may be invoked to handle this authentication.</p>
 
@@ -644,35 +675,6 @@
                             </tr>
                           </tbody>
                         </table>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK27OnlineAuthenticationHandlerC07performdE0yyF"></a>
-                    <a name="//apple_ref/swift/Method/performOnlineAuthentication()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK27OnlineAuthenticationHandlerC07performdE0yyF">performOnlineAuthentication()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Should not be called from external consumers. The <code>authenticate</code> method should be used to start the authentication process.</p>
-
-<p>Subclasses should override this method to perform the actual work of authentication, and should call <code>authenticationComplete(status:)</code> with the result of that authentication.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">performOnlineAuthentication</span><span class="p">()</span></code></pre>
-
-                        </div>
                       </div>
                     </section>
                   </div>
@@ -724,13 +726,53 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/subclass%20use%20only"></a>
+                <a name="//apple_ref/swift/Section/subclass use only" class="dashAnchor"></a>
+                <a href="#/subclass%20use%20only">
+                  <h3 class="section-name">subclass use only</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK27OnlineAuthenticationHandlerC07performdE0yyF"></a>
+                    <a name="//apple_ref/swift/Method/performOnlineAuthentication()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK27OnlineAuthenticationHandlerC07performdE0yyF">performOnlineAuthentication()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Should not be called from external consumers. The <code>authenticate</code> method should be used to start the authentication process.</p>
+
+<p>Subclasses should override this method to perform the actual work of authentication, and should call <code>authenticationComplete(status:)</code> with the result of that authentication.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">performOnlineAuthentication</span><span class="p">()</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-23)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-24)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

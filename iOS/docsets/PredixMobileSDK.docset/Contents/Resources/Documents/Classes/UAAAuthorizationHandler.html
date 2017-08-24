@@ -394,6 +394,13 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/initialization"></a>
+                <a name="//apple_ref/swift/Section/initialization" class="dashAnchor"></a>
+                <a href="#/initialization">
+                  <h3 class="section-name">initialization</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -408,7 +415,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initialization</p>
+                        <p>Initializes and returns a UAAAuthorizationHandler object</p>
 
                       </div>
                       <div class="declaration">
@@ -422,12 +429,23 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20instance%20methods"></a>
+                <a name="//apple_ref/swift/Section/public instance methods" class="dashAnchor"></a>
+                <a href="#/public%20instance%20methods">
+                  <h3 class="section-name">public instance methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK20AuthorizationHandlerP9authorizeys10DictionaryVySSypG21authenticationPayload_yAGc010completionE0tF"></a>
+                    <a name="/s:15PredixMobileSDK23UAAAuthorizationHandlerC9authorizeys10DictionaryVySSypG21authenticationPayload_yAGc010completionE0tF"></a>
                     <a name="//apple_ref/swift/Method/authorize(authenticationPayload:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK20AuthorizationHandlerP9authorizeys10DictionaryVySSypG21authenticationPayload_yAGc010completionE0tF">authorize(authenticationPayload:completionHandler:)</a>
+                    <a class="token" href="#/s:15PredixMobileSDK23UAAAuthorizationHandlerC9authorizeys10DictionaryVySSypG21authenticationPayload_yAGc010completionE0tF">authorize(authenticationPayload:completionHandler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -435,7 +453,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Starts the authorization process.</p>
+
+<p>Called by the associated <code><a href="../Classes/AuthenticationManager.html">AuthenticationManager</a></code> when needed.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -457,7 +478,7 @@
                               </td>
                               <td>
                                 <div>
-                                  
+                                  <p>the dictionary of information gathered during the authentication process. This information usually contains user-identifying tokens which are exchanged for specific user data during the authentication process.</p>
                                 </div>
                               </td>
                             </tr>
@@ -469,7 +490,7 @@
                               </td>
                               <td>
                                 <div>
-                                  
+                                  <p>closure called when authorization has completed.</p>
                                 </div>
                               </td>
                             </tr>
@@ -481,7 +502,7 @@
                               </td>
                               <td>
                                 <div>
-                                  
+                                  <p>dictionary of user information retrieved during the authorization process.</p>
                                 </div>
                               </td>
                             </tr>
@@ -504,7 +525,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Parses a oAuth token, and returns a dictionary of the token&rsquo;s data components</p>
+                        <p>Parses a UAA access token, and returns a dictionary of the token&rsquo;s data components</p>
 
                       </div>
                       <div class="declaration">
@@ -611,7 +632,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-23)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-24)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

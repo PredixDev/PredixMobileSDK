@@ -386,7 +386,9 @@
 
                 </div>
               </div>
-            <p><code><a href="../../Classes/AuthenticationManager.html">AuthenticationManager</a></code> <code>authenticate</code> completion status enumeration</p>
+            <p>Authentication completion status enumeration</p>
+
+<p>returns information about the authentication state when the <code><a href="../../Classes/AuthenticationManager.html#/s:15PredixMobileSDK21AuthenticationManagerC12authenticateyyAC0D16CompletionStatusOc17completionHandler_tF">authenticate(completionHandler:)</a></code> method completed.</p>
 
           </div>
         </section>
@@ -410,9 +412,12 @@
                       <div class="abstract">
                         <p>Authentication was completed successfully.</p>
 
-<p>type: <code>AuthenticationType</code> type of the successful authentication, either online or offline.</p>
+<p>Values:</p>
 
-<p>user: <code><a href="../../Structs/User.html">User</a></code> object containing the authenticated user information</p>
+<ul>
+<li><p>type: <code><a href="../../Enums/AuthenticationValidationType.html">AuthenticationValidationType</a></code> type of the successful authentication, either online or offline.</p></li>
+<li><p>user: <code><a href="../../Structs/User.html">User</a></code> object containing the authenticated user information</p></li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -507,7 +512,11 @@
                       <div class="abstract">
                         <p>Authentication failed.</p>
 
-<p>error: <code>Error</code> containing details as to why the authentication failed.</p>
+<p>Values:</p>
+
+<ul>
+<li>error: <code>Error</code> containing details as to why the authentication failed.</li>
+</ul>
 
                       </div>
                       <div class="declaration">
@@ -524,13 +533,20 @@
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20instance%20methods"></a>
+                <a name="//apple_ref/swift/Section/public instance methods" class="dashAnchor"></a>
+                <a href="#/public%20instance%20methods">
+                  <h3 class="section-name">public instance methods</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s23CustomStringConvertibleP11descriptionSSv"></a>
+                    <a name="/s:15PredixMobileSDK21AuthenticationManagerC0D16CompletionStatusO11descriptionSSv"></a>
                     <a name="//apple_ref/swift/Property/description" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s23CustomStringConvertibleP11descriptionSSv">description</a>
+                    <a class="token" href="#/s:15PredixMobileSDK21AuthenticationManagerC0D16CompletionStatusO11descriptionSSv">description</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -538,7 +554,8 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>A textual representation of this instance.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -554,13 +571,20 @@
               </ul>
             </div>
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/operators"></a>
+                <a name="//apple_ref/swift/Section/operators" class="dashAnchor"></a>
+                <a href="#/operators">
+                  <h3 class="section-name">operators</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:s9EquatableP2eeoiSbx_xtFZ"></a>
+                    <a name="/s:15PredixMobileSDK21AuthenticationManagerC0D16CompletionStatusO2eeoiSbAE_AEtFZ"></a>
                     <a name="//apple_ref/swift/Method/==(_:_:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:s9EquatableP2eeoiSbx_xtFZ">==(_:_:)</a>
+                    <a class="token" href="#/s:15PredixMobileSDK21AuthenticationManagerC0D16CompletionStatusO2eeoiSbAE_AEtFZ">==(_:_:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -568,7 +592,10 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        
+                        <p>Equatable conformance</p>
+
+<p>returns: a Boolean value indicating whether two values are equal.</p>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -577,37 +604,6 @@
                           <pre class="highlight"><code><span class="kd">public</span> <span class="kd">static</span> <span class="kd">func</span> <span class="o">==</span> <span class="p">(</span><span class="nv">lhs</span><span class="p">:</span> <span class="kt"><a href="../../Classes/AuthenticationManager.html">AuthenticationManager</a></span><span class="o">.</span><span class="kt">AuthenticationCompletionStatus</span><span class="p">,</span> <span class="nv">rhs</span><span class="p">:</span> <span class="kt"><a href="../../Classes/AuthenticationManager.html">AuthenticationManager</a></span><span class="o">.</span><span class="kt">AuthenticationCompletionStatus</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Bool</span></code></pre>
 
                         </div>
-                      </div>
-                      <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>lhs</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  
-                                </div>
-                              </td>
-                            </tr>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>rhs</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
                       </div>
                     </section>
                   </div>
@@ -620,7 +616,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-23)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-24)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

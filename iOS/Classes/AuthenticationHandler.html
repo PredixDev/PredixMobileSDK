@@ -386,7 +386,9 @@
 
                 </div>
               </div>
-            <p>Base class for all <code>AuthenticationHandlers</code>. Provides common functions that all <code>AuthenticationHandlers</code> share.</p>
+            <p>Base class for all AuthenticationHandlers.</p>
+
+<p>Provides common functions that all AuthenticationHandlers share.</p>
 
           </div>
         </section>
@@ -394,6 +396,52 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/Enumerations"></a>
+                <a name="//apple_ref/swift/Section/Enumerations" class="dashAnchor"></a>
+                <a href="#/Enumerations">
+                  <h3 class="section-name">Enumerations</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK21AuthenticationHandlerC18AuthenticateResultO"></a>
+                    <a name="//apple_ref/swift/Enum/AuthenticateResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK21AuthenticationHandlerC18AuthenticateResultO">AuthenticateResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Result enumeration for the AuthenticationHandler authentication process.</p>
+
+                        <a href="../Classes/AuthenticationHandler/AuthenticateResult.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AuthenticateResult</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20properties"></a>
+                <a name="//apple_ref/swift/Section/public properties" class="dashAnchor"></a>
+                <a href="#/public%20properties">
+                  <h3 class="section-name">public properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -408,7 +456,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="../Enums/AuthenticationValidationType.html">AuthenticationValidationType</a></code> handled by this <code>AuthenticationHandler</code></p>
+                        <p><code><a href="../Enums/AuthenticationValidationType.html">AuthenticationValidationType</a></code> handled by this AuthenticationHandler</p>
 
                       </div>
                       <div class="declaration">
@@ -416,34 +464,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">validationType</span><span class="p">:</span> <span class="kt"><a href="../Enums/AuthenticationValidationType.html">AuthenticationValidationType</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK21AuthenticationHandlerC18AuthenticateResultO"></a>
-                    <a name="//apple_ref/swift/Enum/AuthenticateResult" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK21AuthenticationHandlerC18AuthenticateResultO">AuthenticateResult</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Result enumeration for AuthenticationHandler authentication process.</p>
-
-                        <a href="../Classes/AuthenticationHandler/AuthenticateResult.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">enum</span> <span class="kt">AuthenticateResult</span></code></pre>
 
                         </div>
                       </div>
@@ -531,6 +551,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20instance%20methods"></a>
+                <a name="//apple_ref/swift/Section/public instance methods" class="dashAnchor"></a>
+                <a href="#/public%20instance%20methods">
+                  <h3 class="section-name">public instance methods</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -545,6 +576,8 @@
                       <div class="pointer"></div>
                       <div class="abstract">
                         <p>Starts the authentication process.</p>
+
+<p>Called by the associated <code><a href="../Classes/AuthenticationManager.html">AuthenticationManager</a></code> when needed.</p>
 
                       </div>
                       <div class="declaration">
@@ -604,6 +637,8 @@
                       <div class="abstract">
                         <p>Cancels an authentication in-process. Does nothing if no authentication is currently in process.</p>
 
+<p>Called by the associated <code><a href="../Classes/AuthenticationManager.html">AuthenticationManager</a></code> when needed.</p>
+
 <p>Subclasses should perform any needed cancelation activities prior to calling <code>super.cancelAuthentication()</code></p>
 
                       </div>
@@ -612,35 +647,6 @@
                         <div class="language">
                           <p class="aside-title">Swift</p>
                           <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">cancelAuthentication</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK21AuthenticationHandlerC22authenticationCompleteyAC18AuthenticateResultO6result_tF"></a>
-                    <a name="//apple_ref/swift/Method/authenticationComplete(result:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK21AuthenticationHandlerC22authenticationCompleteyAC18AuthenticateResultO6result_tF">authenticationComplete(result:)</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Called by subsclasses to indicate the authentication process is complete.</p>
-
-<p>Should not be called from external consumers. The <code>cancelAuthentication</code> method should be used to end an in-progress authentication.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">authenticationComplete</span><span class="p">(</span><span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Classes/AuthenticationHandler/AuthenticateResult.html">AuthenticateResult</a></span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -695,13 +701,53 @@
                 </li>
               </ul>
             </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/subclass%20use%20only"></a>
+                <a name="//apple_ref/swift/Section/subclass use only" class="dashAnchor"></a>
+                <a href="#/subclass%20use%20only">
+                  <h3 class="section-name">subclass use only</h3>
+                </a>
+              </div>
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK21AuthenticationHandlerC22authenticationCompleteyAC18AuthenticateResultO6result_tF"></a>
+                    <a name="//apple_ref/swift/Method/authenticationComplete(result:)" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK21AuthenticationHandlerC22authenticationCompleteyAC18AuthenticateResultO6result_tF">authenticationComplete(result:)</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Called by subsclasses to indicate an authentication process is complete.</p>
+
+<p>Should not be called from external consumers. The <code>cancelAuthentication</code> method should be used to end an in-progress authentication.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">func</span> <span class="nf">authenticationComplete</span><span class="p">(</span><span class="nv">result</span><span class="p">:</span> <span class="kt"><a href="../Classes/AuthenticationHandler/AuthenticateResult.html">AuthenticateResult</a></span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-23)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-24)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

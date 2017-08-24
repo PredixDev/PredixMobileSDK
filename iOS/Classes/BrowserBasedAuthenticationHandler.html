@@ -386,9 +386,9 @@
 
                 </div>
               </div>
-            <p>`OnlineAuthenticationHandler subclass for handling browser-based based online authentication.</p>
+            <p><code><a href="../Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code> subclass for handling browser-based based online authentication.</p>
 
-<p>Handles displaying a authentication web page, intercepting an Oauth2 redirect, and parsing the results.</p>
+<p>Handles displaying an authentication web page, intercepting an Oauth2 redirect, and parsing the results.</p>
 
           </div>
         </section>
@@ -396,6 +396,13 @@
         <section class="section">
           <div class="section-content">
             <div class="task-group">
+              <div class="task-name-container">
+                <a name="/public%20properties"></a>
+                <a name="//apple_ref/swift/Section/public properties" class="dashAnchor"></a>
+                <a href="#/public%20properties">
+                  <h3 class="section-name">public properties</h3>
+                </a>
+              </div>
               <ul class="item-container">
                 <li class="item">
                   <div>
@@ -509,6 +516,17 @@
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/initialization"></a>
+                <a name="//apple_ref/swift/Section/initialization" class="dashAnchor"></a>
+                <a href="#/initialization">
+                  <h3 class="section-name">initialization</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -522,7 +540,7 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Initialization.</p>
+                        <p>Initializes and returns a BrowserBasedAuthenticationHandler object with the provided parameters</p>
 
                       </div>
                       <div class="declaration">
@@ -555,32 +573,17 @@
                     </section>
                   </div>
                 </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK33BrowserBasedAuthenticationHandlerC013performOnlineF0yyF"></a>
-                    <a name="//apple_ref/swift/Method/performOnlineAuthentication()" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK33BrowserBasedAuthenticationHandlerC013performOnlineF0yyF">performOnlineAuthentication()</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="n">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">performOnlineAuthentication</span><span class="p">()</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <div class="task-name-container">
+                <a name="/subclass%20use%20only"></a>
+                <a name="//apple_ref/swift/Section/subclass use only" class="dashAnchor"></a>
+                <a href="#/subclass%20use%20only">
+                  <h3 class="section-name">subclass use only</h3>
+                </a>
+              </div>
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
@@ -634,6 +637,10 @@
 
 <p>Subclasses may override this method to provide alternative query parameter parsing, or additional key/value pairs to the parsed query paremeters detected on the redirectURI following successful browser authentication.</p>
 
+<ul>
+<li><p>from: URL containing query string parameters to parse</p></li>
+</ul>
+
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
@@ -644,27 +651,39 @@
                         </div>
                       </div>
                       <div>
-                        <h4>Parameters</h4>
-                        <table class="graybox">
-                          <tbody>
-                            <tr>
-                              <td>
-                                <code>
-                                <em>from</em>
-                                </code>
-                              </td>
-                              <td>
-                                <div>
-                                  <p>URL containing query string parameters to parse</p>
-                                </div>
-                              </td>
-                            </tr>
-                          </tbody>
-                        </table>
-                      </div>
-                      <div>
                         <h4>Return Value</h4>
                         <p>key/value pairs from query string. If a query string key contains no value, a empty string will be the dictionary value. If the url contained no parameters, this an empty dictionary will be returned.</p>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK33BrowserBasedAuthenticationHandlerC013performOnlineF0yyF"></a>
+                    <a name="//apple_ref/swift/Method/performOnlineAuthentication()" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK33BrowserBasedAuthenticationHandlerC013performOnlineF0yyF">performOnlineAuthentication()</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Not expected to be called from external consumers.</p>
+
+<p>Subclasses may override this method to provide additional functionality prior to the authentication process.</p>
+
+<p>Performs the online browser-based authentication process, calling the <code><a href="../Classes/BrowserBasedAuthenticationHandler.html#/s:15PredixMobileSDK33BrowserBasedAuthenticationHandlerC014authenticationD8DelegateAA0defgI0_pSgXwv">authenticationBrowserDelegate</a></code> to display the authentication URL.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="k">override</span> <span class="kd">func</span> <span class="nf">performOnlineAuthentication</span><span class="p">()</span></code></pre>
+
+                        </div>
                       </div>
                     </section>
                   </div>
@@ -677,7 +696,7 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-23)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-24)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>

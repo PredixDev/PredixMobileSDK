@@ -571,7 +571,7 @@ manager.authenticate { (status) in
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>`OnlineAuthenticationHandler subclass for handling service-call based based (non-browser) online authentication.</p>
+                        <p><code><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code> subclass for handling service-call based based (non-browser) online authentication.</p>
 
 <p>Handles making a request to the backend for authentication, and parsing the results.</p>
 
@@ -840,7 +840,9 @@ manager.authenticate { (status) in
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Base class for all <code>AuthenticationHandlers</code>. Provides common functions that all <code>AuthenticationHandlers</code> share.</p>
+                        <p>Base class for all AuthenticationHandlers.</p>
+
+<p>Provides common functions that all AuthenticationHandlers share.</p>
 
                         <a href="Classes/AuthenticationHandler.html" class="slightly-smaller">See more</a>
                       </div>
@@ -874,9 +876,11 @@ manager.authenticate { (status) in
                       <div class="abstract">
                         <p>Base class for all refresh authentication handlers used by an <code><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code></p>
 
-<p>Processes Oauth2 refresh-based authentication, where a refresh token is exchanged for an active authentication token with a authentication provider to allow for secure Touch Id based authentication scenarios.</p>
+<p>Processes Oauth2 refresh-based authentication, where a refresh token is exchanged for an active authentication token with an authentication provider.</p>
 
-<p>In the expected process, the <code><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code> <code>authenticationResponsePayload</code> will contain a refresh token. This token is then used by this handler to refresh the authentication without needing the users credentials.</p>
+<p>Intended to allow for secure biometric or device passcode based authentication scenarios.</p>
+
+<p>In the expected process, the <code>OnlineAuthenticationHandler.authenticationResponsePayload</code> property will contain a refresh token. This token is then used by this handler during the next authentication request to refresh the authentication without needing the users credentials.</p>
 
                         <a href="Classes/RefreshAuthenticationHandler.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1080,7 +1084,7 @@ manager.authenticate { (status) in
                       <div class="abstract">
                         <p><code><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></code> subclass that handles standard predix.io UAA browser-based login page authentication.</p>
 
-<p>Uses the UAA authorization code grant mechanism, which then uses <code><a href="Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a></code> to exchange that authorization code for authentication and refresh tokens.</p>
+<p>Uses the UAA <q>authorization code grant</q> mechanism, which then uses <code><a href="Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a></code> to exchange that authorization code for authentication and refresh tokens.</p>
 
                         <a href="Classes/UAABrowserAuthenticationHandler.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1359,9 +1363,9 @@ manager.authenticate { (status) in
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>`OnlineAuthenticationHandler subclass for handling browser-based based online authentication.</p>
+                        <p><code><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code> subclass for handling browser-based based online authentication.</p>
 
-<p>Handles displaying a authentication web page, intercepting an Oauth2 redirect, and parsing the results.</p>
+<p>Handles displaying an authentication web page, intercepting an Oauth2 redirect, and parsing the results.</p>
 
                         <a href="Classes/BrowserBasedAuthenticationHandler.html" class="slightly-smaller">See more</a>
                       </div>
@@ -1583,7 +1587,7 @@ manager.authenticate { (status) in
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-23)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-24)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
