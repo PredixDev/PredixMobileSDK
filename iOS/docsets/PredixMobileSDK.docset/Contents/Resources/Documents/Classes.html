@@ -134,6 +134,9 @@
                 <a class="nav-group-task-link" href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a>
               </li>
               <li class="nav-group-task">
+                <a class="nav-group-task-link" href="Classes/SFAuthenticationSessionHandler.html">SFAuthenticationSessionHandler</a>
+              </li>
+              <li class="nav-group-task">
                 <a class="nav-group-task-link" href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a>
               </li>
               <li class="nav-group-task">
@@ -443,7 +446,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UAARefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">UAARefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -830,6 +833,38 @@ manager.authenticate { (status) in
                 <li class="item">
                   <div>
                     <code>
+                    <a name="/s:15PredixMobileSDK30SFAuthenticationSessionHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/SFAuthenticationSessionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK30SFAuthenticationSessionHandlerC">SFAuthenticationSessionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uses SFAuthenticationSession (available in iOS 11) to handle authentication, then uses <code><a href="Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a></code> to exchange the retrieved authorization code for authentication and refresh tokens.</p>
+
+                        <a href="Classes/SFAuthenticationSessionHandler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SFAuthenticationSessionHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
                     <a name="/s:15PredixMobileSDK21AuthenticationHandlerC"></a>
                     <a name="//apple_ref/swift/Class/AuthenticationHandler" class="dashAnchor"></a>
                     <a class="token" href="#/s:15PredixMobileSDK21AuthenticationHandlerC">AuthenticationHandler</a>
@@ -1092,7 +1127,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UAABrowserAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">UAABrowserAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1445,7 +1480,7 @@ manager.authenticate { (status) in
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UAAServiceAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight"><code><span class="n">open</span> <span class="kd">class</span> <span class="kt">UAAServiceAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1587,7 +1622,7 @@ manager.authenticate { (status) in
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-08-24)</p>
+      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-09-12)</p>
       <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
