@@ -1,7 +1,7 @@
 # PredixSDKforHybrid
 
 The Predix SDK for Hybrid is a comprehensive suite of tools, frameworks and source examples that will enable and educate you on building mobile applications for the Industrial Internet of Things (IIoT). To get started, follow this documentation:
-* [Get Started with the Mobile Service and Mobile SDK](https://docs.predix.io/en-US/content/service/mobile/predix_sync/get-started-with-the-predix-sync-and-sdks) 
+* [Get Started with the Predix Sync and SDKs](https://docs.predix.io/en-US/content/service/mobile/predix_sync/get-started-with-the-predix-sync-and-sdks) 
 * [Running the Predix Mobile Sample App](https://docs.predix.io/en-US/content/service/mobile/predix_sync/running-the-mobile-sample-app)
 * [Creating a Mobile Hello World Web App](https://docs.predix.io/en-US/content/service/mobile/predix_sync/creating-a-mobile-hello-world-web-app) 
 
