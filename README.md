@@ -31,7 +31,7 @@ For native Swift and Java documentation specific to the iOS/macOS, Java and Andr
 
 ## Examples
 
-The following examples show different ways you can use the Predix Mobile SDK. They are not meant for production use.
+The following examples show different ways you can use the Predix SDK for Hybrid. They are not meant for production use.
 
 1. WEB-APPs
   * Predix Mobile Sample app - [MobileExample-WebApp-Sample](https://github.com/PredixDev/MobileExample-WebApp-Sample)  
