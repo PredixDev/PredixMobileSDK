@@ -176,39 +176,39 @@
             <a class="nav-group-name-link" href="../Global Variables.html">Global Variables</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK9ApiSchemeSSv">ApiScheme</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK9ApiSchemeSSvp">ApiScheme</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK15ApiSchemeSecureSSv">ApiSchemeSecure</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK15ApiSchemeSecureSSvp">ApiSchemeSecure</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK26DatabaseManagerErrorDomainSSv">DatabaseManagerErrorDomain</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK26DatabaseManagerErrorDomainSSvp">DatabaseManagerErrorDomain</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK33DocumentChangedNotificationPrefixSSv">DocumentChangedNotificationPrefix</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK33DocumentChangedNotificationPrefixSSvp">DocumentChangedNotificationPrefix</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK11HttpVersionSSv">HttpVersion</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK11HttpVersionSSvp">HttpVersion</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK19KeychainErrorDomainSSv">KeychainErrorDomain</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK19KeychainErrorDomainSSvp">KeychainErrorDomain</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK37ReplicationCompleteNotificationSuffixSSv">ReplicationCompleteNotificationSuffix</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK37ReplicationCompleteNotificationSuffixSSvp">ReplicationCompleteNotificationSuffix</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK34authenticationErrorFailureStageKeySSv">authenticationErrorFailureStageKey</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK34authenticationErrorFailureStageKeySSvp">authenticationErrorFailureStageKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK36authenticationErrorValidationTypeKeySSv">authenticationErrorValidationTypeKey</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK36authenticationErrorValidationTypeKeySSvp">authenticationErrorValidationTypeKey</a>
               </li>
               <li class="nav-group-task">
-                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK45authenticationNotificationCompletionStatusKeySSv">authenticationNotificationCompletionStatusKey</a>
+                <a class="nav-group-task-link" href="../Global Variables.html#/s:15PredixMobileSDK45authenticationNotificationCompletionStatusKeySSvp">authenticationNotificationCompletionStatusKey</a>
               </li>
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Enums.html">Enums</a>
+            <a class="nav-group-name-link" href="../Enums.html">Enumerations</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Enums/AuthenticationStage.html">AuthenticationStage</a>
@@ -337,7 +337,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Structs.html">Structs</a>
+            <a class="nav-group-name-link" href="../Structs.html">Structures</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Structs/AuthenticationManagerConfiguration.html">AuthenticationManagerConfiguration</a>
@@ -375,7 +375,7 @@
             </ul>
           </li>
           <li class="nav-group-name">
-            <a class="nav-group-name-link" href="../Typealiases.html">Typealiases</a>
+            <a class="nav-group-name-link" href="../Typealiases.html">Type Aliases</a>
             <ul class="nav-group-tasks">
               <li class="nav-group-task">
                 <a class="nav-group-task-link" href="../Typealiases.html#/s:15PredixMobileSDK33AuthenticationCredentialsProvidera">AuthenticationCredentialsProvider</a>
@@ -397,7 +397,7 @@
             <h1>ApplicationDelegateHandlers</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ApplicationDelegateHandlers</span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ApplicationDelegateHandlers</span></code></pre>
 
                 </div>
               </div>
@@ -435,9 +435,9 @@
                         <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationWillResignActive event from a consuming application.</p>
 
 <p>Would be called by the container&rsquo;s AppDelegate, example:</p>
-<pre class="highlight plaintext"><code>func applicationWillResignActive(_ application: UIApplication) {
-   PredixMobilityManager.sharedInstance.applicationDelegates.applicationWillResignActive(application)
-}
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationWillResignActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+   <span class="kt">PredixMobilityManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">applicationDelegates</span><span class="o">.</span><span class="nf">applicationWillResignActive</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -445,7 +445,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationWillResignActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationWillResignActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -487,9 +487,9 @@
                         <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationDidBecomeActive event from a consuming application.</p>
 
 <p>Would be called by the container&rsquo;s AppDelegate, example:</p>
-<pre class="highlight plaintext"><code>func applicationDidBecomeActive(_ application: UIApplication) {
-    PredixMobilityManager.sharedInstance.applicationDelegates.applicationDidBecomeActive(application)
-}
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationDidBecomeActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">PredixMobilityManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">applicationDelegates</span><span class="o">.</span><span class="nf">applicationDidBecomeActive</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -497,7 +497,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationDidBecomeActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationDidBecomeActive</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -539,9 +539,9 @@
                         <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationWillTerminate event from a consuming application.</p>
 
 <p>Would be called by the container&rsquo;s AppDelegate, example:</p>
-<pre class="highlight plaintext"><code>func applicationWillTerminate(_ application: UIApplication) {
-    PredixMobilityManager.sharedInstance.applicationDelegates.applicationWillTerminate(application)
-}
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationWillTerminate</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">PredixMobilityManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">applicationDelegates</span><span class="o">.</span><span class="nf">applicationWillTerminate</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -549,7 +549,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationWillTerminate</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationWillTerminate</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -591,9 +591,9 @@
                         <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationDidEnterBackground event from a consuming application.</p>
 
 <p>Would be called by the container&rsquo;s AppDelegate, example:</p>
-<pre class="highlight plaintext"><code>func applicationDidEnterBackground(_ application: UIApplication) {
-    PredixMobilityManager.sharedInstance.applicationDelegates.applicationDidEnterBackground(application)
-}
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationDidEnterBackground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">PredixMobilityManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">applicationDelegates</span><span class="o">.</span><span class="nf">applicationDidEnterBackground</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -601,7 +601,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationDidEnterBackground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationDidEnterBackground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -643,9 +643,9 @@
                         <p>When PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is false, this method can be used to inform the SDK of the applicationWillEnterForeground event from a consuming application.</p>
 
 <p>Would be called by the container&rsquo;s AppDelegate, example:</p>
-<pre class="highlight plaintext"><code>func applicationWillEnterForeground(_ application: UIApplication) {
-    PredixMobilityManager.sharedInstance.applicationDelegates.applicationWillEnterForeground(application)
-}
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">applicationWillEnterForeground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">PredixMobilityManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="n">applicationDelegates</span><span class="o">.</span><span class="nf">applicationWillEnterForeground</span><span class="p">(</span><span class="n">application</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -653,7 +653,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationWillEnterForeground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">applicationWillEnterForeground</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -706,9 +706,9 @@
                         <p>Allows the SDK to handle local iOS notifications, informing the running webapp when they occur.</p>
 
 <p>Should be called by the container&rsquo;s AppDelegate, example:</p>
-<pre class="highlight plaintext"><code>func application(_ application: UIApplication, didReceive notification: UILocalNotification) {
-    PredixMobilityManager.sharedInstance.application(application, didReceiveLocalNotification: notification)
-}
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceive</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UILocalNotification</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">PredixMobilityManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">application</span><span class="p">(</span><span class="n">application</span><span class="p">,</span> <span class="nv">didReceiveLocalNotification</span><span class="p">:</span> <span class="n">notification</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -716,7 +716,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceiveLocalNotification</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UILocalNotification</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceiveLocalNotification</span> <span class="nv">notification</span><span class="p">:</span> <span class="kt">UILocalNotification</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -781,9 +781,9 @@
                         <p>Allows the SDK to handle remote push notifications, informing the running webapp when they occur.</p>
 
 <p>Should be called by the container&rsquo;s AppDelegate, example:</p>
-<pre class="highlight plaintext"><code>func application(_ application: UIApplication, didReceiveRemoteNotification userInfo: [AnyHashable: Any]) {
-    PredixMobilityManager.sharedInstance.application(application, didReceiveRemoteNotification: userInfo)
-}
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceiveRemoteNotification</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="p">{</span>
+    <span class="kt">PredixMobilityManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">application</span><span class="p">(</span><span class="n">application</span><span class="p">,</span> <span class="nv">didReceiveRemoteNotification</span><span class="p">:</span> <span class="n">userInfo</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -791,7 +791,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceiveRemoteNotification</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didReceiveRemoteNotification</span> <span class="nv">userInfo</span><span class="p">:</span> <span class="p">[</span><span class="kt">AnyHashable</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span></code></pre>
 
                         </div>
                       </div>
@@ -847,9 +847,9 @@
 <p>Registration information will be written to a Database document where it can be processed by the server to register the device for remote notifications.</p>
 
 <p>Should be called by the container&rsquo;s AppDelegate, example:</p>
-<pre class="highlight plaintext"><code>func application(_ application: UIApplication, didRegisterForRemoteNotificationsWithDeviceToken deviceToken: Data) {
-    PredixMobilityManager.sharedInstance.application(application, didRegisterForRemoteNotificationsWithDeviceToken: deviceToken)
-}
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didRegisterForRemoteNotificationsWithDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kt">PredixMobilityManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">application</span><span class="p">(</span><span class="n">application</span><span class="p">,</span> <span class="nv">didRegisterForRemoteNotificationsWithDeviceToken</span><span class="p">:</span> <span class="n">deviceToken</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -857,7 +857,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didRegisterForRemoteNotificationsWithDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didRegisterForRemoteNotificationsWithDeviceToken</span> <span class="nv">deviceToken</span><span class="p">:</span> <span class="kt">Data</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -911,9 +911,9 @@
                         <p>Allows the SDK to handle failures in obtaining a remote push notification device token.</p>
 
 <p>Should be called by the container&rsquo;s AppDelegate, example:</p>
-<pre class="highlight plaintext"><code>func application(_ application: UIApplication, didFailToRegisterForRemoteNotificationsWithError error: Error) {
-   PredixMobilityManager.sharedInstance.application(application, didFailToRegisterForRemoteNotificationsWithError: error as NSError)
-}
+<pre class="highlight swift"><code><span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFailToRegisterForRemoteNotificationsWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span> <span class="p">{</span>
+   <span class="kt">PredixMobilityManager</span><span class="o">.</span><span class="n">sharedInstance</span><span class="o">.</span><span class="nf">application</span><span class="p">(</span><span class="n">application</span><span class="p">,</span> <span class="nv">didFailToRegisterForRemoteNotificationsWithError</span><span class="p">:</span> <span class="n">error</span> <span class="k">as</span> <span class="kt">NSError</span><span class="p">)</span>
+<span class="p">}</span>
 </code></pre>
 
                       </div>
@@ -921,7 +921,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFailToRegisterForRemoteNotificationsWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">func</span> <span class="nf">application</span><span class="p">(</span><span class="n">_</span> <span class="nv">application</span><span class="p">:</span> <span class="kt">UIApplication</span><span class="p">,</span> <span class="n">didFailToRegisterForRemoteNotificationsWithError</span> <span class="nv">error</span><span class="p">:</span> <span class="kt">Error</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -967,8 +967,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2017 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2017-11-01)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.8.3</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-22)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
