@@ -46,6 +46,7 @@ The following examples show different ways you can use the Predix SDK for Hybrid
 3. iOS Client Services
   * Basic native iOS service example - [MobileExample-iOSService-Sample](https://github.com/PredixDev/MobileExample-iOSService-Sample)
   * Retrieve user's current location in iOS via a service example [MobileExample-iOSService-SingleLocation ](https://github.com/PredixDev/MobileExample-iOSService-SingleLocation)
+  * Continuously receive updates to the user's location in iOS -- demonstrates using an iOS service and the notify service  - [MobileExample-iOSService-ContinuousLocation](https://github.com/PredixDev/MobileExample-iOSService-ContinuousLocation) 
   * Barcode scanner implementation for iOS via native service - [MobileExample-iOSService-Barcode-Scanner : ](https://github.com/PredixDev/MobileExample-iOSService-Barcode-Scanner)
   * Camera service implementation for iOS via native service - [MobileExample-iOSService-Camera : ](https://github.com/PredixDev/MobileExample-iOSService-Camera)
 
