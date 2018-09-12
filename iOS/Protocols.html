@@ -14,7 +14,6 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Protocols" class="dashAnchor"></a>
 
     <a title="Protocols  Reference"></a>
 
@@ -407,9 +406,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK15QueryParametersP"></a>
-                    <a name="//apple_ref/swift/Protocol/QueryParameters" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK15QueryParametersP">QueryParameters</a>
+                    <a name="/c:@M@PredixMobileSDK@objc(pl)PredixAppWindowProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/PredixAppWindowProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(pl)PredixAppWindowProtocol">PredixAppWindowProtocol</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -417,15 +416,121 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Protocol for common Query parameters</p>
+                        <p>Primary interface for the PredixMobileSDK to communicate with the UI.</p>
 
-                        <a href="Protocols/QueryParameters.html" class="slightly-smaller">See more</a>
+<p>Used to display the main UI, and the Authentication UI</p>
+
+<p>Informs the UI when to display a native UI waiting component (spinner or progress bar)</p>
+
+<p>Provides communication channel for notifications (script execution)</p>
+
+                        <a href="Protocols/PredixAppWindowProtocol.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">QueryParameters</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PredixAppWindowProtocol</span> <span class="p">:</span> <span class="kd">class</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK42HybridOfflineAuthenticationHandlerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/HybridOfflineAuthenticationHandlerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK42HybridOfflineAuthenticationHandlerDelegateP">HybridOfflineAuthenticationHandlerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Supports using hybrid webapps for offline password management where TouchId is not available.</p>
+
+                        <a href="Protocols/HybridOfflineAuthenticationHandlerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HybridOfflineAuthenticationHandlerDelegate</span><span class="p">:</span> <span class="kd">class</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK20AuthorizationHandlerP"></a>
+                    <a name="//apple_ref/swift/Protocol/AuthorizationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK20AuthorizationHandlerP">AuthorizationHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol for AuthorizationHandlers.</p>
+
+<p>Authorization handlers provide specific authorization (post-authentication) capabilities for the <code><a href="Classes/AuthenticationManager.html">AuthenticationManager</a></code></p>
+
+<p>Classes that implement this protocol handle authorization, by exchanging authentication tokens for authorized user information.</p>
+
+                        <a href="Protocols/AuthorizationHandler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AuthorizationHandler</span> <span class="p">:</span> <span class="kd">class</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK14LogTransmitterP"></a>
+                    <a name="//apple_ref/swift/Protocol/LogTransmitter" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK14LogTransmitterP">LogTransmitter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Defines a basic interface that allows for control of where logs get transmitted to</p>
+
+                        <a href="Protocols/LogTransmitter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LogTransmitter</span></code></pre>
 
                         </div>
                       </div>
@@ -485,7 +590,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CommandRecord</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CommandContents.html">CommandContents</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">CommandRecord</span><span class="p">:</span> <span class="kt"><a href="Protocols/CommandContents.html">CommandContents</a></span></code></pre>
 
                         </div>
                       </div>
@@ -499,9 +604,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK14LogTransmitterP"></a>
-                    <a name="//apple_ref/swift/Protocol/LogTransmitter" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK14LogTransmitterP">LogTransmitter</a>
+                    <a name="/c:@M@PredixMobileSDK@objc(pl)ServiceProtocol"></a>
+                    <a name="//apple_ref/swift/Protocol/ServiceProtocol" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(pl)ServiceProtocol">ServiceProtocol</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -509,15 +614,22 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Defines a basic interface that allows for control of where logs get transmitted to</p>
+                        <p>Protocol all services must implement to be considered a <q>service</q></p>
+<div class="aside aside-important">
+    <p class="aside-title">Important</p>
+    You will notice all these methods are staticly defined. Services are expected to be completely static classes. This is done to emphasize and promote the stateless nature of service calls. Services should be stateless, reentrant, and thread-safe. 
 
-                        <a href="Protocols/LogTransmitter.html" class="slightly-smaller">See more</a>
+</div>
+
+<p><em>There are no guarentees for how, when, on what thread, or how often any service is called.</em></p>
+
+                        <a href="Protocols/ServiceProtocol.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LogTransmitter</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ServiceProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -549,8 +661,42 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LoggerProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">LoggerProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK27NotificationManagerDelegateP"></a>
+                    <a name="//apple_ref/swift/Protocol/NotificationManagerDelegate" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK27NotificationManagerDelegateP">NotificationManagerDelegate</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Allow a container application (iOS native) to make decision and extensions to notifications that will be sent to a web client (Hybrid).</p>
+
+<p>An example of this would be to allow an application to process and filter notifications in a background thread before allowing notification to be sent to the 
+web client running in the webview.</p>
+
+                        <a href="Protocols/NotificationManagerDelegate.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NotificationManagerDelegate</span><span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -584,7 +730,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AuthenticationHandlerUIDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AuthenticationHandlerUIDelegate</span> <span class="p">:</span> <span class="kd">class</span></code></pre>
 
                         </div>
                       </div>
@@ -612,7 +758,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FailableAuthenticationHandlerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">FailableAuthenticationHandlerDelegate</span> <span class="p">:</span> <span class="kd">class</span></code></pre>
 
                         </div>
                       </div>
@@ -640,7 +786,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ProvideCredentialsAuthenticationHandlerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ProvideCredentialsAuthenticationHandlerDelegate</span> <span class="p">:</span> <span class="kd">class</span></code></pre>
 
                         </div>
                       </div>
@@ -682,188 +828,6 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK20AuthorizationHandlerP"></a>
-                    <a name="//apple_ref/swift/Protocol/AuthorizationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK20AuthorizationHandlerP">AuthorizationHandler</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Protocol for AuthorizationHandlers.</p>
-
-<p>Authorization handlers provide specific authorization (post-authentication) capabilities for the <code><a href="Classes/AuthenticationManager.html">AuthenticationManager</a></code></p>
-
-<p>Classes that implement this protocol handle authorization, by exchanging authentication tokens for authorized user information.</p>
-
-                        <a href="Protocols/AuthorizationHandler.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">AuthorizationHandler</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK42HybridOfflineAuthenticationHandlerDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/HybridOfflineAuthenticationHandlerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK42HybridOfflineAuthenticationHandlerDelegateP">HybridOfflineAuthenticationHandlerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Supports using hybrid webapps for offline password management where TouchId is not available.</p>
-
-                        <a href="Protocols/HybridOfflineAuthenticationHandlerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">HybridOfflineAuthenticationHandlerDelegate</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK27NotificationManagerDelegateP"></a>
-                    <a name="//apple_ref/swift/Protocol/NotificationManagerDelegate" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK27NotificationManagerDelegateP">NotificationManagerDelegate</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Allow a container application (iOS native) to make decision and extensions to notifications that will be sent to a web client (Hybrid).</p>
-
-<p>An example of this would be to allow an application to process and filter notifications in a background thread before allowing notification to be sent to the 
-web client running in the webview.</p>
-
-                        <a href="Protocols/NotificationManagerDelegate.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">NotificationManagerDelegate</span> <span class="p">:</span> <span class="kt">NSObjectProtocol</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PredixMobileSDK@objc(pl)PredixAppWindowProtocol"></a>
-                    <a name="//apple_ref/swift/Protocol/PredixAppWindowProtocol" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(pl)PredixAppWindowProtocol">PredixAppWindowProtocol</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Primary interface for the PredixMobileSDK to communicate with the UI.</p>
-
-<p>Used to display the main UI, and the Authentication UI</p>
-
-<p>Informs the UI when to display a native UI waiting component (spinner or progress bar)</p>
-
-<p>Provides communication channel for notifications (script execution)</p>
-
-                        <a href="Protocols/PredixAppWindowProtocol.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">PredixAppWindowProtocol</span> <span class="p">:</span> <span class="kt">AnyObject</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PredixMobileSDK@objc(pl)ServiceProtocol"></a>
-                    <a name="//apple_ref/swift/Protocol/ServiceProtocol" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(pl)ServiceProtocol">ServiceProtocol</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Protocol all services must implement to be considered a <q>service</q></p>
-<div class="aside aside-important">
-    <p class="aside-title">Important</p>
-    You will notice all these methods are staticly defined. Services are expected to be completely static classes. This is done to emphasize and promote the stateless nature of service calls. Services should be stateless, reentrant, and thread-safe. 
-
-</div>
-
-<p><em>There are no guarentees for how, when, on what thread, or how often any service is called.</em></p>
-
-                        <a href="Protocols/ServiceProtocol.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ServiceProtocol</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
                     <a name="/c:@M@PredixMobileSDK@objc(pl)ServiceRouterProtocol"></a>
                     <a name="//apple_ref/swift/Protocol/ServiceRouterProtocol" class="dashAnchor"></a>
                     <a class="token" href="#/c:@M@PredixMobileSDK@objc(pl)ServiceRouterProtocol">ServiceRouterProtocol</a>
@@ -887,8 +851,39 @@ web client running in the webview.</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ServiceRouterProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">ServiceRouterProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK15QueryParametersP"></a>
+                    <a name="//apple_ref/swift/Protocol/QueryParameters" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK15QueryParametersP">QueryParameters</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Protocol for common Query parameters</p>
+
+                        <a href="Protocols/QueryParameters.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">protocol</span> <span class="kt">QueryParameters</span></code></pre>
 
                         </div>
                       </div>
@@ -903,8 +898,8 @@ web client running in the webview.</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-09-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

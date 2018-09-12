@@ -14,7 +14,6 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Structures" class="dashAnchor"></a>
 
     <a title="Structures  Reference"></a>
 
@@ -407,9 +406,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK14QueryByKeyListV"></a>
-                    <a name="//apple_ref/swift/Struct/QueryByKeyList" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK14QueryByKeyListV">QueryByKeyList</a>
+                    <a name="/s:15PredixMobileSDK4UserV"></a>
+                    <a name="//apple_ref/swift/Struct/User" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK4UserV">User</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -417,27 +416,31 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Query parameter structure to use when querying a known list of keys.</p>
+                        <p>Represents a User</p>
 
-                        <a href="Structs/QueryByKeyList.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/User.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyList</span> <span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">User</span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK15QueryByKeyRangeV"></a>
-                    <a name="//apple_ref/swift/Struct/QueryByKeyRange" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK15QueryByKeyRangeV">QueryByKeyRange</a>
+                    <a name="/s:15PredixMobileSDK14ViewDefinitionV"></a>
+                    <a name="//apple_ref/swift/Struct/ViewDefinition" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK14ViewDefinitionV">ViewDefinition</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -445,15 +448,144 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Query parameter structure to use when querying a range of keys.</p>
+                        <p>Structure used in PredixMobilityConfiguration to define a database View.
+ See dataViewDefinitions and appendDataViewDefinition</p>
 
-                        <a href="Structs/QueryByKeyRange.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/ViewDefinition.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyRange</span> <span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ViewDefinition</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK18ReachabilityStatusV"></a>
+                    <a name="//apple_ref/swift/Struct/ReachabilityStatus" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK18ReachabilityStatusV">ReachabilityStatus</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>OptionSet indicating endpoint connectivity statuses</p>
+
+                        <a href="Structs/ReachabilityStatus.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReachabilityStatus</span><span class="p">:</span> <span class="kt">OptionSet</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK0aB17ServerInformationV"></a>
+                    <a name="//apple_ref/swift/Struct/PredixMobileServerInformation" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK0aB17ServerInformationV">PredixMobileServerInformation</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Model for Predix Mobile server information as returned by the <code><a href="Classes/PredixMobileServerInformationFetcher.html">PredixMobileServerInformationFetcher</a></code></p>
+
+                        <a href="Structs/PredixMobileServerInformation.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredixMobileServerInformation</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK34AuthenticationManagerConfigurationV"></a>
+                    <a name="//apple_ref/swift/Struct/AuthenticationManagerConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK34AuthenticationManagerConfigurationV">AuthenticationManagerConfiguration</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Configuration for Authentication</p>
+
+                        <a href="Structs/AuthenticationManagerConfiguration.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AuthenticationManagerConfiguration</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK22ShowSeriousErrorHelperV"></a>
+                    <a name="//apple_ref/swift/Struct/ShowSeriousErrorHelper" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK22ShowSeriousErrorHelperV">ShowSeriousErrorHelper</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Helper to show the Serious Error UI displayed when the SDK encounters a error from which it cannot recover.</p>
+
+                        <a href="Structs/ShowSeriousErrorHelper.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ShowSeriousErrorHelper</span></code></pre>
 
                         </div>
                       </div>
@@ -527,9 +659,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK4UserV"></a>
-                    <a name="//apple_ref/swift/Struct/User" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK4UserV">User</a>
+                    <a name="/s:15PredixMobileSDK14QueryByKeyListV"></a>
+                    <a name="//apple_ref/swift/Struct/QueryByKeyList" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK14QueryByKeyListV">QueryByKeyList</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -537,31 +669,27 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Represents a User</p>
+                        <p>Query parameter structure to use when querying a known list of keys.</p>
 
-                        <a href="Structs/User.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/QueryByKeyList.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">User</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyList</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK34AuthenticationManagerConfigurationV"></a>
-                    <a name="//apple_ref/swift/Struct/AuthenticationManagerConfiguration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK34AuthenticationManagerConfigurationV">AuthenticationManagerConfiguration</a>
+                    <a name="/s:15PredixMobileSDK15QueryByKeyRangeV"></a>
+                    <a name="//apple_ref/swift/Struct/QueryByKeyRange" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK15QueryByKeyRangeV">QueryByKeyRange</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -569,47 +697,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Configuration for Authentication</p>
+                        <p>Query parameter structure to use when querying a range of keys.</p>
 
-                        <a href="Structs/AuthenticationManagerConfiguration.html" class="slightly-smaller">See more</a>
+                        <a href="Structs/QueryByKeyRange.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">AuthenticationManagerConfiguration</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK0aB17ServerInformationV"></a>
-                    <a name="//apple_ref/swift/Struct/PredixMobileServerInformation" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK0aB17ServerInformationV">PredixMobileServerInformation</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Model for Predix Mobile server information as returned by the <code><a href="Classes/PredixMobileServerInformationFetcher.html">PredixMobileServerInformationFetcher</a></code></p>
-
-                        <a href="Structs/PredixMobileServerInformation.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">PredixMobileServerInformation</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">QueryByKeyRange</span><span class="p">:</span> <span class="kt"><a href="Protocols/QueryParameters.html">QueryParameters</a></span></code></pre>
 
                         </div>
                       </div>
@@ -650,111 +746,14 @@
                 </li>
               </ul>
             </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK14ViewDefinitionV"></a>
-                    <a name="//apple_ref/swift/Struct/ViewDefinition" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK14ViewDefinitionV">ViewDefinition</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Structure used in PredixMobilityConfiguration to define a database View.
- See dataViewDefinitions and appendDataViewDefinition</p>
-
-                        <a href="Structs/ViewDefinition.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ViewDefinition</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK22ShowSeriousErrorHelperV"></a>
-                    <a name="//apple_ref/swift/Struct/ShowSeriousErrorHelper" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK22ShowSeriousErrorHelperV">ShowSeriousErrorHelper</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Helper to show the Serious Error UI displayed when the SDK encounters a error from which it cannot recover.</p>
-
-                        <a href="Structs/ShowSeriousErrorHelper.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ShowSeriousErrorHelper</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK18ReachabilityStatusV"></a>
-                    <a name="//apple_ref/swift/Struct/ReachabilityStatus" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK18ReachabilityStatusV">ReachabilityStatus</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>OptionSet indicating endpoint connectivity statuses</p>
-
-                        <a href="Structs/ReachabilityStatus.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">struct</span> <span class="kt">ReachabilityStatus</span> <span class="p">:</span> <span class="kt">OptionSet</span><span class="p">,</span> <span class="kt">CustomStringConvertible</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
           </div>
         </section>
 
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-09-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

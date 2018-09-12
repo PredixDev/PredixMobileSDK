@@ -395,13 +395,7 @@
         <section class="section">
           <div class="section-content">
             <h1>Name</h1>
-              <div class="declaration">
-                <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">typealias</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span> <span class="o">=</span> <span class="kt">NSNotification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
-
-                </div>
-              </div>
-            <p>Notification Name extension, adding Authentication notifications</p>
+            <p>Notification Name extension, adding PredixMobileSDK notifications</p>
 
           </div>
         </section>
@@ -413,69 +407,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE0cD22AuthenticationCompleteADvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/PredixMobileAuthenticationComplete" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE0cD22AuthenticationCompleteADvpZ">PredixMobileAuthenticationComplete</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Posted when the authentication process completes.</p>
-
-<p>userInfo will contain status of authentication under the key <code>AuthenticationNotificationCompletionStatusKey</code></p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">PredixMobileAuthenticationComplete</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE0cD26AuthenticationHasLoggedOutADvpZ"></a>
-                    <a name="//apple_ref/swift/Variable/PredixMobileAuthenticationHasLoggedOut" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE0cD26AuthenticationHasLoggedOutADvpZ">PredixMobileAuthenticationHasLoggedOut</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Posted when the logout process completes.</p>
-
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">PredixMobileAuthenticationHasLoggedOut</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE21pmReachabilityWatcherADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE21pmReachabilityWatcherABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmReachabilityWatcher" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE21pmReachabilityWatcherADvpZ">pmReachabilityWatcher</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE21pmReachabilityWatcherABvpZ">pmReachabilityWatcher</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -490,7 +424,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmReachabilityWatcher</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmReachabilityWatcher</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReachabilityWatcherNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -500,9 +434,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE28pmInitialReplicationCompleteADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE28pmInitialReplicationCompleteABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmInitialReplicationComplete" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE28pmInitialReplicationCompleteADvpZ">pmInitialReplicationComplete</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE28pmInitialReplicationCompleteABvpZ">pmInitialReplicationComplete</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -517,7 +451,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmInitialReplicationComplete</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmInitialReplicationComplete</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"InitialReplicationCompleteNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -527,9 +461,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE18pmDatabaseDownloadADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE18pmDatabaseDownloadABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmDatabaseDownload" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE18pmDatabaseDownloadADvpZ">pmDatabaseDownload</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE18pmDatabaseDownloadABvpZ">pmDatabaseDownload</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -544,7 +478,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmDatabaseDownload</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmDatabaseDownload</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"DatabaseDownloadNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -554,9 +488,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE9pmUIReadyADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE9pmUIReadyABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmUIReady" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE9pmUIReadyADvpZ">pmUIReady</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE9pmUIReadyABvpZ">pmUIReady</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -571,7 +505,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmUIReady</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmUIReady</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"UIReadyNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -581,9 +515,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE25pmPullReplicationCompleteADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE25pmPullReplicationCompleteABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmPullReplicationComplete" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE25pmPullReplicationCompleteADvpZ">pmPullReplicationComplete</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE25pmPullReplicationCompleteABvpZ">pmPullReplicationComplete</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -598,7 +532,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmPullReplicationComplete</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmPullReplicationComplete</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"pullReplicationCompleteNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -608,9 +542,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE25pmPushReplicationCompleteADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE25pmPushReplicationCompleteABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmPushReplicationComplete" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE25pmPushReplicationCompleteADvpZ">pmPushReplicationComplete</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE25pmPushReplicationCompleteABvpZ">pmPushReplicationComplete</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -625,7 +559,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmPushReplicationComplete</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmPushReplicationComplete</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"pushReplicationCompleteNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -635,9 +569,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE16pmServiceInvokedADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE16pmServiceInvokedABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmServiceInvoked" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE16pmServiceInvokedADvpZ">pmServiceInvoked</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE16pmServiceInvokedABvpZ">pmServiceInvoked</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -663,7 +597,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmServiceInvoked</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmServiceInvoked</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ServiceInvokedNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -673,9 +607,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE19pmReplicationPausedADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE19pmReplicationPausedABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmReplicationPaused" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE19pmReplicationPausedADvpZ">pmReplicationPaused</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE19pmReplicationPausedABvpZ">pmReplicationPaused</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -692,7 +626,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmReplicationPaused</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmReplicationPaused</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReplicationPausedNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -702,9 +636,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE20pmReplicationResumedADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE20pmReplicationResumedABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmReplicationResumed" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE20pmReplicationResumedADvpZ">pmReplicationResumed</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE20pmReplicationResumedABvpZ">pmReplicationResumed</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -722,7 +656,7 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmReplicationResumed</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmReplicationResumed</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"ReplicationResumedNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -732,9 +666,9 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE19pmAPIRequestHandledADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE19pmAPIRequestHandledABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmAPIRequestHandled" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE19pmAPIRequestHandledADvpZ">pmAPIRequestHandled</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE19pmAPIRequestHandledABvpZ">pmAPIRequestHandled</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -762,7 +696,7 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmAPIRequestHandled</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmAPIRequestHandled</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"PMAPIRequestHandledNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -772,9 +706,9 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE17pmDatabaseChangedADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE17pmDatabaseChangedABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmDatabaseChanged" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE17pmDatabaseChangedADvpZ">pmDatabaseChanged</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE17pmDatabaseChangedABvpZ">pmDatabaseChanged</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -799,7 +733,7 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmDatabaseChanged</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmDatabaseChanged</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"DatabaseChangedNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -809,9 +743,9 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:So14NSNotificationC4NameV15PredixMobileSDKE23pmServerEndpointChangedADvpZ"></a>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE23pmServerEndpointChangedABvpZ"></a>
                     <a name="//apple_ref/swift/Variable/pmServerEndpointChanged" class="dashAnchor"></a>
-                    <a class="token" href="#/s:So14NSNotificationC4NameV15PredixMobileSDKE23pmServerEndpointChangedADvpZ">pmServerEndpointChanged</a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE23pmServerEndpointChangedABvpZ">pmServerEndpointChanged</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -828,7 +762,7 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmServerEndpointChanged</span><span class="p">:</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">pmServerEndpointChanged</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"PMServerEndpointChanged"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -858,7 +792,67 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">description</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE0cD22AuthenticationCompleteABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/PredixMobileAuthenticationComplete" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE0cD22AuthenticationCompleteABvpZ">PredixMobileAuthenticationComplete</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted when the authentication process completes.</p>
+
+<p>userInfo will contain status of authentication under the key <code>AuthenticationNotificationCompletionStatusKey</code></p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">PredixMobileAuthenticationComplete</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"PredixMobileAuthenticationCompleteNotification"</span><span class="p">)</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:So18NSNotificationNamea15PredixMobileSDKE0cD26AuthenticationHasLoggedOutABvpZ"></a>
+                    <a name="//apple_ref/swift/Variable/PredixMobileAuthenticationHasLoggedOut" class="dashAnchor"></a>
+                    <a class="token" href="#/s:So18NSNotificationNamea15PredixMobileSDKE0cD26AuthenticationHasLoggedOutABvpZ">PredixMobileAuthenticationHasLoggedOut</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Posted when the logout process completes.</p>
+
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">static</span> <span class="k">let</span> <span class="nv">PredixMobileAuthenticationHasLoggedOut</span> <span class="o">=</span> <span class="kt">Notification</span><span class="o">.</span><span class="kt">Name</span><span class="p">(</span><span class="s">"PredixMobileAuthenticationLogoutNotification"</span><span class="p">)</span></code></pre>
 
                         </div>
                       </div>
@@ -873,8 +867,8 @@ or because repeated failures paused replication, and PredixMobileConfiguration.r
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-09-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

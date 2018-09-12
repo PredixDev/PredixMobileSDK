@@ -14,7 +14,6 @@
   </head>
   <body>
 
-    <a name="//apple_ref/swift/Section/Classes" class="dashAnchor"></a>
 
     <a title="Classes  Reference"></a>
 
@@ -407,9 +406,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PredixMobileSDK@objc(cs)FullTextSearch"></a>
-                    <a name="//apple_ref/swift/Class/FullTextSearch" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)FullTextSearch">FullTextSearch</a>
+                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/PredixMobileAuthorizationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC">PredixMobileAuthorizationHandler</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -417,28 +416,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Used to create full text search database views.</p>
+                        <p>AuthorizationHandler to perform authorization against the PredixMobile authorization service.</p>
 
-<ul>
-<li><p>example:</p>
-<pre class="highlight swift"><code><span class="kt">PredixMobilityConfiguration</span><span class="o">.</span><span class="nf">appendDataViewDefinition</span><span class="p">(</span><span class="s">"views/searchtext"</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="s">"1"</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="nv">properties</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">emit</span><span class="p">:</span> <span class="p">(</span><span class="kt">Any</span><span class="p">,</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
+<p>Given a valid authenticated user, this class interacts with the Predix Mobile session service to initialize a session, and return user information.</p>
 
-    <span class="k">if</span> <span class="k">let</span> <span class="nv">body</span> <span class="o">=</span> <span class="n">properties</span><span class="p">[</span><span class="s">"body"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">String</span>
-    <span class="p">{</span>
-        <span class="nf">emit</span><span class="p">(</span><span class="kt">FullTextSearch</span><span class="o">.</span><span class="nf">createKey</span><span class="p">(</span><span class="n">body</span><span class="p">),</span> <span class="kc">nil</span><span class="p">)</span>
-    <span class="p">}</span>
-<span class="p">}</span>
-</code></pre></li>
-</ul>
-
-                        <a href="Classes/FullTextSearch.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/PredixMobileAuthorizationHandler.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">open</span> <span class="kd">class</span> <span class="kt">FullTextSearch</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">PredixMobileAuthorizationHandler</span><span class="p">:</span> <span class="kt"><a href="Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -452,9 +440,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK7CommandC"></a>
-                    <a name="//apple_ref/swift/Class/Command" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK7CommandC">Command</a>
+                    <a name="/s:15PredixMobileSDK31UAARefreshAuthenticationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/UAARefreshAuthenticationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK31UAARefreshAuthenticationHandlerC">UAARefreshAuthenticationHandler</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -462,313 +450,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Command class encapsulating a minimum Command</p>
+                        <p><code><a href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></code> subclass that handles standard predix.io UAA service refresh token authentication</p>
 
-                        <a href="Classes/Command.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/UAARefreshAuthenticationHandler.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Command</span> <span class="p">:</span> <span class="kt"><a href="Protocols/CommandContents.html">CommandContents</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK15CommandResponseC"></a>
-                    <a name="//apple_ref/swift/Class/CommandResponse" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK15CommandResponseC">CommandResponse</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Command subclass that contains additional properties after the Command has been committed.</p>
-
-                        <a href="Classes/CommandResponse.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CommandResponse</span> <span class="p">:</span> <span class="kt"><a href="Classes/Command.html">Command</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/CommandRecord.html">CommandRecord</a></span><span class="p">,</span> <span class="kt">CommandDocumentData</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK21KeychainCommandResultC"></a>
-                    <a name="//apple_ref/swift/Class/KeychainCommandResult" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK21KeychainCommandResultC">KeychainCommandResult</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Object to contain the result of a keychain operation.</p>
-
-                        <a href="Classes/KeychainCommandResult.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeychainCommandResult</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK25ReadKeychainCommandResultC"></a>
-                    <a name="//apple_ref/swift/Class/ReadKeychainCommandResult" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK25ReadKeychainCommandResultC">ReadKeychainCommandResult</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Object to contain the result of a keychain read operation.</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="Classes/KeychainCommandResult.html">KeychainCommandResult</a></code>
-
-</div>
-
-                        <a href="Classes/ReadKeychainCommandResult.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReadKeychainCommandResult</span> <span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommandResult.html">KeychainCommandResult</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK8KeychainC"></a>
-                    <a name="//apple_ref/swift/Class/Keychain" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK8KeychainC">Keychain</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Keychain access class used for storing, retrieving and deleting values from the Apple keychain.</p>
-
-                        <a href="Classes/Keychain.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Keychain</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK19ReadKeychainCommandC"></a>
-                    <a name="//apple_ref/swift/Class/ReadKeychainCommand" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK19ReadKeychainCommandC">ReadKeychainCommand</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>KeychainCommand object for reading values from the keychain</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="Classes/KeychainCommand.html">KeychainCommand</a></code>
-
-</div>
-
-                        <a href="Classes/ReadKeychainCommand.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReadKeychainCommand</span> <span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommand.html">KeychainCommand</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK20WriteKeychainCommandC"></a>
-                    <a name="//apple_ref/swift/Class/WriteKeychainCommand" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK20WriteKeychainCommandC">WriteKeychainCommand</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>KeychainCommand object for writing values to the keychain</p>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <code><a href="Classes/KeychainCommand.html">KeychainCommand</a></code>
-
-</div>
-
-                        <a href="Classes/WriteKeychainCommand.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">WriteKeychainCommand</span> <span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommand.html">KeychainCommand</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK15KeychainCommandC"></a>
-                    <a name="//apple_ref/swift/Class/KeychainCommand" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK15KeychainCommandC">KeychainCommand</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>KeychainCommand base class for reading and writing values to/from the keychain</p>
-
-                        <a href="Classes/KeychainCommand.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeychainCommand</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/c:@M@PredixMobileSDK@objc(cs)Logger"></a>
-                    <a name="//apple_ref/swift/Class/Logger" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)Logger">Logger</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Provides Logging support for the SDK. </p>
-<li><p>On iOS 9 and below and macOS El Capitan and below this class will use the Apple NSLog-style logs.</p></li>
-<li><p>When running in iOS 10+ and macOS Sierra+ this class will use the Apple Unified Logging API</p></li>
-<div class="aside aside-see-also">
-    <p class="aside-title">See also</p>
-    <p>SeeAlso:</p>
-
-<ul>
-<li><a href="https://developer.apple.com/reference/os/1891852-logging">Logging - os | Apple Developer Documentation</a></li>
-<li><a href="https://developer.apple.com/videos/play/wwdc2016/721/">WWDC 2016: Unified Logging and Activity Tracing</a></li>
-</ul>
-
-</div>
-
-                        <a href="Classes/Logger.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">open</span> <span class="kd">class</span> <span class="kt">Logger</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/LoggerProtocol.html">LoggerProtocol</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK27ApplicationDelegateHandlersC"></a>
-                    <a name="//apple_ref/swift/Class/ApplicationDelegateHandlers" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK27ApplicationDelegateHandlersC">ApplicationDelegateHandlers</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>Handles methods for application lifecycle events, local and remote notifications.</p>
-
-<p>If PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is true, the SDK will automatically handle application lifecycle events, however local and remote notification event method calls will need to be passed to the SDK from the container app.</p>
-
-                        <a href="Classes/ApplicationDelegateHandlers.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ApplicationDelegateHandlers</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAARefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -854,9 +544,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK21AuthenticationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/AuthenticationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK21AuthenticationHandlerC">AuthenticationHandler</a>
+                    <a name="/c:@M@PredixMobileSDK@objc(cs)WaitStateReturn"></a>
+                    <a name="//apple_ref/swift/Class/WaitStateReturn" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)WaitStateReturn">WaitStateReturn</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -864,17 +554,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Base class for all AuthenticationHandlers.</p>
+                        <p>Wrapper object used for returning the wait state of the UI. Encapsulates both the WaitState enumeration, and the optional string message.</p>
 
-<p>Provides common functions that all AuthenticationHandlers share.</p>
-
-                        <a href="Classes/AuthenticationHandler.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/WaitStateReturn.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">AuthenticationHandler</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">WaitStateReturn</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -888,9 +576,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK33BrowserBasedAuthenticationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/BrowserBasedAuthenticationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK33BrowserBasedAuthenticationHandlerC">BrowserBasedAuthenticationHandler</a>
+                    <a name="/s:15PredixMobileSDK33ServiceBasedAuthenticationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/ServiceBasedAuthenticationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK33ServiceBasedAuthenticationHandlerC">ServiceBasedAuthenticationHandler</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -898,17 +586,17 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p><code><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code> subclass for handling browser-based based online authentication.</p>
+                        <p><code><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code> subclass for handling service-call based based (non-browser) online authentication.</p>
 
-<p>Handles displaying an authentication web page, intercepting an Oauth2 redirect, and parsing the results.</p>
+<p>Handles making a request to the backend for authentication, and parsing the results.</p>
 
-                        <a href="Classes/BrowserBasedAuthenticationHandler.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/ServiceBasedAuthenticationHandler.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">BrowserBasedAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ServiceBasedAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span><span class="p">,</span> <span class="kt">CallAuthenticationServiceProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -940,7 +628,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HybridOfflineAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/OfflineAuthenticationHandler.html">OfflineAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">HybridOfflineAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OfflineAuthenticationHandler.html">OfflineAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -954,9 +642,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK28OfflineAuthenticationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/OfflineAuthenticationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK28OfflineAuthenticationHandlerC">OfflineAuthenticationHandler</a>
+                    <a name="/s:15PredixMobileSDK0B7MonitorC"></a>
+                    <a name="//apple_ref/swift/Class/MobileMonitor" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK0B7MonitorC">MobileMonitor</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -964,17 +652,24 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Base class for all offline authentication handlers</p>
+                        <p>Allows an application to add monitor data that can be stored and transmitted once a user is online.
+ 
+ The MobileMonitor is a non-intrusive and non-blocking log collector that can be configured to be more or less aggressive with monitoring logs.  all items are processed in a serial queue on a background thread.
+ By default, the monitor will trace database events and report their status with a timestamp for debugging time critical operations.  It will also attempt to detect document conflicts
+ which can be a cause for concern for applications.
+ 
+ Additionally, applications can add their own monitoring and bundle it with the monitor items that are included by default.  This allows applications to dynamically collect logs when needed to help remotely route cause issues
+ without needed to send a new application to the device.
+ 
+ The monitor has been optimized to be non-intrusive to the running application, however users may still experience some lag if the monitor is set to aggressively collect, save and transmit logs.</p>
 
-<p>Processes offline authentication.</p>
-
-                        <a href="Classes/OfflineAuthenticationHandler.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/MobileMonitor.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OfflineAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MobileMonitor</span></code></pre>
 
                         </div>
                       </div>
@@ -988,9 +683,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK27OnlineAuthenticationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/OnlineAuthenticationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK27OnlineAuthenticationHandlerC">OnlineAuthenticationHandler</a>
+                    <a name="/s:15PredixMobileSDK36UAACodeExchangeAuthenticationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/UAACodeExchangeAuthenticationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK36UAACodeExchangeAuthenticationHandlerC">UAACodeExchangeAuthenticationHandler</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -998,17 +693,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Base class for all online authentication handlers</p>
+                        <p>A specialized AuthenticationHandler that works with an associated <code><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></code> to exchange a UAA authorization code for authentication and refresh tokens.</p>
 
-<p>Processes online authentication, and allows for authentication refresh capabilities.</p>
-
-                        <a href="Classes/OnlineAuthenticationHandler.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/UAACodeExchangeAuthenticationHandler.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OnlineAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UAACodeExchangeAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1022,9 +715,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/PredixMobileAuthorizationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC">PredixMobileAuthorizationHandler</a>
+                    <a name="/s:15PredixMobileSDK19ReadKeychainCommandC"></a>
+                    <a name="//apple_ref/swift/Class/ReadKeychainCommand" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK19ReadKeychainCommandC">ReadKeychainCommand</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1032,17 +725,81 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>AuthorizationHandler to perform authorization against the PredixMobile authorization service.</p>
+                        <p>KeychainCommand object for reading values from the keychain</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="Classes/KeychainCommand.html">KeychainCommand</a></code>
 
-<p>Given a valid authenticated user, this class interacts with the Predix Mobile session service to initialize a session, and return user information.</p>
+</div>
 
-                        <a href="Classes/PredixMobileAuthorizationHandler.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/ReadKeychainCommand.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">PredixMobileAuthorizationHandler</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReadKeychainCommand</span><span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommand.html">KeychainCommand</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK20WriteKeychainCommandC"></a>
+                    <a name="//apple_ref/swift/Class/WriteKeychainCommand" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK20WriteKeychainCommandC">WriteKeychainCommand</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>KeychainCommand object for writing values to the keychain</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="Classes/KeychainCommand.html">KeychainCommand</a></code>
+
+</div>
+
+                        <a href="Classes/WriteKeychainCommand.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">WriteKeychainCommand</span><span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommand.html">KeychainCommand</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK15KeychainCommandC"></a>
+                    <a name="//apple_ref/swift/Class/KeychainCommand" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK15KeychainCommandC">KeychainCommand</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>KeychainCommand base class for reading and writing values to/from the keychain</p>
+
+                        <a href="Classes/KeychainCommand.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeychainCommand</span></code></pre>
 
                         </div>
                       </div>
@@ -1056,9 +813,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK0aB24ServerInformationFetcherC"></a>
-                    <a name="//apple_ref/swift/Class/PredixMobileServerInformationFetcher" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK0aB24ServerInformationFetcherC">PredixMobileServerInformationFetcher</a>
+                    <a name="/c:@M@PredixMobileSDK@objc(cs)PredixMobilityConfiguration"></a>
+                    <a name="//apple_ref/swift/Class/PredixMobilityConfiguration" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)PredixMobilityConfiguration">PredixMobilityConfiguration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1066,15 +823,81 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Retrieves <code><a href="Structs/PredixMobileServerInformation.html">PredixMobileServerInformation</a></code> from a given Predix Mobile server endpoint</p>
+                        <p>Static class of elements Predix Mobile SDK consumers can use to adjust to configure aspects of the SDK.</p>
 
-                        <a href="Classes/PredixMobileServerInformationFetcher.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/PredixMobilityConfiguration.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredixMobileServerInformationFetcher</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredixMobilityConfiguration</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK30SFAuthenticationSessionHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/SFAuthenticationSessionHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK30SFAuthenticationSessionHandlerC">SFAuthenticationSessionHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Uses SFAuthenticationSession (available in iOS 11) to handle authentication, then uses <code><a href="Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a></code> to exchange the retrieved authorization code for authentication and refresh tokens.</p>
+
+                        <a href="Classes/SFAuthenticationSessionHandler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">SFAuthenticationSessionHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK21AuthenticationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/AuthenticationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK21AuthenticationHandlerC">AuthenticationHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Base class for all AuthenticationHandlers.</p>
+
+<p>Provides common functions that all AuthenticationHandlers share.</p>
+
+                        <a href="Classes/AuthenticationHandler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">AuthenticationHandler</span></code></pre>
 
                         </div>
                       </div>
@@ -1112,7 +935,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">RefreshAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span><span class="p">,</span> <span class="kt">CallAuthenticationServiceProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">RefreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span><span class="p">,</span> <span class="kt">CallAuthenticationServiceProtocol</span></code></pre>
 
                         </div>
                       </div>
@@ -1126,9 +949,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK30SFAuthenticationSessionHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/SFAuthenticationSessionHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK30SFAuthenticationSessionHandlerC">SFAuthenticationSessionHandler</a>
+                    <a name="/c:@M@PredixMobileSDK@objc(cs)FullTextSearch"></a>
+                    <a name="//apple_ref/swift/Class/FullTextSearch" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)FullTextSearch">FullTextSearch</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1136,212 +959,27 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Uses SFAuthenticationSession (available in iOS 11) to handle authentication, then uses <code><a href="Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a></code> to exchange the retrieved authorization code for authentication and refresh tokens.</p>
+                        <p>Used to create full text search database views.</p>
 
-                        <a href="Classes/SFAuthenticationSessionHandler.html" class="slightly-smaller">See more</a>
+<ul>
+<li><p>example:</p>
+<pre class="highlight swift"><code><span class="kt">PredixMobilityConfiguration</span><span class="o">.</span><span class="nf">appendDataViewDefinition</span><span class="p">(</span><span class="s">"views/searchtext"</span><span class="p">,</span> <span class="nv">version</span><span class="p">:</span> <span class="s">"1"</span><span class="p">)</span> <span class="p">{</span> <span class="p">(</span><span class="nv">properties</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">],</span> <span class="nv">emit</span><span class="p">:</span> <span class="p">(</span><span class="kt">Any</span><span class="p">,</span> <span class="kt">Any</span><span class="p">?)</span> <span class="o">-&gt;</span> <span class="kt">Void</span><span class="p">)</span> <span class="o">-&gt;</span> <span class="kt">Void</span> <span class="k">in</span>
+
+    <span class="k">if</span> <span class="k">let</span> <span class="nv">body</span> <span class="o">=</span> <span class="n">properties</span><span class="p">[</span><span class="s">"body"</span><span class="p">]</span> <span class="k">as?</span> <span class="kt">String</span>
+    <span class="p">{</span>
+        <span class="nf">emit</span><span class="p">(</span><span class="kt">FullTextSearch</span><span class="o">.</span><span class="nf">createKey</span><span class="p">(</span><span class="n">body</span><span class="p">),</span> <span class="kc">nil</span><span class="p">)</span>
+    <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></li>
+</ul>
+
+                        <a href="Classes/FullTextSearch.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@available(iOS 11.0, *)</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">SFAuthenticationSessionHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK33ServiceBasedAuthenticationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/ServiceBasedAuthenticationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK33ServiceBasedAuthenticationHandlerC">ServiceBasedAuthenticationHandler</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code> subclass for handling service-call based based (non-browser) online authentication.</p>
-
-<p>Handles making a request to the backend for authentication, and parsing the results.</p>
-
-                        <a href="Classes/ServiceBasedAuthenticationHandler.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">ServiceBasedAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span><span class="p">,</span> <span class="kt">CallAuthenticationServiceProtocol</span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK23UAAAuthorizationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/UAAAuthorizationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK23UAAAuthorizationHandlerC">UAAAuthorizationHandler</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>AuthorizationHandler to extract authorization data from the UAA oAuth token</p>
-
-                        <a href="Classes/UAAAuthorizationHandler.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAAAuthorizationHandler</span> <span class="p">:</span> <span class="kt"><a href="Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK31UAABrowserAuthenticationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/UAABrowserAuthenticationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK31UAABrowserAuthenticationHandlerC">UAABrowserAuthenticationHandler</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></code> subclass that handles standard predix.io UAA browser-based login page authentication.</p>
-
-<p>Uses the UAA <q>authorization code grant</q> mechanism, which then uses <code><a href="Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a></code> to exchange that authorization code for authentication and refresh tokens.</p>
-
-                        <a href="Classes/UAABrowserAuthenticationHandler.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAABrowserAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK36UAACodeExchangeAuthenticationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/UAACodeExchangeAuthenticationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK36UAACodeExchangeAuthenticationHandlerC">UAACodeExchangeAuthenticationHandler</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p>A specialized AuthenticationHandler that works with an associated <code><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></code> to exchange a UAA authorization code for authentication and refresh tokens.</p>
-
-                        <a href="Classes/UAACodeExchangeAuthenticationHandler.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">UAACodeExchangeAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK31UAARefreshAuthenticationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/UAARefreshAuthenticationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK31UAARefreshAuthenticationHandlerC">UAARefreshAuthenticationHandler</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code><a href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></code> subclass that handles standard predix.io UAA service refresh token authentication</p>
-
-                        <a href="Classes/UAARefreshAuthenticationHandler.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAARefreshAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></span></code></pre>
-
-                        </div>
-                      </div>
-                    </section>
-                  </div>
-                </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
-                <li class="item">
-                  <div>
-                    <code>
-                    <a name="/s:15PredixMobileSDK31UAAServiceAuthenticationHandlerC"></a>
-                    <a name="//apple_ref/swift/Class/UAAServiceAuthenticationHandler" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK31UAAServiceAuthenticationHandlerC">UAAServiceAuthenticationHandler</a>
-                    </code>
-                  </div>
-                  <div class="height-container">
-                    <div class="pointer-container"></div>
-                    <section class="section">
-                      <div class="pointer"></div>
-                      <div class="abstract">
-                        <p><code><a href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a></code> subclass that handles standard predix.io UAA service password grant authentication</p>
-
-                        <a href="Classes/UAAServiceAuthenticationHandler.html" class="slightly-smaller">See more</a>
-                      </div>
-                      <div class="declaration">
-                        <h4>Declaration</h4>
-                        <div class="language">
-                          <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAAServiceAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">FullTextSearch</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1387,9 +1025,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK15DatabaseManagerC"></a>
-                    <a name="//apple_ref/swift/Class/DatabaseManager" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK15DatabaseManagerC">DatabaseManager</a>
+                    <a name="/s:15PredixMobileSDK7CommandC"></a>
+                    <a name="//apple_ref/swift/Class/Command" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK7CommandC">Command</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1397,31 +1035,27 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Database interaction class. Controls setup of replication, access to documents, manipulation of attachments, etc.</p>
+                        <p>Command class encapsulating a minimum Command</p>
 
-                        <a href="Classes/DatabaseManager.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/Command.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DatabaseManager</span> <span class="p">:</span> <span class="kt">DatabaseManagerProtocol</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Command</span><span class="p">:</span> <span class="kt"><a href="Protocols/CommandContents.html">CommandContents</a></span></code></pre>
 
                         </div>
                       </div>
                     </section>
                   </div>
                 </li>
-              </ul>
-            </div>
-            <div class="task-group">
-              <ul class="item-container">
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PredixMobileSDK@objc(cs)PredixMobilityConfiguration"></a>
-                    <a name="//apple_ref/swift/Class/PredixMobilityConfiguration" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)PredixMobilityConfiguration">PredixMobilityConfiguration</a>
+                    <a name="/s:15PredixMobileSDK15CommandResponseC"></a>
+                    <a name="//apple_ref/swift/Class/CommandResponse" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK15CommandResponseC">CommandResponse</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1429,16 +1063,15 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Static class of elements Predix Mobile SDK consumers can use to adjust to configure aspects of the SDK.</p>
+                        <p>Command subclass that contains additional properties after the Command has been committed.</p>
 
-                        <a href="Classes/PredixMobilityConfiguration.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/CommandResponse.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredixMobilityConfiguration</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">CommandResponse</span><span class="p">:</span> <span class="kt"><a href="Classes/Command.html">Command</a></span><span class="p">,</span> <span class="kt"><a href="Protocols/CommandRecord.html">CommandRecord</a></span><span class="p">,</span> <span class="kt">CommandDocumentData</span></code></pre>
 
                         </div>
                       </div>
@@ -1472,8 +1105,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredixMobilityManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredixMobilityManager</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1487,9 +1119,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK0B7MonitorC"></a>
-                    <a name="//apple_ref/swift/Class/MobileMonitor" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK0B7MonitorC">MobileMonitor</a>
+                    <a name="/s:15PredixMobileSDK31UAABrowserAuthenticationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/UAABrowserAuthenticationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK31UAABrowserAuthenticationHandlerC">UAABrowserAuthenticationHandler</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1497,24 +1129,338 @@
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Allows an application to add monitor data that can be stored and transmitted once a user is online.
- 
- The MobileMonitor is a non-intrusive and non-blocking log collector that can be configured to be more or less aggressive with monitoring logs.  all items are processed in a serial queue on a background thread.
- By default, the monitor will trace database events and report their status with a timestamp for debugging time critical operations.  It will also attempt to detect document conflicts
- which can be a cause for concern for applications.
- 
- Additionally, applications can add their own monitoring and bundle it with the monitor items that are included by default.  This allows applications to dynamically collect logs when needed to help remotely route cause issues
- without needed to send a new application to the device.
- 
- The monitor has been optimized to be non-intrusive to the running application, however users may still experience some lag if the monitor is set to aggressively collect, save and transmit logs.</p>
+                        <p><code><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></code> subclass that handles standard predix.io UAA browser-based login page authentication.</p>
 
-                        <a href="Classes/MobileMonitor.html" class="slightly-smaller">See more</a>
+<p>Uses the UAA <q>authorization code grant</q> mechanism, which then uses <code><a href="Classes/UAACodeExchangeAuthenticationHandler.html">UAACodeExchangeAuthenticationHandler</a></code> to exchange that authorization code for authentication and refresh tokens.</p>
+
+                        <a href="Classes/UAABrowserAuthenticationHandler.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">MobileMonitor</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAABrowserAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/BrowserBasedAuthenticationHandler.html">BrowserBasedAuthenticationHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK0aB24ServerInformationFetcherC"></a>
+                    <a name="//apple_ref/swift/Class/PredixMobileServerInformationFetcher" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK0aB24ServerInformationFetcherC">PredixMobileServerInformationFetcher</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Retrieves <code><a href="Structs/PredixMobileServerInformation.html">PredixMobileServerInformation</a></code> from a given Predix Mobile server endpoint</p>
+
+                        <a href="Classes/PredixMobileServerInformationFetcher.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">PredixMobileServerInformationFetcher</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK15DatabaseManagerC"></a>
+                    <a name="//apple_ref/swift/Class/DatabaseManager" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK15DatabaseManagerC">DatabaseManager</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Database interaction class. Controls setup of replication, access to documents, manipulation of attachments, etc.</p>
+
+                        <a href="Classes/DatabaseManager.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">DatabaseManager</span><span class="p">:</span> <span class="kt">DatabaseManagerProtocol</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PredixMobileSDK@objc(cs)Logger"></a>
+                    <a name="//apple_ref/swift/Class/Logger" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)Logger">Logger</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides Logging support for the SDK. </p>
+<li><p>On iOS 9 and below and macOS El Capitan and below this class will use the Apple NSLog-style logs.</p></li>
+<li><p>When running in iOS 10+ and macOS Sierra+ this class will use the Apple Unified Logging API</p></li>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <p>SeeAlso:</p>
+
+<ul>
+<li><a href="https://developer.apple.com/reference/os/1891852-logging">Logging - os | Apple Developer Documentation</a></li>
+<li><a href="https://developer.apple.com/videos/play/wwdc2016/721/">WWDC 2016: Unified Logging and Activity Tracing</a></li>
+</ul>
+
+</div>
+
+                        <a href="Classes/Logger.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">open</span> <span class="kd">class</span> <span class="kt">Logger</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/LoggerProtocol.html">LoggerProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK28OfflineAuthenticationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/OfflineAuthenticationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK28OfflineAuthenticationHandlerC">OfflineAuthenticationHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Base class for all offline authentication handlers</p>
+
+<p>Processes offline authentication.</p>
+
+                        <a href="Classes/OfflineAuthenticationHandler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OfflineAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK23UAAAuthorizationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/UAAAuthorizationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK23UAAAuthorizationHandlerC">UAAAuthorizationHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>AuthorizationHandler to extract authorization data from the UAA oAuth token</p>
+
+                        <a href="Classes/UAAAuthorizationHandler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAAAuthorizationHandler</span><span class="p">:</span> <span class="kt"><a href="Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK27OnlineAuthenticationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/OnlineAuthenticationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK27OnlineAuthenticationHandlerC">OnlineAuthenticationHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Base class for all online authentication handlers</p>
+
+<p>Processes online authentication, and allows for authentication refresh capabilities.</p>
+
+                        <a href="Classes/OnlineAuthenticationHandler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OnlineAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PredixMobileSDK@objc(cs)ServiceRouter"></a>
+                    <a name="//apple_ref/swift/Class/ServiceRouter" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)ServiceRouter">ServiceRouter</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>The ServiceRouter controls what services are available or unavailable and processes service requests.</p>
+
+<p>When a service is <code>registered</code> it is made available to process requests. When it is <code>unregistered</code> it is no longer available to service requests.</p>
+
+<ul>
+<li><p>All services registered must have a unique serviceIdentifier string.</p></li>
+<li><p>Attempts to register a service with a serviceIdentifier string that is already registered will not be successful.</p></li>
+</ul>
+
+                        <a href="Classes/ServiceRouter.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">@objc</span> <span class="kd">public</span> <span class="kd">class</span> <span class="kt">ServiceRouter</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/ServiceRouterProtocol.html">ServiceRouterProtocol</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK33BrowserBasedAuthenticationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/BrowserBasedAuthenticationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK33BrowserBasedAuthenticationHandlerC">BrowserBasedAuthenticationHandler</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p><code><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></code> subclass for handling browser-based based online authentication.</p>
+
+<p>Handles displaying an authentication web page, intercepting an Oauth2 redirect, and parsing the results.</p>
+
+                        <a href="Classes/BrowserBasedAuthenticationHandler.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">BrowserBasedAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/OnlineAuthenticationHandler.html">OnlineAuthenticationHandler</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+              </ul>
+            </div>
+            <div class="task-group">
+              <ul class="item-container">
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/c:@M@PredixMobileSDK@objc(cs)OpenURLService"></a>
+                    <a name="//apple_ref/swift/Class/OpenURLService" class="dashAnchor"></a>
+                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)OpenURLService">OpenURLService</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Provides the ability to open a URL on device external to app.</p>
+
+<p>URLs may launch different apps on the device, for example:</p>
+
+<ul>
+<li><p>The URL <code>mailto://someone@example.com?Subject=Hello%20again</code> would open the mail app.</p></li>
+<li><p>The URL <code>tel:1-800-555-1212</code> would open the phone app, and initiate a phone call.</p></li>
+<li><p>The URL <code>https://www.google.com</code> would open the Safari app.</p></li>
+</ul>
+
+                        <a href="Classes/OpenURLService.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">OpenURLService</span><span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/ServiceProtocol.html">ServiceProtocol</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1623,7 +1569,7 @@ file types (JSON, text, images, video, etc.)</p>
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">MockNetworkDataManager</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">MockNetworkDataManager</span><span class="p">:</span> <span class="kt">NSObject</span></code></pre>
 
                         </div>
                       </div>
@@ -1637,9 +1583,9 @@ file types (JSON, text, images, video, etc.)</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PredixMobileSDK@objc(cs)WaitStateReturn"></a>
-                    <a name="//apple_ref/swift/Class/WaitStateReturn" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)WaitStateReturn">WaitStateReturn</a>
+                    <a name="/s:15PredixMobileSDK31UAAServiceAuthenticationHandlerC"></a>
+                    <a name="//apple_ref/swift/Class/UAAServiceAuthenticationHandler" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK31UAAServiceAuthenticationHandlerC">UAAServiceAuthenticationHandler</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1647,16 +1593,15 @@ file types (JSON, text, images, video, etc.)</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Wrapper object used for returning the wait state of the UI. Encapsulates both the WaitState enumeration, and the optional string message.</p>
+                        <p><code><a href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a></code> subclass that handles standard predix.io UAA service password grant authentication</p>
 
-                        <a href="Classes/WaitStateReturn.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/UAAServiceAuthenticationHandler.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">open</span> <span class="kd">class</span> <span class="kt">WaitStateReturn</span> <span class="p">:</span> <span class="kt">NSObject</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">UAAServiceAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="Classes/ServiceBasedAuthenticationHandler.html">ServiceBasedAuthenticationHandler</a></span></code></pre>
 
                         </div>
                       </div>
@@ -1670,9 +1615,9 @@ file types (JSON, text, images, video, etc.)</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PredixMobileSDK@objc(cs)ServiceRouter"></a>
-                    <a name="//apple_ref/swift/Class/ServiceRouter" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)ServiceRouter">ServiceRouter</a>
+                    <a name="/s:15PredixMobileSDK27ApplicationDelegateHandlersC"></a>
+                    <a name="//apple_ref/swift/Class/ApplicationDelegateHandlers" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK27ApplicationDelegateHandlersC">ApplicationDelegateHandlers</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1680,23 +1625,17 @@ file types (JSON, text, images, video, etc.)</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>The ServiceRouter controls what services are available or unavailable and processes service requests.</p>
+                        <p>Handles methods for application lifecycle events, local and remote notifications.</p>
 
-<p>When a service is <code>registered</code> it is made available to process requests. When it is <code>unregistered</code> it is no longer available to service requests.</p>
+<p>If PredixMobilityConfiguration.automaticallyListenForApplicationStateEvents is true, the SDK will automatically handle application lifecycle events, however local and remote notification event method calls will need to be passed to the SDK from the container app.</p>
 
-<ul>
-<li><p>All services registered must have a unique serviceIdentifier string.</p></li>
-<li><p>Attempts to register a service with a serviceIdentifier string that is already registered will not be successful.</p></li>
-</ul>
-
-                        <a href="Classes/ServiceRouter.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/ApplicationDelegateHandlers.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">@objc</span>
-<span class="kd">public</span> <span class="kd">class</span> <span class="kt">ServiceRouter</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/ServiceRouterProtocol.html">ServiceRouterProtocol</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ApplicationDelegateHandlers</span></code></pre>
 
                         </div>
                       </div>
@@ -1710,9 +1649,9 @@ file types (JSON, text, images, video, etc.)</p>
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/c:@M@PredixMobileSDK@objc(cs)OpenURLService"></a>
-                    <a name="//apple_ref/swift/Class/OpenURLService" class="dashAnchor"></a>
-                    <a class="token" href="#/c:@M@PredixMobileSDK@objc(cs)OpenURLService">OpenURLService</a>
+                    <a name="/s:15PredixMobileSDK21KeychainCommandResultC"></a>
+                    <a name="//apple_ref/swift/Class/KeychainCommandResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK21KeychainCommandResultC">KeychainCommandResult</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -1720,23 +1659,76 @@ file types (JSON, text, images, video, etc.)</p>
                     <section class="section">
                       <div class="pointer"></div>
                       <div class="abstract">
-                        <p>Provides the ability to open a URL on device external to app.</p>
+                        <p>Object to contain the result of a keychain operation.</p>
 
-<p>URLs may launch different apps on the device, for example:</p>
-
-<ul>
-<li><p>The URL <code>mailto://someone@example.com?Subject=Hello%20again</code> would open the mail app.</p></li>
-<li><p>The URL <code>tel:1-800-555-1212</code> would open the phone app, and initiate a phone call.</p></li>
-<li><p>The URL <code>https://www.google.com</code> would open the Safari app.</p></li>
-</ul>
-
-                        <a href="Classes/OpenURLService.html" class="slightly-smaller">See more</a>
+                        <a href="Classes/KeychainCommandResult.html" class="slightly-smaller">See more</a>
                       </div>
                       <div class="declaration">
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">OpenURLService</span> <span class="p">:</span> <span class="kt">NSObject</span><span class="p">,</span> <span class="kt"><a href="Protocols/ServiceProtocol.html">ServiceProtocol</a></span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">KeychainCommandResult</span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK25ReadKeychainCommandResultC"></a>
+                    <a name="//apple_ref/swift/Class/ReadKeychainCommandResult" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK25ReadKeychainCommandResultC">ReadKeychainCommandResult</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Object to contain the result of a keychain read operation.</p>
+<div class="aside aside-see-also">
+    <p class="aside-title">See also</p>
+    <code><a href="Classes/KeychainCommandResult.html">KeychainCommandResult</a></code>
+
+</div>
+
+                        <a href="Classes/ReadKeychainCommandResult.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">ReadKeychainCommandResult</span><span class="p">:</span> <span class="kt"><a href="Classes/KeychainCommandResult.html">KeychainCommandResult</a></span></code></pre>
+
+                        </div>
+                      </div>
+                    </section>
+                  </div>
+                </li>
+                <li class="item">
+                  <div>
+                    <code>
+                    <a name="/s:15PredixMobileSDK8KeychainC"></a>
+                    <a name="//apple_ref/swift/Class/Keychain" class="dashAnchor"></a>
+                    <a class="token" href="#/s:15PredixMobileSDK8KeychainC">Keychain</a>
+                    </code>
+                  </div>
+                  <div class="height-container">
+                    <div class="pointer-container"></div>
+                    <section class="section">
+                      <div class="pointer"></div>
+                      <div class="abstract">
+                        <p>Keychain access class used for storing, retrieving and deleting values from the Apple keychain.</p>
+
+                        <a href="Classes/Keychain.html" class="slightly-smaller">See more</a>
+                      </div>
+                      <div class="declaration">
+                        <h4>Declaration</h4>
+                        <div class="language">
+                          <p class="aside-title">Swift</p>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="kd">class</span> <span class="kt">Keychain</span></code></pre>
 
                         </div>
                       </div>
@@ -1751,8 +1743,8 @@ file types (JSON, text, images, video, etc.)</p>
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-09-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

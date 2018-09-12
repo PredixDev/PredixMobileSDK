@@ -397,7 +397,7 @@
             <h1>OnlineAuthenticationHandler</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OnlineAuthenticationHandler</span> <span class="p">:</span> <span class="kt"><a href="../Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">OnlineAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/AuthenticationHandler.html">AuthenticationHandler</a></span></code></pre>
 
                 </div>
               </div>
@@ -441,7 +441,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">refreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">refreshAuthenticationHandler</span><span class="p">:</span> <span class="kt"><a href="../Classes/RefreshAuthenticationHandler.html">RefreshAuthenticationHandler</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -468,7 +468,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt"><a href="../Classes/AuthenticationManager.html">AuthenticationManager</a></span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="k">set</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">override</span> <span class="k">weak</span> <span class="k">var</span> <span class="nv">manager</span><span class="p">:</span> <span class="kt"><a href="../Classes/AuthenticationManager.html">AuthenticationManager</a></span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -495,7 +495,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">loginURLPath</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">loginURLPath</span> <span class="o">=</span> <span class="s">""</span></code></pre>
 
                         </div>
                       </div>
@@ -522,7 +522,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">logoutURLPath</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">logoutURLPath</span> <span class="o">=</span> <span class="kt"><a href="../Classes/PredixMobilityConfiguration.html">PredixMobilityConfiguration</a></span><span class="o">.</span><span class="n">logoutURLPath</span></code></pre>
 
                         </div>
                       </div>
@@ -549,7 +549,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">clientId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">clientId</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -576,7 +576,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">clientSecret</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span> <span class="p">{</span> <span class="k">get</span> <span class="p">}</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">clientSecret</span><span class="p">:</span> <span class="kt">String</span><span class="p">?</span></code></pre>
 
                         </div>
                       </div>
@@ -603,7 +603,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">logoutMethod</span><span class="p">:</span> <span class="kt">String</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">logoutMethod</span> <span class="o">=</span> <span class="s">"POST"</span></code></pre>
 
                         </div>
                       </div>
@@ -662,9 +662,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK27OnlineAuthenticationHandlerC12authenticateyyAA0eF0C18AuthenticateResultOc010completionF0_tF"></a>
+                    <a name="/s:15PredixMobileSDK27OnlineAuthenticationHandlerC12authenticate010completionF0yyAA0eF0C18AuthenticateResultOc_tF"></a>
                     <a name="//apple_ref/swift/Method/authenticate(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK27OnlineAuthenticationHandlerC12authenticateyyAA0eF0C18AuthenticateResultOc010completionF0_tF">authenticate(completionHandler:)</a>
+                    <a class="token" href="#/s:15PredixMobileSDK27OnlineAuthenticationHandlerC12authenticate010completionF0yyAA0eF0C18AuthenticateResultOc_tF">authenticate(completionHandler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -724,9 +724,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK27OnlineAuthenticationHandlerC6logoutyyyc010completionF0_tF"></a>
+                    <a name="/s:15PredixMobileSDK27OnlineAuthenticationHandlerC6logout010completionF0yyyc_tF"></a>
                     <a name="//apple_ref/swift/Method/logout(completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK27OnlineAuthenticationHandlerC6logoutyyyc010completionF0_tF">logout(completionHandler:)</a>
+                    <a class="token" href="#/s:15PredixMobileSDK27OnlineAuthenticationHandlerC6logout010completionF0yyyc_tF">logout(completionHandler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -795,8 +795,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-09-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>

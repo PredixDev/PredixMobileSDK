@@ -397,7 +397,7 @@
             <h1>PredixMobileAuthorizationHandler</h1>
               <div class="declaration">
                 <div class="language">
-                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">PredixMobileAuthorizationHandler</span> <span class="p">:</span> <span class="kt"><a href="../Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
+                  <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">class</span> <span class="kt">PredixMobileAuthorizationHandler</span><span class="p">:</span> <span class="kt"><a href="../Protocols/AuthorizationHandler.html">AuthorizationHandler</a></span></code></pre>
 
                 </div>
               </div>
@@ -422,9 +422,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC20sessionConfigurationSo010URLSessionG0Cvp"></a>
+                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC20sessionConfigurationSo012NSURLSessionG0Cvp"></a>
                     <a name="//apple_ref/swift/Property/sessionConfiguration" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC20sessionConfigurationSo010URLSessionG0Cvp">sessionConfiguration</a>
+                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC20sessionConfigurationSo012NSURLSessionG0Cvp">sessionConfiguration</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -439,7 +439,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sessionConfiguration</span><span class="p">:</span> <span class="kt">URLSessionConfiguration</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">sessionConfiguration</span> <span class="o">=</span> <span class="kt">URLSessionConfiguration</span><span class="o">.</span><span class="k">default</span></code></pre>
 
                         </div>
                       </div>
@@ -466,7 +466,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">authorizationSucceededResponseCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">authorizationSucceededResponseCode</span> <span class="o">=</span> <span class="kt"><a href="../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="o">.</span><span class="n">found</span></code></pre>
 
                         </div>
                       </div>
@@ -493,7 +493,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">authorizationFailedResponseCode</span><span class="p">:</span> <span class="kt"><a href="../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">authorizationFailedResponseCode</span> <span class="o">=</span> <span class="kt"><a href="../Enums/Http.html">Http</a></span><span class="o">.</span><span class="kt">StatusCode</span><span class="o">.</span><span class="n">unauthorized</span></code></pre>
 
                         </div>
                       </div>
@@ -503,9 +503,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC14requestHeaderss10DictionaryVyS2SGvp"></a>
+                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC14requestHeadersSDyS2SGvp"></a>
                     <a name="//apple_ref/swift/Property/requestHeaders" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC14requestHeaderss10DictionaryVyS2SGvp">requestHeaders</a>
+                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC14requestHeadersSDyS2SGvp">requestHeaders</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -520,7 +520,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">requestHeaders</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">String</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">public</span> <span class="k">var</span> <span class="nv">requestHeaders</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">String</span><span class="p">]</span> <span class="o">=</span> <span class="p">[:]</span></code></pre>
 
                         </div>
                       </div>
@@ -530,9 +530,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC21authenticationPayloads10DictionaryVySSypGSgvp"></a>
+                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC21authenticationPayloadSDySSypGSgvp"></a>
                     <a name="//apple_ref/swift/Property/authenticationPayload" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC21authenticationPayloads10DictionaryVySSypGSgvp">authenticationPayload</a>
+                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC21authenticationPayloadSDySSypGSgvp">authenticationPayload</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -606,9 +606,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC9authorizeys10DictionaryVySSypG21authenticationPayload_yAGc010completionE0tF"></a>
+                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC9authorize21authenticationPayload010completionE0ySDySSypG_yAGctF"></a>
                     <a name="//apple_ref/swift/Method/authorize(authenticationPayload:completionHandler:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC9authorizeys10DictionaryVySSypG21authenticationPayload_yAGc010completionE0tF">authorize(authenticationPayload:completionHandler:)</a>
+                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC9authorize21authenticationPayload010completionE0ySDySSypG_yAGctF">authorize(authenticationPayload:completionHandler:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -689,9 +689,9 @@
                 <li class="item">
                   <div>
                     <code>
-                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC11postProcesss10DictionaryVySSypGAG8userData_tF"></a>
+                    <a name="/s:15PredixMobileSDK0aB20AuthorizationHandlerC11postProcess8userDataSDySSypGAF_tF"></a>
                     <a name="//apple_ref/swift/Method/postProcess(userData:)" class="dashAnchor"></a>
-                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC11postProcesss10DictionaryVySSypGAG8userData_tF">postProcess(userData:)</a>
+                    <a class="token" href="#/s:15PredixMobileSDK0aB20AuthorizationHandlerC11postProcess8userDataSDySSypGAF_tF">postProcess(userData:)</a>
                     </code>
                   </div>
                   <div class="height-container">
@@ -708,7 +708,7 @@
                         <h4>Declaration</h4>
                         <div class="language">
                           <p class="aside-title">Swift</p>
-                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">postProcess</span><span class="p">(</span><span class="nv">userData</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span> <span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
+                          <pre class="highlight swift"><code><span class="kd">open</span> <span class="kd">func</span> <span class="nf">postProcess</span><span class="p">(</span><span class="nv">userData</span><span class="p">:</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">])</span> <span class="o">-&gt;</span> <span class="p">[</span><span class="kt">String</span><span class="p">:</span> <span class="kt">Any</span><span class="p">]</span></code></pre>
 
                         </div>
                       </div>
@@ -746,8 +746,8 @@
       </article>
     </div>
     <section class="footer">
-      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-05-22)</p>
-      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.3</a>, a <a class="link" href="https://realm.io" target="_blank" rel="external">Realm</a> project.</p>
+      <p>&copy; 2018 <a class="link" href="http://predix.io" target="_blank" rel="external">GE Digital</a>. All rights reserved. (Last updated: 2018-09-12)</p>
+      <p>Generated by <a class="link" href="https://github.com/realm/jazzy" target="_blank" rel="external">jazzy ♪♫ v0.9.1</a>, a <a class="link" href="http://realm.io" target="_blank" rel="external">Realm</a> project.</p>
     </section>
   </body>
 </div>
