@@ -43,21 +43,10 @@ The following examples show different ways you can use the Predix SDK for Hybrid
   * Sample Command Processor - [MobileExample-Microservice-CommandProcessor](https://github.com/PredixDev/MobileExample-Microservice-CommandProcessor)  
   * Sample Sync Processor that communicates with Predix Asset service - [MobileExample-Microservice-AssetIntegration](https://github.com/PredixDev/MobileExample-Microservice-AssetIntegration)  
 
-3. iOS Client Services
-  * Basic native iOS service example - [MobileExample-iOSService-Sample](https://github.com/PredixDev/MobileExample-iOSService-Sample)
-  * Retrieve user's current location in iOS via a service example [MobileExample-iOSService-SingleLocation ](https://github.com/PredixDev/MobileExample-iOSService-SingleLocation)
-  * Barcode scanner implementation for iOS via native service - [MobileExample-iOSService-Barcode-Scanner : ](https://github.com/PredixDev/MobileExample-iOSService-Barcode-Scanner)
-  * Camera service implementation for iOS via native service - [MobileExample-iOSService-Camera : ](https://github.com/PredixDev/MobileExample-iOSService-Camera)
-
-4. iOS Client Examples
-  * Store Logs in the Database [MobileExample-iOS-StoreLogsInDatabase](https://github.com/PredixDev/MobileExample-iOS-StoreLogsInDatabase)
-  * Create a non-hybrid, native iOS app with Mobile SDK -  [MobileExample-iOS-NativeIssuesListApp](https://github.com/PredixDev/MobileExample-iOS-NativeIssuesListApp)
-  * Development-time rapid on-device WebApp iterations -  [MobileExample-iOS-DeviceDevWebAppUpdater](https://github.com/PredixDev/MobileExample-iOS-DeviceDevWebAppUpdater)
-  * Example container integrating Predix Mobile with React-Native -  [MobileExample-iOS-PredixMobileWithReactNative](https://github.com/PredixDev/MobileExample-iOS-PredixMobileWithReactNative)
   
-5. Android Client Examples
+3. Android Client Examples
  * Sample hybrid application - [PredixMobileAndroidSampleApplication](https://github.com/PredixDev/PredixMobileAndroidSampleApplication)
 
-6. Java Client Examples
+4. Java Client Examples
  * Sample hybrid application using JavaFX - [PredixMobileJavaSampleApplication](https://github.com/PredixDev/PredixMobileJavaSampleApplication)
  
